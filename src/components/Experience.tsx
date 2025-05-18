@@ -170,13 +170,13 @@ export const Experience: React.FC = () => {
   return (
     <section id="experience" className="py-20 px-4">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-down">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-600">
             Mi Trayectoria
           </span>
         </h2>
 
-        <div className="flex justify-center mb-8">
+        <div className="flex justify-center mb-8" data-aos="fade-up" data-aos-delay="100">
           <div className="inline-flex p-1 bg-gray-800 rounded-lg">
             <button
               onClick={() => setActiveTab('all')}
@@ -213,7 +213,7 @@ export const Experience: React.FC = () => {
 
         <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-blue-500 before:via-blue-500 before:to-indigo-600 before:opacity-30">
           {displayedExperiences.map((exp, index) => (
-            <div key={index} className="relative flex items-start group">
+            <div key={index} className="relative flex items-start group" data-aos={index % 2 === 0 ? "fade-right" : "fade-left"} data-aos-delay={200 + (index * 100)}>
               <div className="absolute left-0 md:left-1/2 ml-1.5 md:-ml-1.5 h-3 w-3 rounded-full border-2 border-blue-500 bg-gray-900 group-hover:border-indigo-600 transition-colors"></div>
               
               <div className="ml-10 md:ml-0 md:w-1/2 md:pr-10 md:text-right group-odd:md:ml-auto group-odd:md:pl-10 group-odd:md:pr-0">

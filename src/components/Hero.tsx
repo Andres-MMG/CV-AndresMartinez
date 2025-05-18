@@ -55,20 +55,20 @@ export const Hero: React.FC = () => {
     <section id="home" className="min-h-screen flex items-center justify-center pt-16 px-4">
       <div className="container mx-auto max-w-5xl">
         <div className="text-center md:text-left">
-          <h1 className="text-4xl md:text-6xl font-bold mb-2">
+          <h1 className="text-4xl md:text-6xl font-bold mb-2" data-aos="fade-down">
             Andrés Martínez Gajardo
           </h1>
-          <div className="h-12 mb-6">
+          <div className="h-12 mb-6" data-aos="fade-up" data-aos-delay="300">
             <h2 className="text-xl md:text-3xl text-gray-300">
               <span ref={typewriterRef} className="text-blue-400"></span>
               <span className="animate-pulse">|</span>
             </h2>
           </div>
-          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto md:mx-0 mb-8">
+          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto md:mx-0 mb-8" data-aos="fade-up" data-aos-delay="500">
             Transformando ideas en soluciones digitales impulsadas por IA. 
             Más de 20 años de experiencia creando software de calidad.
           </p>
-          <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+          <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start" data-aos="fade-up" data-aos-delay="700">
             <a
               href="#projects"
               className="px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-700 rounded-md font-semibold text-white hover:from-blue-700 hover:to-indigo-800 transition-all shadow-lg hover:shadow-blue-500/25"

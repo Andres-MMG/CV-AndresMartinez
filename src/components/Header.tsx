@@ -23,15 +23,18 @@ export const Header: React.FC = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? 'bg-gray-900/90 backdrop-blur-md shadow-lg' : 'bg-transparent'
       }`}
+      data-aos="fade-down"
+      data-aos-duration="800"
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="flex items-center">            <div className="h-10 w-10 rounded-full overflow-hidden border-2 border-blue-400">
-              <img 
+        <div className="flex items-center">            
+          <div className="h-10 w-10 rounded-full overflow-hidden border-2 border-blue-400">
+            <img 
               src="/Andres.png" 
               alt="Andrés Martínez" 
               className="h-full w-full object-cover"
             />
-            </div>
+          </div>
         </div>
         
         {/* Desktop Navigation */}

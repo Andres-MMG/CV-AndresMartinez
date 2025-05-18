@@ -62,13 +62,13 @@ export const Projects: React.FC = () => {
   return (
     <section id="projects" className="py-20 px-4">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-down">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-600">
             Mis Proyectos
           </span>
         </h2>
 
-        <div className="flex justify-center flex-wrap gap-2 mb-12">
+        <div className="flex justify-center flex-wrap gap-2 mb-12" data-aos="fade-up" data-aos-delay="100">
           <button
             onClick={() => setSelectedTag(null)}
             className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${
@@ -97,13 +97,15 @@ export const Projects: React.FC = () => {
         {/* Featured Projects */}
         {(selectedTag === null) && (
           <div className="mb-16">
-            <h3 className="text-xl font-semibold mb-6 text-blue-400">Proyectos Destacados</h3>
+            <h3 className="text-xl font-semibold mb-6 text-blue-400" data-aos="fade-right" data-aos-delay="200">Proyectos Destacados</h3>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {projects
                 .filter(project => project.featured)
                 .map((project, index) => (
                   <div 
                     key={index}
+                    data-aos="zoom-in" 
+                    data-aos-delay={300 + (index * 100)}
                     className="group bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 transition-all border border-gray-700 hover:border-blue-500/30"
                   >
                     <a href={project.url} target="_blank" rel="noopener noreferrer" className="block relative">
@@ -148,6 +150,8 @@ export const Projects: React.FC = () => {
             .map((project, index) => (
               <div 
                 key={index}
+                data-aos="fade-up" 
+                data-aos-delay={150 + (index * 50)}
                 className="group bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-blue-500/10 transition-all border border-gray-700 hover:border-blue-500/30"
               >
                 <a href={project.url} target="_blank" rel="noopener noreferrer" className="block">
