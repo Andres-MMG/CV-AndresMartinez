@@ -1,55 +1,41 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useContext } from 'react';
+import { LanguageContext } from '../context/LanguageContext';
 
 export const Hero: React.FC = () => {
+  const { t, locale } = useContext(LanguageContext);
   const typewriterRef = useRef<HTMLSpanElement>(null);
   
   useEffect(() => {
-    const phrases = [
-      'Ingeniero de Software',
-      'Desarrollador Full Stack',
-      'Emprendedor Tech',
-      'Especialista en IA',
-      'Fundador de InteliAI'
-    ];
-    
+    const phrases = t('hero.phrases') as string[];
     let currentPhraseIndex = 0;
     let currentCharIndex = 0;
     let isDeleting = false;
     let typingSpeed = 100;
-    
+    let timerId: number;
     const type = () => {
       const currentPhrase = phrases[currentPhraseIndex];
-      
       if (isDeleting) {
-        if (typewriterRef.current) {
-          typewriterRef.current.textContent = currentPhrase.substring(0, currentCharIndex - 1);
-          currentCharIndex--;
-        }
+        typewriterRef.current!.textContent = currentPhrase.substring(0, currentCharIndex - 1);
+        currentCharIndex--;
         typingSpeed = 50;
       } else {
-        if (typewriterRef.current) {
-          typewriterRef.current.textContent = currentPhrase.substring(0, currentCharIndex + 1);
-          currentCharIndex++;
-        }
+        typewriterRef.current!.textContent = currentPhrase.substring(0, currentCharIndex + 1);
+        currentCharIndex++;
         typingSpeed = 100;
       }
-      
       if (!isDeleting && currentCharIndex === currentPhrase.length) {
         isDeleting = true;
-        typingSpeed = 1500; // Pause at the end
+        typingSpeed = 1500;
       } else if (isDeleting && currentCharIndex === 0) {
         isDeleting = false;
         currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
-        typingSpeed = 500; // Pause before next phrase
+        typingSpeed = 500;
       }
-      
-      setTimeout(type, typingSpeed);
+      timerId = window.setTimeout(type, typingSpeed);
     };
-    
-    const typingTimeout = setTimeout(type, 1000);
-    
-    return () => clearTimeout(typingTimeout);
-  }, []);
+    timerId = window.setTimeout(type, 1000);
+    return () => clearTimeout(timerId);
+  }, [locale]);
   
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-16 px-4">
@@ -65,21 +51,20 @@ export const Hero: React.FC = () => {
             </h2>
           </div>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto md:mx-0 mb-8" data-aos="fade-up" data-aos-delay="500">
-            Transformando ideas en soluciones digitales impulsadas por IA. 
-            Más de 20 años de experiencia creando software de calidad.
+            {t('hero.description')}
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start" data-aos="fade-up" data-aos-delay="700">
             <a
               href="#projects"
               className="px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-700 rounded-md font-semibold text-white hover:from-blue-700 hover:to-indigo-800 transition-all shadow-lg hover:shadow-blue-500/25"
             >
-              Ver Proyectos
+              {t('hero.buttons.projects')}
             </a>
             <a
               href="#contact"
               className="px-6 py-3 bg-gray-800 rounded-md font-semibold text-white hover:bg-gray-700 transition-all border border-gray-700"
             >
-              Contactar
+              {t('hero.buttons.contact')}
             </a>
           </div>
         </div>

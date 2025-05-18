@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { ExternalLink } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 interface Project {
-  title: string;
-  description: string;
+  id: string;
   image: string;
   url: string;
   tags: string[];
@@ -11,42 +11,38 @@ interface Project {
 }
 
 export const Projects: React.FC = () => {
+  const { t } = useLanguage();
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
 
   const projects: Project[] = [
     {
-      title: 'InteliAI',
-      description: 'Landing page para plataforma de agentes IA. Incluye planes de precios, integración con MercadoPago, demos de chat IA y formularios inteligentes.',
+      id: 'inteliai',
       image: '/logoInteliAi.png',
       url: 'https://inteliai.cl',
       tags: ['AI', 'React', 'TypeScript','Tailwind', 'MercadoPago', 'Landing Page'],
       featured: true
     },
     {
-      title: 'Dashboard InteliAI',
-      description: 'Panel para gestión de agentes IA con monitoreo en tiempo real. Permite configurar conocimiento, integraciones y visualizar métricas de rendimiento.',
+      id: 'dashboard',
       image: '/DashBoardInteliAI.png',
       url: 'https://dashboard.inteliai.cl',
       tags: ['React', 'TypeScript', 'Tailwind', 'Supabase', 'PostgreSQL', 'Redis', 'Dashboard', 'Analytics'],
       featured: true
     },
     {
-      title: 'Ars Perpetuum',
-      description: 'E-commerce de arte con gestión de inventario y pagos online.',
+      id: 'arsperpetuum',
       image: '/arsperpetuum.webp',
       url: 'https://arsperpetuum.cl',
       tags: ['WordPress', 'WooCommerce', 'E-commerce','MercadoPago'],
     },
     {
-      title: 'OK Fugas',
-      description: 'Web para detección de fugas con sistema de citas y formulario IA.',
+      id: 'okfugas',
       image: '/okfugas.png',
       url: 'https://www.okfugas.cl',
       tags: ['WordPress', 'PHP', 'Scheduling', 'AI'],
     },
     {
-      title: 'Dr. House',
-      description: 'Web para detección de aguas con gestor de servicios, citas y chatbot IA.',
+      id: 'drhouse',
       image: '/dr-house.png',
       url: 'https://dr-house.cl',
       tags: ['React', 'TypeScript', 'PHP', 'WordPress', 'AI', 'Chatbots'],
@@ -64,7 +60,7 @@ export const Projects: React.FC = () => {
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-down">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-600">
-            Mis Proyectos
+            {t('projects.title')}
           </span>
         </h2>
 
@@ -77,7 +73,7 @@ export const Projects: React.FC = () => {
                 : 'bg-gray-800 text-gray-400 hover:text-white hover:bg-gray-700'
             }`}
           >
-            Todos
+            {t('projects.filterAll')}
           </button>
           {allTags.map(tag => (
             <button
@@ -97,7 +93,7 @@ export const Projects: React.FC = () => {
         {/* Featured Projects */}
         {(selectedTag === null) && (
           <div className="mb-16">
-            <h3 className="text-xl font-semibold mb-6 text-blue-400" data-aos="fade-right" data-aos-delay="200">Proyectos Destacados</h3>
+            <h3 className="text-xl font-semibold mb-6 text-blue-400" data-aos="fade-right" data-aos-delay="200">{t('projects.featuredProjects')}</h3>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {projects
                 .filter(project => project.featured)
@@ -112,18 +108,18 @@ export const Projects: React.FC = () => {
                       <div className="relative h-48 md:h-64 overflow-hidden">
                         <img 
                           src={project.image} 
-                          alt={project.title} 
+                          alt={t(`projects.items.${project.id}.title`)} 
                           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent opacity-80"></div>
                       </div>
                       <div className="absolute bottom-0 left-0 right-0 p-6">
                         <h4 className="text-xl md:text-2xl font-bold text-white mb-2 flex items-center">
-                          {project.title}
+                          {t(`projects.items.${project.id}.title`)}
                           <ExternalLink className="ml-2 w-3 h-3 md:w-4 md:h-4 opacity-70" />
                         </h4>
                         <p className="text-white font-medium mb-4 text-shadow-sm shadow-black text-sm md:text-base">
-                          {project.description}
+                          {t(`projects.items.${project.id}.description`)}
                         </p>
                         <div className="flex flex-wrap gap-2">
                           {project.tags.map((tag, i) => (
@@ -158,17 +154,17 @@ export const Projects: React.FC = () => {
                   <div className="relative h-36 md:h-48 overflow-hidden">
                     <img 
                       src={project.image} 
-                      alt={project.title} 
+                      alt={t(`projects.items.${project.id}.title`)} 
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent opacity-70"></div>
                   </div>
                   <div className="p-4">
                     <h4 className="text-lg md:text-xl font-bold text-white mb-2 flex items-center">
-                      {project.title}
+                      {t(`projects.items.${project.id}.title`)}
                       <ExternalLink className="ml-2 w-3 h-3 md:w-4 md:h-4 opacity-70" />
                     </h4>
-                    <p className="text-gray-300 text-xs md:text-sm mb-4 line-clamp-2 md:line-clamp-3" dangerouslySetInnerHTML={{ __html: project.description.replace(/(gestión|inventario|sistema|agenda|facturación|detección|IA|chatbot)/g, '<span class="font-semibold text-white">$1</span>') }} />
+                    <p className="text-gray-300 text-xs md:text-sm mb-4 line-clamp-2 md:line-clamp-3" dangerouslySetInnerHTML={{ __html: t(`projects.items.${project.id}.description`).replace(/(gestión|inventario|sistema|agenda|facturación|detección|IA|chatbot)/g, '<span class="font-semibold text-white">$1</span>') }} />
                     <div className="flex flex-wrap gap-2">
                       {project.tags.map((tag, i) => (
                         <span 

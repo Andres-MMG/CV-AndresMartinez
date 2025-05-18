@@ -4,6 +4,8 @@ import App from './App.tsx';
 import './index.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { LanguageProvider } from './context/LanguageContext';
+import { ThemeProvider } from './context/ThemeContext';
 
 // Inicializar AOS
 AOS.init({
@@ -16,6 +18,10 @@ AOS.init({
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <LanguageProvider>
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+    </LanguageProvider>
   </StrictMode>
 );

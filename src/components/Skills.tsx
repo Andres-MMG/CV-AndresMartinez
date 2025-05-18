@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { LanguageContext } from '../context/LanguageContext';
 import NoSkillsMessage from './NoSkillsMessage';
 
 type SkillCategory = 'languages' | 'frameworks' | 'tools' | 'devops' | 'database' | 'ai';
@@ -11,9 +12,22 @@ interface Skill {
 }
 
 export const Skills: React.FC = () => {
+  const { t } = useContext(LanguageContext);
   const [activeCategory, setActiveCategory] = useState<SkillCategory | 'all'>('all');
   const [showAll, setShowAll] = useState(false);
   const skillsLimit = 12; // Número de habilidades a mostrar inicialmente
+
+  // Función para obtener la etiqueta de proficiencia traducida
+  const getProficiencyLabel = (level: number): string => {
+    switch (level) {
+      case 1: return t('skills.levels.basic');
+      case 2: return t('skills.levels.lowIntermediate');
+      case 3: return t('skills.levels.intermediate');
+      case 4: return t('skills.levels.advanced');
+      case 5: return t('skills.levels.expert');
+      default: return t('skills.levels.unknown');
+    }
+  };
 
   const skills: Skill[] = [
     { name: 'C#', proficiency: 5, category: 'languages' },
@@ -100,33 +114,30 @@ export const Skills: React.FC = () => {
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-down">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-600">
-            Habilidades Técnicas
+            {t('skills.title')}
           </span>
         </h2>
 
         <div className="flex justify-center flex-wrap gap-2 mb-12" data-aos="fade-up" data-aos-delay="100">
-          {categories.map(category => (
+          {categories.map(cat => (
             <button
-              key={category.id}
-              onClick={() => {
-                setActiveCategory(category.id as SkillCategory | 'all');
-                setShowAll(false); // Restablecer showAll al cambiar de categoría
-              }}
+              key={cat.id}
+              onClick={() => { setActiveCategory(cat.id as SkillCategory | 'all'); setShowAll(false); }}
               className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${
-                activeCategory === category.id
+                activeCategory === cat.id
                   ? 'bg-blue-600 text-white shadow-lg'
                   : 'bg-gray-800 text-gray-400 hover:text-white hover:bg-gray-700'
               }`}
             >
-              {category.label}
+              {t(`skills.categories.${cat.id}`)}
             </button>
           ))}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 skills-grid">
-          {filteredSkills.length > 0 ? (
-            filteredSkills.map((skill, index) => (
-              <div 
+       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 skills-grid">
+         {filteredSkills.length > 0 ? (
+           filteredSkills.map((skill, index) => (
+             <div 
                 key={index}
                 data-aos="fade-up" 
                 data-aos-delay={150 + (index % 9) * 50}
@@ -197,31 +208,24 @@ export const Skills: React.FC = () => {
         </div>
         
         {hasMoreSkills && (
-          <div className="flex justify-center mt-10">
-            <button 
-              onClick={() => setShowAll(!showAll)}
-              className="px-6 py-2 bg-blue-600/30 hover:bg-blue-600/50 text-blue-100 rounded-lg transition-all shadow-md hover:shadow-blue-500/20 flex items-center gap-2"
-              data-aos="fade-up"
-            >
-              {showAll ? 'Ver menos' : activeCategory === 'all' ? `Ver todas (${categoryFilteredSkills.length})` : `Ver más (${categoryFilteredSkills.length - filteredSkills.length})`}
-              <span className={`transition-transform ${showAll ? 'rotate-180' : ''}`}>
-                ↓
-              </span>
-            </button>
-          </div>
-        )}
-      </div>
-    </section>
-  );
+         <div className="flex justify-center mt-10">
+           <button
+             onClick={() => setShowAll(!showAll)}
+             className="px-6 py-2 bg-blue-600/30 hover:bg-blue-600/50 text-blue-100 rounded-lg transition-all shadow-md hover:shadow-blue-500/20 flex items-center gap-2"
+             data-aos="fade-up"
+           >
+              {showAll
+                ? t('skills.showLess')
+                : activeCategory === 'all'
+                  ? `${t('skills.showAll')} (${categoryFilteredSkills.length})`
+                  : `${t('skills.showMore')} (${categoryFilteredSkills.length - filteredSkills.length})`}
+               <span className={`transition-transform ${showAll ? 'rotate-180' : ''}`}>
+                 ↓
+               </span>
+             </button>
+           </div>
+         )}
+       </div>
+     </section>
+   );
 };
-
-function getProficiencyLabel(level: number): string {
-  switch (level) {
-    case 1: return 'Básico';
-    case 2: return 'Intermedio Bajo';
-    case 3: return 'Intermedio';
-    case 4: return 'Avanzado';
-    case 5: return 'Experto';
-    default: return 'Desconocido';
-  }
-}

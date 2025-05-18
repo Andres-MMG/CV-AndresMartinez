@@ -1,0 +1,129 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "subtitle": "Ingeniero de Software & Emprendedor",
+    "paragraph1": "Con más de 20 años de experiencia en el desarrollo de software, he evolucionado desde crear soluciones para el sector bancario hasta fundar mi propia empresa de tecnología.",
+    "paragraph2": "Apasionado por el aprendizaje continuo, me he sumergido en el ecosistema de la IA, desarrollando agentes inteligentes que transforman la manera en que las empresas interactúan con sus clientes.",
+    "name": "Nombre:",
+    "email": "Email:",
+    "phone": "Teléfono:",
+    "location": "Ubicación:",
+    "availability": "Disponibilidad:"
+  },  "skills": {
+    "noSkills": "No hay habilidades en esta categoría",
+    "selectCategory": "Selecciona otra categoría para ver más habilidades",
+    "title": "Habilidades Técnicas",
+    "categories": {
+      "all": "Todas",
+      "languages": "Lenguajes",
+      "frameworks": "Frameworks",
+      "database": "Bases de Datos",
+      "devops": "DevOps",
+      "ai": "IA",
+      "tools": "Herramientas"
+    },
+    "levels": {
+      "basic": "Básico",
+      "lowIntermediate": "Intermedio Bajo",
+      "intermediate": "Intermedio",
+      "advanced": "Avanzado",
+      "expert": "Experto",
+      "unknown": "Desconocido"
+    },
+    "showAll": "Ver todas",
+    "showMore": "Ver más",
+    "showLess": "Ver menos"
+  },
+  "hero": {
+    "phrases": [
+      "Ingeniero de Software",
+      "Desarrollador Full Stack",
+      "Emprendedor Tech",
+      "Especialista en IA",
+      "Fundador de InteliAI"
+    ],
+    "description": "Transformando ideas en soluciones digitales impulsadas por IA. Más de 20 años de experiencia creando software de calidad.",
+    "buttons": {
+      "projects": "Ver Proyectos",
+      "contact": "Contactar"
+    }
+  },  "experience": {
+    "title": "Mi Trayectoria",
+    "tabs": {
+      "all": "Todos",
+      "banking": "Sector Bancario",
+      "tech": "Tecnología"
+    },
+    "showMore": "Ver más experiencia",
+    "showLess": "Ver menos experiencia"
+  },  "education": {
+    "title": "Educación",
+    "systemsAnalyst": {
+      "period": "2009 - 2010",
+      "degree": "Analista de Sistemas",
+      "institution": "Universidad de Ciencias de la Informática (UCINF)"
+    },
+    "technicalProgramming": {
+      "period": "1993 - 1996",
+      "degree": "Técnico en Programación de Sistemas Computacionales",
+      "institution": "Centro Politécnico Particular Nº 2 de Ñuñoa"
+    }
+  },  "projects": {
+    "title": "Mis Proyectos",
+    "filterAll": "Todos",
+    "featuredProjects": "Proyectos Destacados",
+    "items": {
+      "inteliai": {
+        "title": "InteliAI",
+        "description": "Landing page para plataforma de agentes IA. Incluye planes de precios, integración con MercadoPago, demos de chat IA y formularios inteligentes."
+      },
+      "dashboard": {
+        "title": "Dashboard InteliAI",
+        "description": "Panel para gestión de agentes IA con monitoreo en tiempo real. Permite configurar conocimiento, integraciones y visualizar métricas de rendimiento."
+      },
+      "arsperpetuum": {
+        "title": "Ars Perpetuum",
+        "description": "E-commerce de arte con gestión de inventario y pagos online."
+      },
+      "okfugas": {
+        "title": "OK Fugas",
+        "description": "Web para detección de fugas con sistema de citas y formulario IA."
+      },
+      "drhouse": {
+        "title": "Dr. House",
+        "description": "Web para detección de aguas con gestor de servicios, citas y chatbot IA."
+      }
+    }
+  },  "contact": {
+    "title": "Contacto",
+    "letsTalk": "¿Hablamos?",
+    "description": "Si estás interesado en colaborar en un proyecto, tienes alguna pregunta o simplemente quieres charlar sobre tecnología, no dudes en contactarme.",
+    "phone": "Teléfono",
+    "email": "Correo Electrónico",
+    "location": "Ubicación",
+    "formTitle": "Envíame un mensaje",
+    "nameLabel": "Nombre completo",
+    "namePlaceholder": "Ingresa tu nombre completo",
+    "emailLabel": "Correo electrónico",
+    "emailPlaceholder": "correo@ejemplo.com",
+    "subjectLabel": "Asunto",
+    "subjectPlaceholder": "¿Sobre qué quieres hablar?",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Escribe tu mensaje aquí...",
+    "submit": "Enviar mensaje",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado con éxito!",
+    "error": "Ha ocurrido un error. Por favor intenta nuevamente."
+  },
+  "footer": {
+    "allRightsReserved": "Todos los derechos reservados."
+  }
+}

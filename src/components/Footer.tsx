@@ -1,7 +1,10 @@
 import React from 'react';
 import { Github, Linkedin, Twitter } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 export const Footer: React.FC = () => {
+  const { t } = useLanguage();
+  
   return (
     <footer className="py-8 px-4 bg-gray-900 border-t border-gray-800">
       <div className="container mx-auto max-w-5xl">
@@ -16,7 +19,7 @@ export const Footer: React.FC = () => {
                 />
               </div>
               <p className="text-gray-400 text-sm">
-                © {new Date().getFullYear()} Andrés Martínez. Todos los derechos reservados.
+                © {new Date().getFullYear()} Andrés Martínez. {t('footer.allRightsReserved')}
               </p>
             </div>
           </div>

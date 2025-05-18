@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
@@ -9,10 +9,14 @@ import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { ParticleBackground } from './components/ParticleBackground';
+import { ThemeContext } from './context/ThemeContext';
 
 function App() {
+  const { theme } = useContext(ThemeContext);
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-100 relative overflow-hidden">
+    <div className={`min-h-screen relative overflow-hidden ${
+      theme === 'light' ? 'bg-white text-gray-900' : 'bg-gray-900 text-gray-100'
+    }`}>
       <ParticleBackground />
       <div className="relative z-10">
         <Header />

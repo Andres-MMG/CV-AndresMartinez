@@ -1,0 +1,129 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Software Engineer & Entrepreneur",
+    "paragraph1": "With over 20 years of software development experience, I have evolved from building banking solutions to founding my own tech company.",
+    "paragraph2": "Passionate about continuous learning, I have immersed myself in the AI ecosystem, developing intelligent agents that transform how businesses interact with their customers.",
+    "name": "Name:",
+    "email": "Email:",
+    "phone": "Phone:",
+    "location": "Location:",
+    "availability": "Availability:"
+  },  "skills": {
+    "noSkills": "No skills in this category",
+    "selectCategory": "Select another category to see more skills",
+    "title": "Technical Skills",
+    "categories": {
+      "all": "All",
+      "languages": "Languages",
+      "frameworks": "Frameworks",
+      "database": "Databases",
+      "devops": "DevOps",
+      "ai": "AI",
+      "tools": "Tools"
+    },
+    "levels": {
+      "basic": "Basic",
+      "lowIntermediate": "Low Intermediate",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced",
+      "expert": "Expert",
+      "unknown": "Unknown"
+    },
+    "showAll": "View all",
+    "showMore": "Show more",
+    "showLess": "Show less"
+  },
+  "hero": {
+    "phrases": [
+      "Software Engineer",
+      "Full Stack Developer",
+      "Tech Entrepreneur",
+      "AI Specialist",
+      "Founder of InteliAI"
+    ],
+    "description": "Transforming ideas into AI-powered digital solutions. Over 20 years of experience building quality software.",
+    "buttons": {
+      "projects": "View Projects",
+      "contact": "Contact"
+    }
+  },  "experience": {
+    "title": "My Journey",
+    "tabs": {
+      "all": "All",
+      "banking": "Banking Sector",
+      "tech": "Tech"
+    },
+    "showMore": "See more experience",
+    "showLess": "See less"
+  },  "education": {
+    "title": "Education",
+    "systemsAnalyst": {
+      "period": "2009 - 2010",
+      "degree": "Systems Analyst",
+      "institution": "Universidad de Ciencias de la Informática (UCINF)"
+    },
+    "technicalProgramming": {
+      "period": "1993 - 1996",
+      "degree": "Technical Degree in Computer Systems Programming",
+      "institution": "Centro Politécnico Particular Nº 2 de Ñuñoa"
+    }
+  },  "projects": {
+    "title": "My Projects",
+    "filterAll": "All",
+    "featuredProjects": "Featured Projects",
+    "items": {
+      "inteliai": {
+        "title": "InteliAI",
+        "description": "Landing page for AI agents platform. Includes pricing plans, MercadoPago integration, AI chat demos, and smart forms."
+      },
+      "dashboard": {
+        "title": "InteliAI Dashboard",
+        "description": "Management panel for AI agents with real-time monitoring. Allows knowledge configuration, integrations, and performance metrics visualization."
+      },
+      "arsperpetuum": {
+        "title": "Ars Perpetuum",
+        "description": "Art e-commerce with inventory management and online payments."
+      },
+      "okfugas": {
+        "title": "OK Fugas",
+        "description": "Leak detection website with appointment system and AI form."
+      },
+      "drhouse": {
+        "title": "Dr. House",
+        "description": "Water detection web with service management, appointments, and AI chatbot."
+      }
+    }
+  },  "contact": {
+    "title": "Contact",
+    "letsTalk": "Let's Talk",
+    "description": "If you're interested in collaborating on a project, have any questions, or simply want to chat about technology, don't hesitate to contact me.",
+    "phone": "Phone",
+    "email": "Email",
+    "location": "Location",
+    "formTitle": "Send me a message",
+    "nameLabel": "Full name",
+    "namePlaceholder": "Enter your full name",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "email@example.com",
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "What would you like to discuss?",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Write your message here...",
+    "submit": "Send message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "An error occurred. Please try again."
+  },
+  "footer": {
+    "allRightsReserved": "All rights reserved."
+  }
+}
