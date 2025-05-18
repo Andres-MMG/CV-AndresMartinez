@@ -25,14 +25,13 @@ export const Header: React.FC = () => {
       }`}
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="flex items-center">
-          <div className="h-10 w-10 rounded-full overflow-hidden border-2 border-blue-400">
-            <img 
-              src="/src/components/images/Andres.png" 
+        <div className="flex items-center">            <div className="h-10 w-10 rounded-full overflow-hidden border-2 border-blue-400">
+              <img 
+              src="/Andres.png" 
               alt="Andrés Martínez" 
               className="h-full w-full object-cover"
             />
-          </div>
+            </div>
         </div>
         
         {/* Desktop Navigation */}

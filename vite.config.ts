@@ -22,6 +22,17 @@ export default defineConfig({
     },
     assetsInlineLimit: 0  // Evita que Vite incruste recursos pequeños como base64
   },
-  base: './', // Esto asegura que las rutas sean relativas
-  publicDir: 'public' // Asegura que los activos públicos se incluyan en la compilación
+  base: '/', // Usar rutas absolutas desde la raíz del sitio
+  publicDir: 'public', // Asegura que los activos públicos se incluyan en la compilación
+  server: {
+    port: 3000,
+    strictPort: true,
+    host: true
+  },
+  preview: {
+    // Configuración para vista previa de producción
+    port: 4173,
+    strictPort: true,
+    host: true
+  }
 });

@@ -1,0 +1,36 @@
+# Habilitar CORS
+Header set Access-Control-Allow-Origin "*"
+
+# Configurar tipos MIME correctos
+AddType application/javascript .js
+AddType application/javascript .mjs
+AddType text/javascript .js
+AddType text/javascript .mjs
+AddType image/x-icon .ico
+
+# Redireccionar todas las solicitudes a index.html para Single-Page Application
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  # Si la solicitud no es para un archivo existente (como una imagen o un JS)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  # Si la solicitud no es para un directorio existente
+  RewriteCond %{REQUEST_FILENAME} !-d
+  # Redireccionar todas las demás solicitudes a index.html
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Establecer caché para recursos estáticos
+<IfModule mod_expires.c>
+  ExpiresActive On
+  # Imágenes
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  # CSS y JavaScript
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+</IfModule>

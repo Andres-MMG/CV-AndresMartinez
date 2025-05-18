@@ -17,7 +17,7 @@ export const Projects: React.FC = () => {
     {
       title: 'InteliAI',
       description: 'Landing page promocional para la plataforma de agentes inteligentes, con presentación de diferentes planes y tarifas para empresas. Incluye integración con MercadoPago para suscripciones, demos interactivas con chat web IA y formularios inteligentes para filtrado de consultas.',
-      image: '/src/components/images/logoInteliAi.png',
+      image: '/logoInteliAi.png',
       url: 'https://inteliai.cl',
       tags: ['AI', 'React', 'TypeScript','Tailwind', 'MercadoPago', 'Landing Page'],
       featured: true
@@ -25,7 +25,7 @@ export const Projects: React.FC = () => {
     {
       title: 'Dashboard InteliAI',
       description: 'Panel administrativo para la gestión de agentes de IA con monitoreo en tiempo real. Permite configurar conocimiento personalizado, gestionar integraciones y visualizar métricas de rendimiento para optimizar las interacciones con usuarios.',
-      image: '/src/components/images/DashBoardInteliAI.png',
+      image: '/DashBoardInteliAI.png',
       url: 'https://dashboard.inteliai.cl',
       tags: ['React', 'TypeScript', 'Tailwind', 'Supabase', 'PostgreSQL', 'Redis', 'Dashboard', 'Analytics'],
       featured: true
@@ -33,21 +33,21 @@ export const Projects: React.FC = () => {
     {
       title: 'Ars Perpetuum',
       description: 'Tienda en línea de productos artísticos con sistema de gestión de inventario y procesamiento de pagos.',
-      image: '/src/components/images/arsperpetuum.webp',
+      image: '/arsperpetuum.webp',
       url: 'https://arsperpetuum.cl',
       tags: ['WordPress', 'WooCommerce', 'E-commerce','MercadoPago'],
     },
     {
       title: 'OK Fugas',
       description: 'Plataforma para empresa de detección de fugas, con sistema de gestión de citas y calendario. Incluye formulario con IA para filtrado automático',
-      image: '/src/components/images/okfugas.png',
+      image: '/okfugas.png',
       url: 'https://www.okfugas.cl',
       tags: ['WordPress', 'PHP', 'Scheduling', 'AI'],
     },
     {
       title: 'Dr. House',
       description: 'Empresa especializada en detección de aguas con sistema de gestión de servicios, citas y calendario. Cuenta con formulario inteligente con IA y chatbot para atención al cliente. Desarrollada con React y TypeScript.',
-      image: '/src/components/images/dr-house.png',
+      image: '/dr-house.png',
       url: 'https://dr-house.cl',
       tags: ['React', 'TypeScript', 'PHP', 'WordPress', 'AI', 'Chatbots'],
     }

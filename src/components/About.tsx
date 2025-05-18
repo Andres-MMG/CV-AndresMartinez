@@ -15,7 +15,7 @@ export const About: React.FC = () => {
             <div className="relative rounded-xl overflow-hidden border-2 border-blue-500/30 shadow-lg shadow-blue-500/10" style={{aspectRatio: "3/4"}}>
               <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-indigo-900/40"></div>
               <img 
-                src="/src/components/images/torectangulo.png" 
+                src="/torectangulo.png" 
                 alt="Andrés Martínez" 
                 className="absolute inset-0 w-full h-full object-contain"
               />
