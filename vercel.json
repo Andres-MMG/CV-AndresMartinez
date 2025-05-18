@@ -1,0 +1,24 @@
+{
+  "routes": [
+    {
+      "src": "/assets/.+\\.(js|mjs)",
+      "headers": {
+        "Content-Type": "application/javascript"
+      }
+    },
+    {
+      "src": "/(.*)\\.ico$",
+      "headers": {
+        "Content-Type": "image/x-icon"
+      }
+    },
+    {
+      "src": "/(.*)\\.svg$",
+      "headers": {
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}

@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -20,13 +19,9 @@ export default defineConfig({
           lucide: ['lucide-react']
         }
       }
-    }
+    },
+    assetsInlineLimit: 0  // Evita que Vite incruste recursos pequeños como base64
   },
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src')
-    }
-  },
-  // Asegura que los activos públicos se incluyan en la compilación
-  publicDir: 'public'
+  base: './', // Esto asegura que las rutas sean relativas
+  publicDir: 'public' // Asegura que los activos públicos se incluyan en la compilación
 });
