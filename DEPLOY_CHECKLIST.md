@@ -49,8 +49,28 @@ Después del despliegue, verifica:
 
 Ejecuta Lighthouse en Chrome DevTools para verificar el rendimiento, accesibilidad, SEO y mejores prácticas del sitio.
 
+## 6. Optimización para Dispositivos Móviles
+
+- ✅ Textos de proyectos acortados para mejor visualización en móviles
+- ✅ Tamaños de fuente responsive (más pequeños en móvil)
+- ✅ Altura de imágenes reducida en dispositivos móviles
+- ✅ Límite de líneas visible en descripciones (line-clamp-2 en móvil)
+
+## 7. Script de Prueba Local
+
+Utiliza el script `test-build.ps1` para:
+- Verificar que todas las imágenes necesarias estén en la carpeta `public`
+- Generar una compilación de producción
+- Iniciar un servidor local para probar la versión de producción
+
+```powershell
+# Ejecuta desde PowerShell
+.\test-build.ps1
+```
+
 ## Notas para Coolify
 
 - Asegúrate de que Nginx esté configurado correctamente con el archivo `nginx.conf` proporcionado
 - Verifica que todos los archivos estáticos estén siendo servidos con los MIME types correctos
 - Si hay problemas con los MIME types, revisa la configuración en `nginx.conf`
+- Para móviles, asegúrate que la visualización sea correcta en pantallas pequeñas

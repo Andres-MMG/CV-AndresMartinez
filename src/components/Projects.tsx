@@ -16,7 +16,7 @@ export const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       title: 'InteliAI',
-      description: 'Landing page promocional para la plataforma de agentes inteligentes, con presentación de diferentes planes y tarifas para empresas. Incluye integración con MercadoPago para suscripciones, demos interactivas con chat web IA y formularios inteligentes para filtrado de consultas.',
+      description: 'Landing page para plataforma de agentes IA. Incluye planes de precios, integración con MercadoPago, demos de chat IA y formularios inteligentes.',
       image: '/logoInteliAi.png',
       url: 'https://inteliai.cl',
       tags: ['AI', 'React', 'TypeScript','Tailwind', 'MercadoPago', 'Landing Page'],
@@ -24,7 +24,7 @@ export const Projects: React.FC = () => {
     },
     {
       title: 'Dashboard InteliAI',
-      description: 'Panel administrativo para la gestión de agentes de IA con monitoreo en tiempo real. Permite configurar conocimiento personalizado, gestionar integraciones y visualizar métricas de rendimiento para optimizar las interacciones con usuarios.',
+      description: 'Panel para gestión de agentes IA con monitoreo en tiempo real. Permite configurar conocimiento, integraciones y visualizar métricas de rendimiento.',
       image: '/DashBoardInteliAI.png',
       url: 'https://dashboard.inteliai.cl',
       tags: ['React', 'TypeScript', 'Tailwind', 'Supabase', 'PostgreSQL', 'Redis', 'Dashboard', 'Analytics'],
@@ -32,21 +32,21 @@ export const Projects: React.FC = () => {
     },
     {
       title: 'Ars Perpetuum',
-      description: 'Tienda en línea de productos artísticos con sistema de gestión de inventario y procesamiento de pagos.',
+      description: 'E-commerce de arte con gestión de inventario y pagos online.',
       image: '/arsperpetuum.webp',
       url: 'https://arsperpetuum.cl',
       tags: ['WordPress', 'WooCommerce', 'E-commerce','MercadoPago'],
     },
     {
       title: 'OK Fugas',
-      description: 'Plataforma para empresa de detección de fugas, con sistema de gestión de citas y calendario. Incluye formulario con IA para filtrado automático',
+      description: 'Web para detección de fugas con sistema de citas y formulario IA.',
       image: '/okfugas.png',
       url: 'https://www.okfugas.cl',
       tags: ['WordPress', 'PHP', 'Scheduling', 'AI'],
     },
     {
       title: 'Dr. House',
-      description: 'Empresa especializada en detección de aguas con sistema de gestión de servicios, citas y calendario. Cuenta con formulario inteligente con IA y chatbot para atención al cliente. Desarrollada con React y TypeScript.',
+      description: 'Web para detección de aguas con gestor de servicios, citas y chatbot IA.',
       image: '/dr-house.png',
       url: 'https://dr-house.cl',
       tags: ['React', 'TypeScript', 'PHP', 'WordPress', 'AI', 'Chatbots'],
@@ -107,7 +107,7 @@ export const Projects: React.FC = () => {
                     className="group bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 transition-all border border-gray-700 hover:border-blue-500/30"
                   >
                     <a href={project.url} target="_blank" rel="noopener noreferrer" className="block relative">
-                      <div className="relative h-64 overflow-hidden">
+                      <div className="relative h-48 md:h-64 overflow-hidden">
                         <img 
                           src={project.image} 
                           alt={project.title} 
@@ -116,11 +116,11 @@ export const Projects: React.FC = () => {
                         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent opacity-80"></div>
                       </div>
                       <div className="absolute bottom-0 left-0 right-0 p-6">
-                        <h4 className="text-2xl font-bold text-white mb-2 flex items-center">
+                        <h4 className="text-xl md:text-2xl font-bold text-white mb-2 flex items-center">
                           {project.title}
-                          <ExternalLink className="ml-2 w-4 h-4 opacity-70" />
+                          <ExternalLink className="ml-2 w-3 h-3 md:w-4 md:h-4 opacity-70" />
                         </h4>
-                        <p className="text-white font-medium mb-4 text-shadow-sm shadow-black">
+                        <p className="text-white font-medium mb-4 text-shadow-sm shadow-black text-sm md:text-base">
                           {project.description}
                         </p>
                         <div className="flex flex-wrap gap-2">
@@ -151,7 +151,7 @@ export const Projects: React.FC = () => {
                 className="group bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-blue-500/10 transition-all border border-gray-700 hover:border-blue-500/30"
               >
                 <a href={project.url} target="_blank" rel="noopener noreferrer" className="block">
-                  <div className="relative h-48 overflow-hidden">
+                  <div className="relative h-36 md:h-48 overflow-hidden">
                     <img 
                       src={project.image} 
                       alt={project.title} 
@@ -160,11 +160,11 @@ export const Projects: React.FC = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent opacity-70"></div>
                   </div>
                   <div className="p-4">
-                    <h4 className="text-xl font-bold text-white mb-2 flex items-center">
+                    <h4 className="text-lg md:text-xl font-bold text-white mb-2 flex items-center">
                       {project.title}
-                      <ExternalLink className="ml-2 w-4 h-4 opacity-70" />
+                      <ExternalLink className="ml-2 w-3 h-3 md:w-4 md:h-4 opacity-70" />
                     </h4>
-                    <p className="text-gray-300 text-sm mb-4 line-clamp-3" dangerouslySetInnerHTML={{ __html: project.description.replace(/(gestión|inventario|sistema|agenda|facturación|detección)/g, '<span class="font-semibold text-white">$1</span>') }} />
+                    <p className="text-gray-300 text-xs md:text-sm mb-4 line-clamp-2 md:line-clamp-3" dangerouslySetInnerHTML={{ __html: project.description.replace(/(gestión|inventario|sistema|agenda|facturación|detección|IA|chatbot)/g, '<span class="font-semibold text-white">$1</span>') }} />
                     <div className="flex flex-wrap gap-2">
                       {project.tags.map((tag, i) => (
                         <span 
