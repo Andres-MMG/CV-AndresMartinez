@@ -13,13 +13,12 @@ export const ThemeContext = createContext<ThemeContextProps>({
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [theme, setTheme] = useState<Theme>('dark');
-
-  // Load saved theme from localStorage
+  // Siempre comenzar con tema oscuro
   useEffect(() => {
-    const saved = localStorage.getItem('theme') as Theme | null;
-    if (saved === 'light') {
-      setTheme('light');
-    }
+    // No verificamos localStorage, simplemente establecemos el tema oscuro
+    setTheme('dark');
+    // También actualizar localStorage para mantener consistencia
+    localStorage.setItem('theme', 'dark');
   }, []);
 
   // Apply theme class to document root

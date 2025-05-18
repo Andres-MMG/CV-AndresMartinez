@@ -140,12 +140,7 @@ export const Skills: React.FC = () => {
              <div 
                 key={index}
                 data-aos="fade-up" 
-                data-aos-delay={150 + (index % 9) * 50}
-                className={`bg-gray-800 rounded-lg p-4 border transition-all shadow-md ${
-                  skill.proficiency === 5 
-                  ? 'border-yellow-500/40 shadow-yellow-400/20 relative overflow-hidden ring-2 ring-yellow-500/20 hover:ring-yellow-500/40 hover:shadow-yellow-500/30' 
-                  : 'border-gray-700 hover:border-blue-500/30 hover:shadow-blue-500/10'
-                }`}
+                data-aos-delay={150 + (index % 9) * 50}                className="bg-gray-800 rounded-lg p-4 border border-gray-700 hover:border-blue-500/30 transition-all shadow-md hover:shadow-blue-500/10"
               >
                 <div className="flex justify-between items-center mb-2">
                   <h3 className="font-semibold text-white flex items-center">
@@ -155,41 +150,25 @@ export const Skills: React.FC = () => {
                         new
                       </span>
                     )}
-                  </h3>
-                  {skill.proficiency === 5 ? (
-                    <div className="relative inline-block hover:scale-110 transition-transform">
-                      {/* Capa base con glow */}
-                      <div className="text-xs font-bold bg-yellow-900/20 px-1.5 py-0.5 rounded border border-yellow-500/30 glow-effect">
-                        <span className="text-transparent">{getProficiencyLabel(skill.proficiency)}</span>
-                      </div>
-                      
-                      {/* Texto amarillo brillante */}
-                      <div className="absolute inset-0 flex items-center justify-center text-yellow-300 text-xs font-bold">
-                        {getProficiencyLabel(skill.proficiency)}
-                      </div>
-                      
-                      {/* Texto negro encima - aumentado el z-index para asegurar que esté por encima */}
-                      <div className="absolute inset-0 flex items-center justify-center z-10" style={{transform: 'translate(-0.5px, -0.5px)'}}>
-                        <span className="text-black text-shadow-sm text-xs font-bold">{getProficiencyLabel(skill.proficiency)}</span>
-                      </div>
-                    </div>
+                  </h3>                  {skill.proficiency === 5 ? (
+                    <span className="text-xs text-blue-400 font-semibold">
+                      {getProficiencyLabel(skill.proficiency)}
+                    </span>
                   ) : (
                     <span className="text-xs text-gray-400">
                       {getProficiencyLabel(skill.proficiency)}
                     </span>
                   )}
-                </div>
-                <div className="w-full bg-gray-700 rounded-full h-2.5 mt-1.5">
-                  {skill.proficiency === 5 ? (
+                </div>                <div className="w-full bg-gray-700 rounded-full h-2.5 mt-1.5">                  {skill.proficiency === 5 ? (
                     <div className="relative">
-                      {/* Barra negra delgada de base */}
+                      {/* Capa de brillo base */}
                       <div 
-                        className="absolute h-2 top-0.5 left-0 rounded-full bg-black/80"
-                        style={{ width: `${skill.proficiency * 20}%` }}
+                        className="absolute h-2.5 rounded-full bg-blue-500/20 blur-sm"
+                        style={{ width: `${skill.proficiency * 20 + 5}%` }}
                       ></div>
-                      {/* Barra amarilla brillante */}
+                      {/* Barra principal con efecto de pulso sutil */}
                       <div 
-                        className="h-2.5 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 animate-gentle-pulse"
+                        className="h-2.5 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 animate-pulse-subtle relative"
                         style={{ width: `${skill.proficiency * 20}%` }}
                       ></div>
                     </div>
