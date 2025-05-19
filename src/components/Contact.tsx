@@ -107,10 +107,20 @@ export const Contact: React.FC = () => {
       });
 
       if (response.ok) {
-        // Reset form and show success
-        setFormData({ name: '', phone: '', email: '', subject: '', message: '' });
-        setShowSuccess(true);
-        setTimeout(() => setShowSuccess(false), 5000); // Hide success after 5 seconds
+        // Determinar la página de éxito según el idioma actual
+        const successPages: Record<string, string> = {
+          'en': '/contact-success-en.html',
+          'es': '/contact-success.html',
+          'pt-BR': '/contact-success-pt.html'
+        };
+        
+        // Obtener el idioma actual, la hook no puede usarse aquí directamente porque
+        // sólo puede usarse en el nivel superior de los componentes funcionales
+        const currentLocale = localStorage.getItem('locale') || 'es';
+        const successPage = successPages[currentLocale] || '/contact-success.html';
+        
+        // Redirigir a la página de éxito
+        window.location.href = successPage;
       } else {
         setShowError(true);
       }
