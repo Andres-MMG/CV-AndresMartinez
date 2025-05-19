@@ -112,6 +112,8 @@
     "formTitle": "Envíame un mensaje",
     "nameLabel": "Nombre completo",
     "namePlaceholder": "Ingresa tu nombre completo",
+    "phoneLabel": "Teléfono/WhatsApp",
+    "phonePlaceholder": "+56 9 1234 5678",
     "emailLabel": "Correo electrónico",
     "emailPlaceholder": "correo@ejemplo.com",
     "subjectLabel": "Asunto",
@@ -121,7 +123,16 @@
     "submit": "Enviar mensaje",
     "sending": "Enviando...",
     "success": "¡Mensaje enviado con éxito!",
-    "error": "Ha ocurrido un error. Por favor intenta nuevamente."
+    "error": "Ha ocurrido un error. Por favor intenta nuevamente.",
+    "validation": {
+      "nameRequired": "El nombre completo es requerido",
+      "emailRequired": "El correo electrónico es requerido",
+      "emailInvalid": "Por favor ingresa un correo electrónico válido",
+      "phoneRequired": "El número de teléfono es requerido",
+      "phoneInvalid": "Por favor ingresa un número de teléfono válido",
+      "subjectRequired": "El asunto es requerido",
+      "messageRequired": "El mensaje es requerido"
+    }
   },
   "footer": {
     "allRightsReserved": "Todos los derechos reservados."

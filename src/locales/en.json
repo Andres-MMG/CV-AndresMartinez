@@ -112,6 +112,8 @@
     "formTitle": "Send me a message",
     "nameLabel": "Full name",
     "namePlaceholder": "Enter your full name",
+    "phoneLabel": "Phone/WhatsApp",
+    "phonePlaceholder": "+1 (123) 456-7890",
     "emailLabel": "Email address",
     "emailPlaceholder": "email@example.com",
     "subjectLabel": "Subject",
@@ -121,7 +123,16 @@
     "submit": "Send message",
     "sending": "Sending...",
     "success": "Message sent successfully!",
-    "error": "An error occurred. Please try again."
+    "error": "An error occurred. Please try again.",
+    "validation": {
+      "nameRequired": "Full name is required",
+      "emailRequired": "Email address is required",
+      "emailInvalid": "Please enter a valid email address",
+      "phoneRequired": "Phone number is required",
+      "phoneInvalid": "Please enter a valid phone number",
+      "subjectRequired": "Subject is required",
+      "messageRequired": "Message is required"
+    }
   },
   "footer": {
     "allRightsReserved": "All rights reserved."
