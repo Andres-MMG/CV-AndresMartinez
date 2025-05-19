@@ -102,26 +102,32 @@ export const Projects: React.FC = () => {
                     key={index}
                     data-aos="zoom-in" 
                     data-aos-delay={300 + (index * 100)}
-                    className="group bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 transition-all border border-gray-700 hover:border-blue-500/30"
+                    className="group bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 transition-all border border-gray-700 hover:border-blue-500/30 flex flex-col"
                   >
-                    <a href={project.url} target="_blank" rel="noopener noreferrer" className="block relative">
-                      <div className="relative h-48 md:h-64 overflow-hidden">
+                    <a href={project.url} target="_blank" rel="noopener noreferrer" className="flex flex-col h-full">
+                      {/* Title first for better mobile display */}
+                      <div className="p-4 bg-gray-800 border-b border-gray-700">
+                        <h4 className="text-lg md:text-xl font-bold text-white flex items-center">
+                          {t(`projects.items.${project.id}.title`)}
+                          <ExternalLink className="ml-2 w-3 h-3 md:w-4 md:h-4 opacity-70" />
+                        </h4>
+                      </div>
+
+                      {/* Image container with fixed height */}
+                      <div className="h-40 overflow-hidden relative">
                         <img 
                           src={project.image} 
                           alt={t(`projects.items.${project.id}.title`)} 
                           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent opacity-80"></div>
                       </div>
-                      <div className="absolute bottom-0 left-0 right-0 p-6">
-                        <h4 className="text-xl md:text-2xl font-bold text-white mb-2 flex items-center">
-                          {t(`projects.items.${project.id}.title`)}
-                          <ExternalLink className="ml-2 w-3 h-3 md:w-4 md:h-4 opacity-70" />
-                        </h4>
-                        <p className="text-white font-medium mb-4 text-shadow-sm shadow-black text-sm md:text-base">
+                      
+                      {/* Description container */}
+                      <div className="p-4 flex flex-col flex-grow bg-gradient-to-b from-gray-800 to-gray-850">
+                        <p className="text-gray-300 font-medium mb-4 text-sm md:text-base flex-grow">
                           {t(`projects.items.${project.id}.description`)}
                         </p>
-                        <div className="flex flex-wrap gap-2">
+                        <div className="flex flex-wrap gap-2 mt-auto">
                           {project.tags.map((tag, i) => (
                             <span 
                               key={i}
@@ -148,25 +154,38 @@ export const Projects: React.FC = () => {
                 key={index}
                 data-aos="fade-up" 
                 data-aos-delay={150 + (index * 50)}
-                className="group bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-blue-500/10 transition-all border border-gray-700 hover:border-blue-500/30"
+                className="group bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-blue-500/10 transition-all border border-gray-700 hover:border-blue-500/30 flex flex-col h-full"
               >
-                <a href={project.url} target="_blank" rel="noopener noreferrer" className="block">
-                  <div className="relative h-36 md:h-48 overflow-hidden">
+                <a href={project.url} target="_blank" rel="noopener noreferrer" className="flex flex-col h-full">
+                  {/* Title first for better mobile display */}
+                  <div className="p-3 bg-gray-800 border-b border-gray-700">
+                    <h4 className="text-base md:text-lg font-bold text-white flex items-center">
+                      {t(`projects.items.${project.id}.title`)}
+                      <ExternalLink className="ml-2 w-3 h-3 opacity-70" />
+                    </h4>
+                  </div>
+                  
+                  {/* Image container with fixed height */}
+                  <div className="h-28 sm:h-32 overflow-hidden relative">
                     <img 
                       src={project.image} 
                       alt={t(`projects.items.${project.id}.title`)} 
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent opacity-70"></div>
                   </div>
-                  <div className="p-4">
-                    <h4 className="text-lg md:text-xl font-bold text-white mb-2 flex items-center">
-                      {t(`projects.items.${project.id}.title`)}
-                      <ExternalLink className="ml-2 w-3 h-3 md:w-4 md:h-4 opacity-70" />
-                    </h4>
-                    <p className="text-gray-300 text-xs md:text-sm mb-4 line-clamp-2 md:line-clamp-3" dangerouslySetInnerHTML={{ __html: t(`projects.items.${project.id}.description`).replace(/(gestión|inventario|sistema|agenda|facturación|detección|IA|chatbot)/g, '<span class="font-semibold text-white">$1</span>') }} />
-                    <div className="flex flex-wrap gap-2">
-                      {project.tags.map((tag, i) => (
+                  
+                  {/* Description container */}
+                  <div className="p-3 flex flex-col flex-grow bg-gradient-to-b from-gray-800 to-gray-850">
+                    <p className="text-gray-300 text-xs md:text-sm mb-4 line-clamp-2 md:line-clamp-3 flex-grow" 
+                      dangerouslySetInnerHTML={{ 
+                        __html: t(`projects.items.${project.id}.description`).replace(
+                          /(gestión|inventario|sistema|agenda|facturación|detección|IA|chatbot)/g, 
+                          '<span class="font-semibold text-white">$1</span>'
+                        ) 
+                      }} 
+                    />
+                    <div className="flex flex-wrap gap-2 mt-auto">
+                      {project.tags.slice(0, 4).map((tag, i) => (
                         <span 
                           key={i}
                           className="px-2 py-0.5 text-xs rounded-md bg-blue-600/20 text-blue-300"
@@ -174,6 +193,9 @@ export const Projects: React.FC = () => {
                           {tag}
                         </span>
                       ))}
+                      {project.tags.length > 4 && (
+                        <span className="text-xs text-blue-300">+{project.tags.length - 4}</span>
+                      )}
                     </div>
                   </div>
                 </a>
