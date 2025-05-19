@@ -17,7 +17,7 @@ const translations: Record<SupportedLocale, Record<string, any>> = {
 };
 
 export const LanguageContext = createContext<LanguageContextProps>({
-  locale: 'en',
+  locale: 'es',
   setLocale: () => {},
   t: (key: string) => key,
 });
