@@ -104,9 +104,21 @@ interface NavLinksProps {
 }
 
 const NavLinks: React.FC<NavLinksProps> = ({ onClick }) => {
-  const { t } = useContext(LanguageContext);
+  const { t, locale } = useContext(LanguageContext);
   const items = ['home','about','experience','skills','projects','contact'];
    
+  // Choose the right printable CV version based on current language
+  const getCvPrintUrl = () => {
+    switch (locale) {
+      case 'en':
+        return '/cv-print-en.html';
+      case 'pt-BR':
+        return '/cv-print-pt.html';
+      default:
+        return '/cv-print.html'; // Spanish (default)
+    }
+  };
+
    return (
      <>
       {items.map(key => (
@@ -119,6 +131,15 @@ const NavLinks: React.FC<NavLinksProps> = ({ onClick }) => {
           {t(`nav.${key}`)}
         </a>
       ))}
+      <a
+        href={getCvPrintUrl()}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-400 hover:text-blue-300 transition-colors duration-300 font-medium"
+        onClick={onClick}
+      >
+        {t('nav.cvPrint')}
+      </a>
      </>
    );
  };

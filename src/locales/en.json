@@ -5,7 +5,8 @@
     "experience": "Experience",
     "skills": "Skills",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "cvPrint": "Printable CV"
   },
   "about": {
     "title": "About Me",

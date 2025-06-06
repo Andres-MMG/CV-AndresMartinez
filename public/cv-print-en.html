@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Andrés Martínez Gajardo</title>
+    <link rel="icon" href="/Andres.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/Andres.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1f2937; /* gray-800 */
+        }
+        .section-title {
+            border-bottom: 2px solid #3b82f6; /* blue-500 */
+            padding-bottom: 0.5rem; /* 8px */
+            margin-bottom: 1.5rem; /* 24px */
+            font-size: 1.25rem; /* 20px */
+            line-height: 1.75rem; /* 28px */
+            font-weight: 600; /* semibold */
+            color: #1e3a8a; /* blue-800 */
+        }
+        .job-title {
+            font-size: 1.125rem; /* 18px */
+            line-height: 1.75rem; /* 28px */
+            font-weight: 600; /* semibold */
+            color: #111827; /* gray-900 */
+        }
+        .company-location-date {
+            font-size: 0.875rem; /* 14px */
+            line-height: 1.25rem; /* 20px */
+            color: #4b5563; /* gray-600 */
+            margin-bottom: 0.5rem; /* 8px */
+        }
+        .print-friendly-table td, .print-friendly-table th {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        @media print {
+            body {
+                font-size: 10pt;
+                color: #000000;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .container {
+                box-shadow: none !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                max-width: 100% !important;
+            }
+            .section-title {
+                border-bottom: 1px solid #000000;
+                color: #000000;
+                font-size: 14pt;
+            }
+            .job-title {
+                font-size: 12pt;
+                color: #000000;
+            }
+            .company-location-date {
+                font-size: 9pt;
+                color: #333333;
+            }
+            a {
+                color: #000000 !important;
+                text-decoration: none !important;
+            }
+            /* Ensure list bullets are visible in print */
+            ul {
+                list-style: disc !important;
+                padding-left: 20px !important;
+            }
+            li {
+                margin-bottom: 4px !important;
+            }
+            .bg-gray-100 {
+                background-color: #ffffff !important; /* Remove background for printing */
+            }
+            .p-4, .p-6, .p-8, .py-8, .px-4, .sm\:px-6, .lg\:px-8 {
+                padding: 0 !important;
+            }
+            .mb-4, .mb-6, .mb-8, .mt-6, .mt-8 {
+                margin-bottom: 10px !important;
+                margin-top: 10px !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 antialiased leading-relaxed">
+    <div class="container mx-auto max-w-4xl p-4 sm:p-6 lg:p-8 bg-white shadow-xl rounded-lg my-8">
+        <!-- Encabezado -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-blue-700">Andrés Martínez Gajardo</h1>
+            <p class="text-lg text-gray-600 mt-2">
+                Santiago, Chile · +56 9 55155418 · 
+                <a href="mailto:andres.martinez.g@gmail.com" class="text-blue-600 hover:text-blue-800">andres.martinez.g@gmail.com</a> ·
+                <a href="https://andresmmartinez.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800">https://andresmmartinez.com</a>
+                <!-- Consider adding LinkedIn: · <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800">LinkedIn</a> -->
+            </p>
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="mb-8">
+            <h2 class="section-title">Professional Summary</h2>
+            <p class="text-gray-700">
+                Senior Software Engineer with over 20 years of experience leading the development and maintenance of robust solutions in the .NET ecosystem. Expert in managing critical projects under agile methodologies (Scrum) and applying best practices such as Clean Architecture and SOLID principles. I have successfully designed and implemented web applications (MVC, REST APIs), cross-platform mobile applications (.NET MAUI), and real-time solutions (SignalR). Promoter of microservices architectures and DevOps tools to optimize the quality, security and scalability of systems. Recently focused on the integration of AI and autonomous agents.
+            </p>
+        </section>
+
+        <!-- Professional Experience -->
+        <section class="mb-8">
+            <h2 class="section-title">Professional Experience</h2>
+
+            <div class="mb-6">
+                <h3 class="job-title">M&L AI SpA.</h3>
+                <p class="company-location-date">Ingeniero de Software / Jefe de Proyectos AI | Santiago, Chile | Agosto 2024 – Presente</p>
+                <ul class="list-disc list-inside text-gray-700 space-y-1 pl-4">
+                    <li>Diseñé e implementé arquitecturas y flujos de trabajo para soluciones de IA, utilizando Docker, VPS, Coolify, Git y servicios de hosting.</li>
+                    <li>Desarrollé agentes autónomos para diversas funciones: recepcionistas virtuales, asistentes de agenda, lectura de correos, recordatorios, agentes inmobiliarios y recepcionistas médicos.</li>
+                    <li>Integré microservicios en .NET C# y Python con interfaces en React, optimizando la experiencia de usuario.</li>
+                    <li>Implementé soluciones utilizando tecnologías emergentes como Retell.ai, VAPI, Zadarma (Evolution API), PocketBase, PostgreSQL, Redis, Google Drive, Google Calendar, ElevenLabs y ChatGPT.</li>
+                    <li>Utilicé herramientas de automatización e IA como n8n, Flowise y Chatwoot.</li>
+                    <li>Investigué y apliqué técnicas de prompt engineering y .NET Semantic Kernel para el procesamiento semántico y entendimiento del lenguaje natural.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="job-title">Sermaluc</h3>
+                <p class="company-location-date">Ingeniero de Software / Jefe de Proyectos TI | Santiago, Chile | Noviembre 2010 – Julio 2024</p>
+                <ul class="list-disc list-inside text-gray-700 space-y-1 pl-4">
+                    <li><strong>Banco Central:</strong> Lideré el desarrollo y mantenimiento de la “App Regional” con .NET y Blazor WebAssembly, enfocada en la visualización de estadísticas en tiempo real. Prototipé una versión en .NET MAUI.</li>
+                    <li><strong>Banco Itaú:</strong> Diseñé e implementé soluciones internas en .NET / .NET Core. Elaboré flujos para la plataforma MUREX y desarrollé APIs REST para la automatización de procesos bancarios.</li>
+                    <li><strong>Banco Estado y Otros:</strong> Participé en proyectos clave como Venta Crédito Hipotecario (VCH), Seguros FIDENS, Matriz Documental, Carpeta Electrónica Cliente, Digitalización de Imágenes y Proyecto Estructurante de Crédito.</li>
+                    <li>Lideré y coordiné equipos de desarrollo, promoviendo la adopción de prácticas DevOps y control de versiones con Git.</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="job-title">Otras Experiencias Profesionales</h3>
+                <p class="company-location-date">Santiago, Chile | 1998 – 2010</p>
+                <ul class="list-disc list-inside text-gray-700 space-y-1 pl-4">
+                    <li><strong>Newsystems Ltda. – Analista Desarrollador (2001–2007):</strong> Desarrollo y mantenimiento de plataformas como ColWeb® y módulos para Escuelas de Conductores.</li>
+                    <li><strong>Salas Consultoría y Asociados – Jefe de Proyecto y Analista (2000–2001):</strong> Implementación de pilotos de Digital Dashboard y Cubos OLAP para clientes como Microsoft Chile y Compaq.</li>
+                    <li><strong>Dos en Uno – Programador y Asesor (2000):</strong> Migración y desarrollo de mantenedores, modelamiento de datos con Power Designer.</li>
+                    <li><strong>Clínica Santiago – Programador (1999–2000):</strong> Desarrollo de sistemas de Gestión Clínica, incluyendo módulos de facturación y reportes.</li>
+                    <li><strong>NetPlus Gestión Informática – Programador (1998–1999):</strong> Creación de módulos mantenedores en Visual Basic 5.0 para proyectos gubernamentales.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Educación -->
+        <section class="mb-8">
+            <h2 class="section-title">Educación</h2>
+            <div class="mb-4">
+                <h3 class="job-title">Analista de Sistemas</h3>
+                <p class="company-location-date">Universidad de Ciencias de la Informática (UCINF) | 2009 – 2010</p>
+            </div>
+            <div>
+                <h3 class="job-title">Técnico en Programación de Sistemas Computacionales</h3>
+                <p class="company-location-date">Centro Politécnico Particular Nº 2 de Ñuñoa, Santiago, Chile | 1993 – 1996</p>
+            </div>
+        </section>
+
+        <!-- Habilidades Técnicas y Competencias -->
+        <section>
+            <h2 class="section-title">Habilidades Técnicas y Competencias</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4 text-gray-700">
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-1">Desarrollo Backend .NET</h4>
+                    <ul class="list-disc list-inside pl-2 text-sm">
+                        <li>.NET (8, Core, Framework)</li>
+                        <li>MVC, Web API, Microservicios</li>
+                        <li>Entity Framework Core, Dapper</li>
+                        <li>SignalR</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-1">Arquitectura y Prácticas</h4>
+                    <ul class="list-disc list-inside pl-2 text-sm">
+                        <li>Clean Architecture, SOLID</li>
+                        <li>Clean Code, Diseño APIs REST</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-1">Desarrollo Frontend</h4>
+                    <ul class="list-disc list-inside pl-2 text-sm">
+                        <li>Blazor WebAssembly</li>
+                        <li>React (integración)</li>
+                        <li>HTML, JavaScript, TypeScript</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-1">Desarrollo Móvil</h4>
+                    <ul class="list-disc list-inside pl-2 text-sm">
+                        <li>.NET MAUI (Prototipos)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-1">Bases de Datos</h4>
+                    <ul class="list-disc list-inside pl-2 text-sm">
+                        <li>SQL Server, PostgreSQL</li>
+                        <li>PocketBase</li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="font-semibold text-gray-800 mb-1">Seguridad y Asincronía</h4>
+                    <ul class="list-disc list-inside pl-2 text-sm">
+                        <li>JWT, Identity Server</li>
+                        <li>Task, Async/Await, Redis</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-1">Contenedores y CI/CD</h4>
+                    <ul class="list-disc list-inside pl-2 text-sm">
+                        <li>Docker, docker-compose</li>
+                        <li>GitLab CI/CD, Git, Coolify</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-1">Cloud</h4>
+                    <ul class="list-disc list-inside pl-2 text-sm">
+                        <li>AWS, Google Cloud (despliegues)</li>
+                        <li>VPS</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-1">Inteligencia Artificial</h4>
+                    <ul class="list-disc list-inside pl-2 text-sm">
+                        <li>Prompt Engineering</li>
+                        <li>.NET Semantic Kernel</li>
+                        <li>n8n, Flowise</li>
+                        <li>Integración APIs IA</li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="font-semibold text-gray-800 mb-1">Lenguajes Adicionales</h4>
+                    <ul class="list-disc list-inside pl-2 text-sm">
+                        <li>Python (scripting, IA)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-1">Metodologías</h4>
+                    <ul class="list-disc list-inside pl-2 text-sm">
+                        <li>Agile, Scrum</li>
+                    </ul>
+                </div>
+            </div>        </section>
+        
+        <!-- Print Button with Icon -->
+        <div class="mt-8 text-center no-print">
+            <button onclick="window.print()" class="bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300 flex items-center justify-center mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v9m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+                Print CV
+            </button>
+        </div>
+
+        <footer class="text-center mt-12 py-4 border-t border-gray-300 no-print">
+            <p class="text-sm text-gray-500">
+                To print as PDF: Use the browser's print function (Ctrl+P or Cmd+P) and select "Save as PDF".
+            </p>
+            <div class="mt-4 space-x-4">
+                <a href="/cv-print.html" class="text-blue-600 hover:underline">Español</a>
+                <a href="/cv-print-en.html" class="text-blue-600 hover:underline">English</a>
+                <a href="/cv-print-pt.html" class="text-blue-600 hover:underline">Português</a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
