@@ -17,6 +17,8 @@ Este repositorio contiene mi curr?culum vitae profesional actualizado. Aqu? enco
 - **Portfolio**: [https://andresmmartinez.com](https://andresmmartinez.com)
 - **GitHub**: [https://github.com/Andres-MMG](https://github.com/Andres-MMG)
 
+> ? **?Necesitas m?s informaci?n de contacto?** Consulta el archivo [CONTACT.md](./CONTACT.md) para detalles completos sobre horarios, disponibilidad y m?todos de contacto.
+
 ## ? Resumen Profesional
 
 Ingeniero de Software Senior con m?s de **20 a?os de experiencia** liderando el desarrollo y mantenimiento de soluciones robustas en el ecosistema **.NET**. Experto en la gesti?n de proyectos cr?ticos bajo metodolog?as ?giles (Scrum) y en la aplicaci?n de buenas pr?cticas como Clean Architecture y principios SOLID. 
@@ -100,10 +102,11 @@ He dise?ado e implementado exitosamente aplicaciones web (MVC, APIs REST), m?vil
 
 ## ? Documentos Disponibles
 
-- ? **CV Completo**: Versi?n detallada en formato PDF
+- ? **[CV Completo](./CV.txt)**: Versi?n detallada en formato texto
 - ? **Certificaciones**: Documentaci?n de cursos y certificaciones
 - ? **Portfolio de Proyectos**: Casos de estudio y proyectos destacados
 - ? **Referencias**: Disponibles bajo solicitud
+- ? **[Informaci?n de Contacto](./CONTACT.md)**: Detalles completos para comunicaci?n
 
 ## ? ?reas de Especializaci?n
 
@@ -120,6 +123,7 @@ Si est?s buscando un profesional experimentado para tu pr?ximo proyecto o tienes
 - ? **Email**: [andres.martinez.g@gmail.com](mailto:andres.martinez.g@gmail.com)
 - ? **Portfolio**: [andresmmartinez.com](https://andresmmartinez.com)
 - ? **WhatsApp**: +56 9 55155418
+- ? **M?s opciones**: Ver [CONTACT.md](./CONTACT.md) para informaci?n detallada
 
 ---
 
