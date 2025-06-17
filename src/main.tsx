@@ -18,8 +18,7 @@ AOS.init({
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <LanguageProvider>
-      <ThemeProvider>
+    <LanguageProvider>      <ThemeProvider>
         <App />
       </ThemeProvider>
     </LanguageProvider>

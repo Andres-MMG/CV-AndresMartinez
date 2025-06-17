@@ -41,17 +41,36 @@ export const Header: React.FC = () => {
           </div>
         </div>
         {/* Right icons and navigation */}
-        <div className="flex items-center space-x-4">
-          {/* Language Menu */}
+        <div className="flex items-center space-x-4">          {/* Language Menu */}
           <div className="relative">
-            <button onClick={() => setIsLangMenuOpen(!isLangMenuOpen)} className="p-2 text-gray-300 hover:text-white" aria-label="Select language">
-              <Globe size={24} />
-            </button>
-            {isLangMenuOpen && (
+            <button onClick={() => setIsLangMenuOpen(!isLangMenuOpen)} className="p-2 text-gray-300 hover:text-white flex items-center" aria-label="Select language">
+              <Globe size={22} />
+              <span className="ml-1 text-xs font-semibold">
+                {locale === 'es' ? 'ES' : locale === 'en' ? 'EN' : 'PT'}
+              </span>
+            </button>{isLangMenuOpen && (
               <div className="absolute top-full right-0 mt-2 w-36 bg-gray-800 text-gray-100 rounded-md shadow-lg z-50">
-                <button onClick={() => { setLocale('es'); setIsLangMenuOpen(false); }} className="w-full text-left px-4 py-2 hover:bg-gray-700">Español</button>
-                <button onClick={() => { setLocale('en'); setIsLangMenuOpen(false); }} className="w-full text-left px-4 py-2 hover:bg-gray-700">English</button>
-                <button onClick={() => { setLocale('pt-BR'); setIsLangMenuOpen(false); }} className="w-full text-left px-4 py-2 hover:bg-gray-700">Português</button>
+                <button 
+                  onClick={() => { setLocale('es'); setIsLangMenuOpen(false); }} 
+                  className={`w-full text-left px-4 py-2 hover:bg-gray-700 flex items-center justify-between ${locale === 'es' ? 'bg-blue-600' : ''}`}
+                >
+                  <span>Español</span>
+                  {locale === 'es' && <span className="text-xs">✓</span>}
+                </button>
+                <button 
+                  onClick={() => { setLocale('en'); setIsLangMenuOpen(false); }} 
+                  className={`w-full text-left px-4 py-2 hover:bg-gray-700 flex items-center justify-between ${locale === 'en' ? 'bg-blue-600' : ''}`}
+                >
+                  <span>English</span>
+                  {locale === 'en' && <span className="text-xs">✓</span>}
+                </button>
+                <button 
+                  onClick={() => { setLocale('pt-BR'); setIsLangMenuOpen(false); }} 
+                  className={`w-full text-left px-4 py-2 hover:bg-gray-700 flex items-center justify-between ${locale === 'pt-BR' ? 'bg-blue-600' : ''}`}
+                >
+                  <span>Português</span>
+                  {locale === 'pt-BR' && <span className="text-xs">✓</span>}
+                </button>
               </div>
             )}
           </div>
@@ -106,16 +125,16 @@ interface NavLinksProps {
 const NavLinks: React.FC<NavLinksProps> = ({ onClick }) => {
   const { t, locale } = useContext(LanguageContext);
   const items = ['home','about','experience','skills','projects','contact'];
-   
-  // Choose the right printable CV version based on current language
+   // Obtener la ruta del PDF según el idioma actual
   const getCvPrintUrl = () => {
+    // Retornar el PDF correspondiente al idioma seleccionado
     switch (locale) {
       case 'en':
-        return '/cv-print-en.html';
+        return '/cv-eng.pdf';
       case 'pt-BR':
-        return '/cv-print-pt.html';
+        return '/cv-pt.pdf';
       default:
-        return '/cv-print.html'; // Spanish (default)
+        return '/cv-esp.pdf'; // Español (default)
     }
   };
 

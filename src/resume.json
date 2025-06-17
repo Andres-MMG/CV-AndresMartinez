@@ -3,11 +3,15 @@
   "basics": {
     "name": "Andrés Martínez Gajardo",
     "label": "Ingeniero de Software Senior",
-    "image": "/Andres.png",
-    "email": "andres.martinez.g@gmail.com",
+    "image": "/Andres.png",    "email": "andres.martinez.g@gmail.com",
     "phone": "+56 9 55155418",
     "url": "https://andresmmartinez.com",
     "summary": "Ingeniero de Software Senior con más de 20 años de experiencia liderando el desarrollo y mantenimiento de soluciones robustas en el ecosistema .NET. Experto en la gestión de proyectos críticos bajo metodologías ágiles (Scrum) y en la aplicación de buenas prácticas como Clean Architecture y principios SOLID. Recientemente enfocado en la integración de IA y desarrollo de agentes autónomos.",
+    "summaryTranslations": {
+      "es": "Ingeniero de Software Senior con más de 20 años de experiencia liderando el desarrollo y mantenimiento de soluciones robustas en el ecosistema .NET. Experto en la gestión de proyectos críticos bajo metodologías ágiles (Scrum) y en la aplicación de buenas prácticas como Clean Architecture y principios SOLID. Recientemente enfocado en la integración de IA y desarrollo de agentes autónomos.",
+      "en": "Senior Software Engineer with over 20 years of experience leading the development and maintenance of robust solutions in the .NET ecosystem. Expert in managing critical projects under agile methodologies (Scrum) and applying best practices such as Clean Architecture and SOLID principles. Recently focused on AI integration and autonomous agent development.",
+      "pt-BR": "Engenheiro de Software Sênior com mais de 20 anos de experiência liderando o desenvolvimento e manutenção de soluções robustas no ecossistema .NET. Especialista na gestão de projetos críticos sob metodologias ágeis (Scrum) e na aplicação de boas práticas como Clean Architecture e princípios SOLID. Recentemente focado na integração de IA e desenvolvimento de agentes autônomos."
+    },
     "location": {
       "city": "Santiago",
       "countryCode": "CL",
@@ -25,7 +29,7 @@
       },
       {
         "network": "LinkedIn",
-        "username": "andres-martinez-gajardo",
+        "username": "andres-m-martinez-g",
         "url": "https://www.linkedin.com/in/andres-m-martinez-g"
       },
       {

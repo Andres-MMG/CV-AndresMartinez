@@ -3,7 +3,7 @@ import en from '../locales/en.json';
 import es from '../locales/es.json';
 import ptBR from '../locales/pt-BR.json';
 
-type SupportedLocale = 'en' | 'es' | 'pt-BR';
+export type SupportedLocale = 'en' | 'es' | 'pt-BR';
 interface LanguageContextProps {
   locale: SupportedLocale;
   setLocale: (loc: SupportedLocale) => void;
@@ -23,12 +23,22 @@ export const LanguageContext = createContext<LanguageContextProps>({
 });
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [locale, setLocaleState] = useState<SupportedLocale>('en');
-
+  const [locale, setLocaleState] = useState<SupportedLocale>('es');
   useEffect(() => {
     const saved = localStorage.getItem('locale') as SupportedLocale | null;
     if (saved && translations[saved]) {
       setLocaleState(saved);
+    } else {
+      // Detectar idioma del navegador
+      const browserLang = navigator.language;
+      if (browserLang.startsWith('es')) {
+        setLocaleState('es');
+      } else if (browserLang.startsWith('pt')) {
+        setLocaleState('pt-BR');
+      } else if (browserLang.startsWith('en')) {
+        setLocaleState('en');
+      }
+      // Si no coincide con ninguno de los soportados, se mantiene el valor por defecto
     }
   }, []);
 

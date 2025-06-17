@@ -134,8 +134,12 @@
       "subjectRequired": "Subject is required",
       "messageRequired": "Message is required"
     }
-  },
-  "footer": {
+  },  "footer": {
     "allRightsReserved": "All rights reserved."
+  },
+  "common": {
+    "print": "Print",
+    "present": "Present",
+    "resume": "Resume"
   }
 }

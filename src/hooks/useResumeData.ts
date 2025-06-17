@@ -1,4 +1,5 @@
 import resumeData from '../resume.json';
+import { useLanguage } from '../context/LanguageContext';
 
 // Tipo para el resume basado en JSON Resume Schema
 export interface JSONResume {
@@ -11,6 +12,11 @@ export interface JSONResume {
     phone?: string;
     url?: string;
     summary?: string;    
+    summaryTranslations?: {
+      en?: string;
+      es?: string;
+      'pt-BR'?: string;
+    };
     location?: {
       address?: string;
       postalCode?: string;
@@ -116,7 +122,19 @@ export interface JSONResume {
 }
 
 export const useResumeData = () => {
-  const resume = resumeData as JSONResume;
+  const { locale } = useLanguage();
+  let resume = resumeData as JSONResume;
+  
+  // Aplicar traducciones según el idioma actual
+  if (resume.basics?.summaryTranslations && resume.basics.summaryTranslations[locale as keyof typeof resume.basics.summaryTranslations]) {
+    resume = {
+      ...resume,
+      basics: {
+        ...resume.basics,
+        summary: resume.basics.summaryTranslations[locale as keyof typeof resume.basics.summaryTranslations]
+      }
+    };
+  }
   
   // Función para obtener el nombre completo
   const getFullName = () => {
@@ -187,7 +205,7 @@ export const useResumeData = () => {
         
         // Crear una entrada por cada keyword
         const keywordSkills: any[] = [];
-        (skill.keywords || []).forEach(keyword => {
+        (skill.keywords || []).forEach((keyword: string) => {
           keywordSkills.push({
             name: keyword,
             level: skill.level,

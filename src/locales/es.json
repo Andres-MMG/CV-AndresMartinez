@@ -134,8 +134,12 @@
       "subjectRequired": "El asunto es requerido",
       "messageRequired": "El mensaje es requerido"
     }
-  },
-  "footer": {
+  },  "footer": {
     "allRightsReserved": "Todos los derechos reservados."
+  },
+  "common": {
+    "print": "Imprimir",
+    "present": "Actual",
+    "resume": "Curriculum"
   }
 }

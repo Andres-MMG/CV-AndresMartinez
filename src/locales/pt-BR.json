@@ -134,8 +134,12 @@
       "subjectRequired": "Assunto é obrigatório",
       "messageRequired": "Mensagem é obrigatória"
     }
-  },
-  "footer": {
+  },  "footer": {
     "allRightsReserved": "Todos os direitos reservados."
+  },
+  "common": {
+    "print": "Imprimir",
+    "present": "Atual",
+    "resume": "Currículo"
   }
 }
