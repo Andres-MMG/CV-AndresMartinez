@@ -1,0 +1,152 @@
+CURR?CULUM VITAE
+==================
+
+ANDR?S MART?NEZ GAJARDO
+INGENIERO DE SOFTWARE SENIOR
+
+INFORMACI?N DE CONTACTO
+-----------------------
+Ubicaci?n: Santiago, Chile
+Tel?fono: +56 9 55155418
+Email: andres.martinez.g@gmail.com
+Portfolio: https://andresmmartinez.com
+GitHub: https://github.com/Andres-MMG
+
+RESUMEN PROFESIONAL
+-------------------
+Ingeniero de Software Senior con m?s de 20 a?os de experiencia liderando el desarrollo y 
+mantenimiento de soluciones robustas en el ecosistema .NET. Experto en la gesti?n de 
+proyectos cr?ticos bajo metodolog?as ?giles (Scrum) y en la aplicaci?n de buenas pr?cticas 
+como Clean Architecture y principios SOLID. He dise?ado e implementado exitosamente 
+aplicaciones web (MVC, APIs REST), m?viles multiplataforma (.NET MAUI) y soluciones en 
+tiempo real (SignalR). Impulsor de la adopci?n de arquitecturas de microservicios y 
+herramientas DevOps para optimizar la calidad, seguridad y escalabilidad de los sistemas. 
+Recientemente enfocado en la integraci?n de IA y agentes aut?nomos.
+
+EXPERIENCIA PROFESIONAL
+------------------------
+
+M&L AI SpA.
+Ingeniero de Software / Jefe de Proyectos AI
+Santiago, Chile | Agosto 2024 ? Presente
+
+? Dise?? e implement? arquitecturas y flujos de trabajo para soluciones de IA, utilizando 
+  Docker, VPS, Coolify, Git y servicios de hosting.
+? Desarroll? agentes aut?nomos para diversas funciones: recepcionistas virtuales, asistentes 
+  de agenda, lectura de correos, recordatorios, agentes inmobiliarios y recepcionistas m?dicos.
+? Integr? microservicios en .NET C# y Python con interfaces en React, optimizando la 
+  experiencia de usuario.
+? Implement? soluciones utilizando tecnolog?as emergentes como Retell.ai, VAPI, Zadarma 
+  (Evolution API), PocketBase, PostgreSQL, Redis, Google Drive, Google Calendar, ElevenLabs 
+  y ChatGPT.
+? Utilic? herramientas de automatizaci?n e IA como n8n, Flowise y Chatwoot.
+? Investigu? y apliqu? t?cnicas de prompt engineering y .NET Semantic Kernel para el 
+  procesamiento sem?ntico y entendimiento del lenguaje natural.
+
+Sermaluc
+Ingeniero de Software / Jefe de Proyectos TI
+Santiago, Chile | Noviembre 2010 ? Julio 2024
+
+? Banco Central: Lider? el desarrollo y mantenimiento de la "App Regional" con .NET y Blazor 
+  WebAssembly, enfocada en la visualizaci?n de estad?sticas en tiempo real. Prototip? una 
+  versi?n en .NET MAUI.
+? Banco Ita?: Dise?? e implement? soluciones internas en .NET / .NET Core. Elabor? flujos 
+  para la plataforma MUREX y desarroll? APIs REST para la automatizaci?n de procesos bancarios.
+? Banco Estado y Otros: Particip? en proyectos clave como Venta Cr?dito Hipotecario (VCH), 
+  Seguros FIDENS, Matriz Documental, Carpeta Electr?nica Cliente, Digitalizaci?n de Im?genes 
+  y Proyecto Estructurante de Cr?dito.
+? Lider? y coordin? equipos de desarrollo, promoviendo la adopci?n de pr?cticas DevOps y 
+  control de versiones con Git.
+
+OTRAS EXPERIENCIAS PROFESIONALES
+Santiago, Chile | 1998 ? 2010
+
+? Newsystems Ltda. ? Analista Desarrollador (2001?2007): Desarrollo y mantenimiento de 
+  plataformas como ColWeb? y m?dulos para Escuelas de Conductores.
+? Salas Consultor?a y Asociados ? Jefe de Proyecto y Analista (2000?2001): Implementaci?n 
+  de pilotos de Digital Dashboard y Cubos OLAP para clientes como Microsoft Chile y Compaq.
+? Dos en Uno ? Programador y Asesor (2000): Migraci?n y desarrollo de mantenedores, 
+  modelamiento de datos con Power Designer.
+? Cl?nica Santiago ? Programador (1999?2000): Desarrollo de sistemas de Gesti?n Cl?nica, 
+  incluyendo m?dulos de facturaci?n y reportes.
+? NetPlus Gesti?n Inform?tica ? Programador (1998?1999): Creaci?n de m?dulos mantenedores 
+  en Visual Basic 5.0 para proyectos gubernamentales.
+
+EDUCACI?N
+---------
+? Analista de Sistemas
+  Universidad de Ciencias de la Inform?tica (UCINF) | 2009 ? 2010
+
+? T?cnico en Programaci?n de Sistemas Computacionales
+  Centro Polit?cnico Particular N? 2 de ?u?oa, Santiago, Chile | 1993 ? 1996
+
+HABILIDADES T?CNICAS Y COMPETENCIAS
+------------------------------------
+
+Desarrollo Backend .NET
+? .NET (8, Core, Framework)
+? MVC, Web API, Microservicios
+? Entity Framework Core, Dapper
+? SignalR
+
+Arquitectura y Pr?cticas
+? Clean Architecture, SOLID
+? Clean Code, Dise?o APIs REST
+
+Desarrollo Frontend
+? Blazor WebAssembly
+? React (integraci?n)
+? HTML, JavaScript, TypeScript
+
+Desarrollo M?vil
+? .NET MAUI (Prototipos)
+
+Bases de Datos
+? SQL Server, PostgreSQL
+? PocketBase
+
+Seguridad y Asincron?a
+? JWT, Identity Server
+? Task, Async/Await, Redis
+
+Contenedores y CI/CD
+? Docker, docker-compose
+? GitLab CI/CD, Git, Coolify
+
+Cloud
+? AWS, Google Cloud (despliegues)
+? VPS
+
+Inteligencia Artificial
+? Prompt Engineering
+? .NET Semantic Kernel
+? n8n, Flowise
+? Integraci?n APIs IA
+
+Lenguajes Adicionales
+? Python (scripting, IA)
+
+Metodolog?as
+? Agile, Scrum
+
+?REAS DE ESPECIALIZACI?N
+------------------------
+? Arquitectura de Software: Clean Architecture, Microservicios, APIs REST
+? Desarrollo Full Stack: .NET, React, Blazor
+? Inteligencia Artificial: Agentes aut?nomos, Prompt Engineering
+? DevOps: Docker, CI/CD, Cloud Deployment
+? Liderazgo T?cnico: Gesti?n de equipos, Metodolog?as ?giles
+
+IDIOMAS
+-------
+? Espa?ol: Nativo
+? Ingl?s: T?cnico (lectura y escritura)
+
+DISPONIBILIDAD
+--------------
+Disponible para oportunidades de trabajo presencial, remoto o h?brido.
+Interesado en proyectos de desarrollo de software, arquitectura de sistemas y soluciones de IA.
+
+---
+Documento actualizado: Diciembre 2024
+Para m?s informaci?n: https://andresmmartinez.com
