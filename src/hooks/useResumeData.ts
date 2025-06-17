@@ -1,22 +1,26 @@
 import resumeData from '../resume.json';
 import { useLanguage } from '../context/LanguageContext';
 
-// Tipo para el resume basado en JSON Resume Schema
+// Tipo para traducciones en múltiples idiomas
+export interface Translations {
+  en?: string;
+  es?: string;
+  'pt-BR'?: string;
+}
+
+// Tipo para el resume basado en JSON Resume Schema con soporte para traducciones
 export interface JSONResume {
   $schema?: string;
   basics?: {
     name?: string;
     label?: string;
+    labelTranslations?: Translations;
     image?: string;
     email?: string;
     phone?: string;
     url?: string;
     summary?: string;    
-    summaryTranslations?: {
-      en?: string;
-      es?: string;
-      'pt-BR'?: string;
-    };
+    summaryTranslations?: Translations;
     location?: {
       address?: string;
       postalCode?: string;
@@ -37,13 +41,21 @@ export interface JSONResume {
   work?: Array<{
     name?: string;
     position?: string;
+    positionTranslations?: Translations;
     url?: string;
     startDate?: string;
     endDate?: string;
     summary?: string;
+    summaryTranslations?: Translations;
     highlights?: string[];
+    highlightsTranslations?: {
+      en?: string[];
+      es?: string[];
+      'pt-BR'?: string[];
+    };
     location?: string;
     description?: string;
+    descriptionTranslations?: Translations;
   }>;
   volunteer?: Array<{
     organization?: string;
@@ -58,14 +70,27 @@ export interface JSONResume {
     institution?: string;
     url?: string;
     area?: string;
+    areaTranslations?: Translations;
     studyType?: string;
+    studyTypeTranslations?: Translations;
     startDate?: string;
     endDate?: string;
     score?: string;
     courses?: string[];
+    coursesTranslations?: {
+      en?: string[];
+      es?: string[];
+      'pt-BR'?: string[];
+    };
     location?: string;
     highlights?: string[];
+    highlightsTranslations?: {
+      en?: string[];
+      es?: string[];
+      'pt-BR'?: string[];
+    };
     description?: string;
+    descriptionTranslations?: Translations;
   }>;
   awards?: Array<{
     title?: string;
@@ -82,20 +107,36 @@ export interface JSONResume {
   }>;
   skills?: Array<{
     name?: string;
+    nameTranslations?: Translations;
     level?: string;
     keywords?: string[];
+    keywordsTranslations?: {
+      en?: string[];
+      es?: string[];
+      'pt-BR'?: string[];
+    };
     category?: string;
+    categoryTranslations?: Translations;
     description?: string;
+    descriptionTranslations?: Translations;
     value?: number;
     icon?: string;
   }>;
   languages?: Array<{
     language?: string;
     fluency?: string;
+    languageTranslations?: Translations;
+    fluencyTranslations?: Translations;
   }>;
   interests?: Array<{
     name?: string;
+    nameTranslations?: Translations;
     keywords?: string[];
+    keywordsTranslations?: {
+      en?: string[];
+      es?: string[];
+      'pt-BR'?: string[];
+    };
   }>;
   references?: Array<{
     name?: string;
@@ -103,15 +144,33 @@ export interface JSONResume {
   }>;
   projects?: Array<{
     name?: string;
+    nameTranslations?: Translations;
     description?: string;
+    descriptionTranslations?: Translations;
     highlights?: string[];
+    highlightsTranslations?: {
+      en?: string[];
+      es?: string[];
+      'pt-BR'?: string[];
+    };
     keywords?: string[];
+    keywordsTranslations?: {
+      en?: string[];
+      es?: string[];
+      'pt-BR'?: string[];
+    };
     startDate?: string;
     endDate?: string;
     url?: string;
     image?: string;
     roles?: string[];
+    rolesTranslations?: {
+      en?: string[];
+      es?: string[];
+      'pt-BR'?: string[];
+    };
     entity?: string;
+    entityTranslations?: Translations;
     type?: string;
   }>;
   meta?: {
@@ -123,17 +182,121 @@ export interface JSONResume {
 
 export const useResumeData = () => {
   const { locale } = useLanguage();
-  let resume = resumeData as JSONResume;
   
-  // Aplicar traducciones según el idioma actual
-  if (resume.basics?.summaryTranslations && resume.basics.summaryTranslations[locale as keyof typeof resume.basics.summaryTranslations]) {
-    resume = {
-      ...resume,
-      basics: {
-        ...resume.basics,
-        summary: resume.basics.summaryTranslations[locale as keyof typeof resume.basics.summaryTranslations]
+  // Crear una copia profunda para no modificar el original
+  let resume = JSON.parse(JSON.stringify(resumeData)) as JSONResume; 
+  
+  // Función auxiliar para aplicar traducciones de un campo específico
+  const applyTranslation = (obj: any, field: string, translationField: string) => {
+    if (obj[translationField] && obj[translationField][locale]) {
+      obj[field] = obj[translationField][locale];
+    }
+    return obj;
+  };
+  
+  // Función auxiliar para aplicar traducciones a arrays
+  const applyArrayTranslation = (obj: any, field: string, translationField: string) => {
+    if (obj[translationField] && obj[translationField][locale]) {
+      obj[field] = obj[translationField][locale];
+    }
+    return obj;
+  };
+  
+  // Función para procesar recursivamente traducciones en objetos
+  const processTranslations = (obj: any) => {
+    if (!obj) return obj;
+    
+    // Procesar todos los campos que terminen con "Translations"
+    Object.keys(obj).forEach(key => {
+      if (key.endsWith('Translations')) {
+        const baseField = key.replace('Translations', '');
+        if (obj[baseField]) { // Solo si existe el campo base, aplicamos la traducción
+          obj = applyTranslation(obj, baseField, key);
+        }
       }
-    };
+    });
+    
+    return obj;
+  };
+  
+  // Aplicar traducciones a todos los objetos del resume
+  
+  // Procesar datos básicos
+  if (resume.basics) {
+    resume.basics = processTranslations(resume.basics);
+    
+    // Procesar perfiles (si tienen traducciones)
+    if (resume.basics?.profiles) {
+      resume.basics.profiles = resume.basics.profiles.map(profile => processTranslations(profile));
+    }
+  }
+  
+  // Procesar experiencia laboral
+  if (resume.work) {
+    resume.work = resume.work.map(job => {
+      let updatedJob = processTranslations(job);
+      
+      // Manejar highlights como array especial
+      updatedJob = applyArrayTranslation(updatedJob, 'highlights', 'highlightsTranslations');
+      
+      return updatedJob;
+    });
+  }
+  
+  // Procesar educación
+  if (resume.education) {
+    resume.education = resume.education.map(edu => {
+      let updatedEdu = processTranslations(edu);
+      
+      // Manejar arrays especiales
+      updatedEdu = applyArrayTranslation(updatedEdu, 'highlights', 'highlightsTranslations');
+      updatedEdu = applyArrayTranslation(updatedEdu, 'courses', 'coursesTranslations');
+      
+      return updatedEdu;
+    });
+  }
+  
+  // Procesar proyectos
+  if (resume.projects) {
+    resume.projects = resume.projects.map(proj => {
+      let updatedProj = processTranslations(proj);
+      
+      // Manejar arrays especiales
+      updatedProj = applyArrayTranslation(updatedProj, 'highlights', 'highlightsTranslations');
+      updatedProj = applyArrayTranslation(updatedProj, 'keywords', 'keywordsTranslations');
+      updatedProj = applyArrayTranslation(updatedProj, 'roles', 'rolesTranslations');
+      
+      return updatedProj;
+    });
+  }
+  
+  // Procesar habilidades
+  if (resume.skills) {
+    resume.skills = resume.skills.map(skill => {
+      let updatedSkill = processTranslations(skill);
+      
+      // Manejar keywords como array especial
+      updatedSkill = applyArrayTranslation(updatedSkill, 'keywords', 'keywordsTranslations');
+      
+      return updatedSkill;
+    });
+  }
+  
+  // Procesar lenguajes
+  if (resume.languages) {
+    resume.languages = resume.languages.map(lang => processTranslations(lang));
+  }
+  
+  // Procesar intereses
+  if (resume.interests) {
+    resume.interests = resume.interests.map(interest => {
+      let updatedInterest = processTranslations(interest);
+      
+      // Manejar keywords como array especial
+      updatedInterest = applyArrayTranslation(updatedInterest, 'keywords', 'keywordsTranslations');
+      
+      return updatedInterest;
+    });
   }
   
   // Función para obtener el nombre completo
@@ -153,22 +316,50 @@ export const useResumeData = () => {
   const getSkillsByCategory = () => {
     if (!resume.skills) return {};
     
-    // Categorías predefinidas
+    // Categorías predefinidas basadas en el idioma seleccionado
     const categories: Record<string, string> = {
-      'languages': 'Lenguajes de Programación',
-      'frameworks': 'Frameworks y Librerías',
-      'databases': 'Bases de Datos',
-      'tools': 'Herramientas',
-      'cloud': 'Servicios Cloud',
-      'methods': 'Metodologías',
-      'softskills': 'Soft Skills',
-      'architecture': 'Arquitectura',
-      'management': 'Gestión de Proyectos',
-      'hardware': 'Hardware y Comunicaciones',
-      'os': 'Sistemas Operativos',
-      'modeling': 'Modelado',
-      'mobile': 'Desarrollo Móvil',
-      'other': 'Otros'
+      'languages': locale === 'es' ? 'Lenguajes de Programación' : 
+                   locale === 'en' ? 'Programming Languages' : 
+                   'Linguagens de Programação',
+      'frameworks': locale === 'es' ? 'Frameworks y Librerías' : 
+                   locale === 'en' ? 'Frameworks and Libraries' : 
+                   'Frameworks e Bibliotecas',
+      'databases': locale === 'es' ? 'Bases de Datos' : 
+                   locale === 'en' ? 'Databases' : 
+                   'Bancos de Dados',
+      'tools': locale === 'es' ? 'Herramientas' : 
+                locale === 'en' ? 'Tools' : 
+                'Ferramentas',
+      'cloud': locale === 'es' ? 'Servicios Cloud' : 
+               locale === 'en' ? 'Cloud Services' : 
+               'Serviços em Nuvem',
+      'methods': locale === 'es' ? 'Metodologías' : 
+                 locale === 'en' ? 'Methodologies' : 
+                 'Metodologias',
+      'softskills': locale === 'es' ? 'Soft Skills' : 
+                    locale === 'en' ? 'Soft Skills' : 
+                    'Habilidades Interpessoais',
+      'architecture': locale === 'es' ? 'Arquitectura' : 
+                      locale === 'en' ? 'Architecture' : 
+                      'Arquitetura',
+      'management': locale === 'es' ? 'Gestión de Proyectos' : 
+                    locale === 'en' ? 'Project Management' : 
+                    'Gerenciamento de Projetos',
+      'hardware': locale === 'es' ? 'Hardware y Comunicaciones' : 
+                  locale === 'en' ? 'Hardware and Communications' : 
+                  'Hardware e Comunicações',
+      'os': locale === 'es' ? 'Sistemas Operativos' : 
+            locale === 'en' ? 'Operating Systems' : 
+            'Sistemas Operacionais',
+      'modeling': locale === 'es' ? 'Modelado' : 
+                  locale === 'en' ? 'Modeling' : 
+                  'Modelagem',
+      'mobile': locale === 'es' ? 'Desarrollo Móvil' : 
+                locale === 'en' ? 'Mobile Development' : 
+                'Desenvolvimento Móvel',
+      'other': locale === 'es' ? 'Otros' : 
+               locale === 'en' ? 'Others' : 
+               'Outros'
     };
     
     // Organizar skills por categoría
@@ -241,7 +432,8 @@ export const useResumeData = () => {
     // Limitar si es necesario
     return limit ? sortedProjects.slice(0, limit) : sortedProjects;
   };
-  // Función para formatear fechas
+  
+  // Función para formatear fechas según el idioma seleccionado
   const formatDate = (dateString?: string) => {
     if (!dateString) return '';
     
@@ -249,7 +441,12 @@ export const useResumeData = () => {
     if (dateString.length === 7) {
       const [year, month] = dateString.split('-');
       const date = new Date(parseInt(year), parseInt(month) - 1);
-      return date.toLocaleDateString('es', { year: 'numeric', month: 'long' });
+      return date.toLocaleDateString(
+        locale === 'en' ? 'en-US' : 
+        locale === 'es' ? 'es-ES' : 
+        'pt-BR', 
+        { year: 'numeric', month: 'long' }
+      );
     }
     
     // Si solo tiene año (formato YYYY)
@@ -259,7 +456,12 @@ export const useResumeData = () => {
     
     // Formato completo (YYYY-MM-DD)
     const date = new Date(dateString);
-    return date.toLocaleDateString('es', { year: 'numeric', month: 'long', day: 'numeric' });
+    return date.toLocaleDateString(
+      locale === 'en' ? 'en-US' : 
+      locale === 'es' ? 'es-ES' : 
+      'pt-BR', 
+      { year: 'numeric', month: 'long', day: 'numeric' }
+    );
   };
 
   // Obtener información de contacto
@@ -294,4 +496,4 @@ export const useResumeData = () => {
     formatDate,
     getSocialProfiles
   };
-}
+};

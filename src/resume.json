@@ -1,9 +1,13 @@
 {
-  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
-  "basics": {
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",  "basics": {
     "name": "Andrés Martínez Gajardo",
     "label": "Ingeniero de Software Senior",
-    "image": "/Andres.png",    "email": "andres.martinez.g@gmail.com",
+    "labelTranslations": {
+      "es": "Ingeniero de Software Senior",
+      "en": "Senior Software Engineer",
+      "pt-BR": "Engenheiro de Software Sênior"
+    },
+    "image": "/Andres.png","email": "andres.martinez.g@gmail.com",
     "phone": "+56 9 55155418",
     "url": "https://andresmmartinez.com",
     "summary": "Ingeniero de Software Senior con más de 20 años de experiencia liderando el desarrollo y mantenimiento de soluciones robustas en el ecosistema .NET. Experto en la gestión de proyectos críticos bajo metodologías ágiles (Scrum) y en la aplicación de buenas prácticas como Clean Architecture y principios SOLID. Recientemente enfocado en la integración de IA y desarrollo de agentes autónomos.",
@@ -38,79 +42,237 @@
         "url": "https://andresmmartinez.com"
       }
     ]
-  },  "work": [
-    {
+  },  "work": [    {
       "name": "M&L AI SpA",
       "position": "Ingeniero de Software / Jefe de Proyectos AI",
+      "positionTranslations": {
+        "es": "Ingeniero de Software / Jefe de Proyectos AI",
+        "en": "Software Engineer / AI Project Manager",
+        "pt-BR": "Engenheiro de Software / Gerente de Projetos IA"
+      },
       "location": "Santiago, Chile",
       "description": "Empresa especializada en soluciones de inteligencia artificial y agentes autónomos",
+      "descriptionTranslations": {
+        "es": "Empresa especializada en soluciones de inteligencia artificial y agentes autónomos",
+        "en": "Company specialized in artificial intelligence solutions and autonomous agents",
+        "pt-BR": "Empresa especializada em soluções de inteligência artificial e agentes autônomos"
+      },
       "startDate": "2024-08",
       "summary": "Diseño e implementación de arquitecturas y flujos de trabajo para soluciones de IA, desarrollo de agentes autónomos especializados e integración de microservicios con tecnologías emergentes.",
+      "summaryTranslations": {
+        "es": "Diseño e implementación de arquitecturas y flujos de trabajo para soluciones de IA, desarrollo de agentes autónomos especializados e integración de microservicios con tecnologías emergentes.",
+        "en": "Design and implementation of architectures and workflows for AI solutions, development of specialized autonomous agents, and integration of microservices with emerging technologies.",
+        "pt-BR": "Projeto e implementação de arquiteturas e fluxos de trabalho para soluções de IA, desenvolvimento de agentes autônomos especializados e integração de microsserviços com tecnologias emergentes."
+      },
       "highlights": [
         "Diseñé e implementé arquitecturas y flujos de trabajo para soluciones de IA, utilizando Docker, VPS, Coolify, Git y servicios de hosting",
         "Desarrollé agentes autónomos para diversas funciones: recepcionistas virtuales, asistentes de agenda, lectura de correos, recordatorios, agentes inmobiliarios y recepcionistas médicos",
         "Integré microservicios en .NET C# y Python con interfaces en React, optimizando la experiencia de usuario",
         "Implementé soluciones utilizando tecnologías emergentes como Retell.ai, VAPI, Zadarma, PocketBase, PostgreSQL, Redis, Google Drive, Google Calendar, ElevenLabs y ChatGPT",
         "Investigué y apliqué técnicas de prompt engineering y .NET Semantic Kernel para el procesamiento semántico y entendimiento del lenguaje natural"
-      ]
-    },
-    {
+      ],
+      "highlightsTranslations": {
+        "es": [
+          "Diseñé e implementé arquitecturas y flujos de trabajo para soluciones de IA, utilizando Docker, VPS, Coolify, Git y servicios de hosting",
+          "Desarrollé agentes autónomos para diversas funciones: recepcionistas virtuales, asistentes de agenda, lectura de correos, recordatorios, agentes inmobiliarios y recepcionistas médicos",
+          "Integré microservicios en .NET C# y Python con interfaces en React, optimizando la experiencia de usuario",
+          "Implementé soluciones utilizando tecnologías emergentes como Retell.ai, VAPI, Zadarma, PocketBase, PostgreSQL, Redis, Google Drive, Google Calendar, ElevenLabs y ChatGPT",
+          "Investigué y apliqué técnicas de prompt engineering y .NET Semantic Kernel para el procesamiento semántico y entendimiento del lenguaje natural"
+        ],
+        "en": [
+          "Designed and implemented architectures and workflows for AI solutions, using Docker, VPS, Coolify, Git, and hosting services",
+          "Developed autonomous agents for various functions: virtual receptionists, calendar assistants, email readers, reminders, real estate agents, and medical receptionists",
+          "Integrated microservices in .NET C# and Python with React interfaces, optimizing the user experience",
+          "Implemented solutions using emerging technologies such as Retell.ai, VAPI, Zadarma, PocketBase, PostgreSQL, Redis, Google Drive, Google Calendar, ElevenLabs, and ChatGPT",
+          "Researched and applied prompt engineering techniques and .NET Semantic Kernel for semantic processing and natural language understanding"
+        ],
+        "pt-BR": [
+          "Projetei e implementei arquiteturas e fluxos de trabalho para soluções de IA, utilizando Docker, VPS, Coolify, Git e serviços de hospedagem",
+          "Desenvolvi agentes autônomos para diversas funções: recepcionistas virtuais, assistentes de agenda, leitura de e-mails, lembretes, agentes imobiliários e recepcionistas médicos",
+          "Integrei microsserviços em .NET C# e Python com interfaces em React, otimizando a experiência do usuário",
+          "Implementei soluções utilizando tecnologias emergentes como Retell.ai, VAPI, Zadarma, PocketBase, PostgreSQL, Redis, Google Drive, Google Calendar, ElevenLabs e ChatGPT",
+          "Pesquisei e apliquei técnicas de prompt engineering e .NET Semantic Kernel para processamento semântico e compreensão de linguagem natural"
+        ]
+      }
+    },    {
       "name": "Sermaluc",
       "position": "Ingeniero de Software / Jefe de Proyectos TI",
+      "positionTranslations": {
+        "es": "Ingeniero de Software / Jefe de Proyectos TI",
+        "en": "Software Engineer / IT Project Manager",
+        "pt-BR": "Engenheiro de Software / Gerente de Projetos de TI"
+      },
       "location": "Santiago, Chile",
       "description": "Empresa de consultoría tecnológica especializada en soluciones bancarias y financieras",
+      "descriptionTranslations": {
+        "es": "Empresa de consultoría tecnológica especializada en soluciones bancarias y financieras",
+        "en": "Technology consulting company specialized in banking and financial solutions",
+        "pt-BR": "Empresa de consultoria tecnológica especializada em soluções bancárias e financeiras"
+      },
       "startDate": "2010-11",
       "endDate": "2024-07",
       "summary": "Liderazgo en el desarrollo de soluciones críticas para instituciones bancarias, incluyendo aplicaciones web, APIs REST y sistemas de visualización en tiempo real.",
+      "summaryTranslations": {
+        "es": "Liderazgo en el desarrollo de soluciones críticas para instituciones bancarias, incluyendo aplicaciones web, APIs REST y sistemas de visualización en tiempo real.",
+        "en": "Leadership in the development of critical solutions for banking institutions, including web applications, REST APIs, and real-time visualization systems.",
+        "pt-BR": "Liderança no desenvolvimento de soluções críticas para instituições bancárias, incluindo aplicativos web, APIs REST e sistemas de visualização em tempo real."
+      },
       "highlights": [
         "Banco Central: Lideré el desarrollo y mantenimiento de la 'App Regional' con .NET y Blazor WebAssembly, enfocada en la visualización de estadísticas en tiempo real",
         "Banco Itaú: Diseñé e implementé soluciones internas en .NET / .NET Core. Elaboré flujos para la plataforma MUREX y desarrollé APIs REST para la automatización de procesos bancarios",
         "Banco Estado: Participé en proyectos clave como Venta Crédito Hipotecario (VCH), Seguros FIDENS, Matriz Documental, Carpeta Electrónica Cliente",
         "Lideré y coordiné equipos de desarrollo, promoviendo la adopción de prácticas DevOps y control de versiones con Git"
-      ]
-    },
-    {
+      ],
+      "highlightsTranslations": {
+        "es": [
+          "Banco Central: Lideré el desarrollo y mantenimiento de la 'App Regional' con .NET y Blazor WebAssembly, enfocada en la visualización de estadísticas en tiempo real",
+          "Banco Itaú: Diseñé e implementé soluciones internas en .NET / .NET Core. Elaboré flujos para la plataforma MUREX y desarrollé APIs REST para la automatización de procesos bancarios",
+          "Banco Estado: Participé en proyectos clave como Venta Crédito Hipotecario (VCH), Seguros FIDENS, Matriz Documental, Carpeta Electrónica Cliente",
+          "Lideré y coordiné equipos de desarrollo, promoviendo la adopción de prácticas DevOps y control de versiones con Git"
+        ],
+        "en": [
+          "Central Bank: Led the development and maintenance of the 'Regional App' with .NET and Blazor WebAssembly, focused on real-time statistics visualization",
+          "Banco Itaú: Designed and implemented internal solutions in .NET / .NET Core. Developed workflows for the MUREX platform and REST APIs for banking process automation",
+          "Banco Estado: Participated in key projects such as Mortgage Credit Sales (VCH), FIDENS Insurance, Document Matrix, Electronic Client Folder",
+          "Led and coordinated development teams, promoting the adoption of DevOps practices and Git version control"
+        ],
+        "pt-BR": [
+          "Banco Central: Liderei o desenvolvimento e manutenção do 'App Regional' com .NET e Blazor WebAssembly, focado na visualização de estatísticas em tempo real",
+          "Banco Itaú: Projetei e implementei soluções internas em .NET / .NET Core. Elaborei fluxos para a plataforma MUREX e desenvolvi APIs REST para automação de processos bancários",
+          "Banco Estado: Participei de projetos-chave como Venda de Crédito Hipotecário (VCH), Seguros FIDENS, Matriz Documental, Pasta Eletrônica do Cliente",
+          "Liderei e coordenei equipes de desenvolvimento, promovendo a adoção de práticas DevOps e controle de versão com Git"
+        ]
+      }
+    },    {
       "name": "Newsystems Ltda.",
       "position": "Analista Desarrollador",
+      "positionTranslations": {
+        "es": "Analista Desarrollador",
+        "en": "Developer Analyst",
+        "pt-BR": "Analista Desenvolvedor"
+      },
       "location": "Santiago, Chile",
       "startDate": "2001",
       "endDate": "2007",
       "summary": "Desarrollo y mantenimiento de plataformas web y sistemas especializados.",
+      "summaryTranslations": {
+        "es": "Desarrollo y mantenimiento de plataformas web y sistemas especializados.",
+        "en": "Development and maintenance of web platforms and specialized systems.",
+        "pt-BR": "Desenvolvimento e manutenção de plataformas web e sistemas especializados."
+      },
+      "description": "Empresa chilena de desarrollo de software para soluciones educativas y de gestión",
+      "descriptionTranslations": {
+        "es": "Empresa chilena de desarrollo de software para soluciones educativas y de gestión",
+        "en": "Chilean software development company for educational and management solutions",
+        "pt-BR": "Empresa chilena de desenvolvimento de software para soluções educacionais e de gestão"
+      },
       "highlights": [
         "Desarrollo y mantenimiento de plataformas como ColWeb© y módulos para Escuelas de Conductores"
-      ]
-    },
-    {
+      ],
+      "highlightsTranslations": {
+        "es": [
+          "Desarrollo y mantenimiento de plataformas como ColWeb© y módulos para Escuelas de Conductores"
+        ],
+        "en": [
+          "Development and maintenance of platforms such as ColWeb© and modules for Driving Schools"
+        ],
+        "pt-BR": [
+          "Desenvolvimento e manutenção de plataformas como ColWeb© e módulos para Escolas de Condutores"
+        ]
+      }
+    },    {
       "name": "Salas Consultoría y Asociados",
       "position": "Jefe de Proyecto y Analista",
+      "positionTranslations": {
+        "es": "Jefe de Proyecto y Analista",
+        "en": "Project Manager and Analyst",
+        "pt-BR": "Gerente de Projeto e Analista"
+      },
       "location": "Santiago, Chile",
       "startDate": "2000",
       "endDate": "2001",
       "summary": "Implementación de soluciones de inteligencia de negocios para clientes corporativos.",
+      "summaryTranslations": {
+        "es": "Implementación de soluciones de inteligencia de negocios para clientes corporativos.",
+        "en": "Implementation of business intelligence solutions for corporate clients.",
+        "pt-BR": "Implementação de soluções de inteligência de negócios para clientes corporativos."
+      },
+      "description": "Consultora especializada en Business Intelligence y soluciones de análisis de datos",
+      "descriptionTranslations": {
+        "es": "Consultora especializada en Business Intelligence y soluciones de análisis de datos",
+        "en": "Consulting firm specialized in Business Intelligence and data analysis solutions",
+        "pt-BR": "Consultoria especializada em Business Intelligence e soluções de análise de dados"
+      },
       "highlights": [
         "Implementación de pilotos de Digital Dashboard y Cubos OLAP para clientes como Microsoft Chile y Compaq"
-      ]
+      ],
+      "highlightsTranslations": {
+        "es": [
+          "Implementación de pilotos de Digital Dashboard y Cubos OLAP para clientes como Microsoft Chile y Compaq"
+        ],
+        "en": [
+          "Implementation of Digital Dashboard and OLAP Cubes pilots for clients such as Microsoft Chile and Compaq"
+        ],
+        "pt-BR": [
+          "Implementação de pilotos de Digital Dashboard e Cubos OLAP para clientes como Microsoft Chile e Compaq"
+        ]
+      }
     }
-  ],
-  "education": [
+  ],  "education": [
     {
       "institution": "Universidad de Ciencias de la Informática (UCINF)",
       "area": "Análisis de Sistemas",
+      "areaTranslations": {
+        "es": "Análisis de Sistemas",
+        "en": "Systems Analysis",
+        "pt-BR": "Análise de Sistemas"
+      },
       "studyType": "Analista de Sistemas",
+      "studyTypeTranslations": {
+        "es": "Analista de Sistemas",
+        "en": "Systems Analyst",
+        "pt-BR": "Analista de Sistemas"
+      },
       "startDate": "2009",
-      "endDate": "2010"
+      "endDate": "2010",
+      "description": "Estudios superiores en análisis y diseño de sistemas informáticos",
+      "descriptionTranslations": {
+        "es": "Estudios superiores en análisis y diseño de sistemas informáticos",
+        "en": "Higher education in analysis and design of computer systems",
+        "pt-BR": "Estudos superiores em análise e design de sistemas informáticos"
+      }
     },
     {
       "institution": "Centro Politécnico Particular N° 2 de Ñuñoa",
       "area": "Programación de Sistemas Computacionales",
+      "areaTranslations": {
+        "es": "Programación de Sistemas Computacionales",
+        "en": "Computer Systems Programming",
+        "pt-BR": "Programação de Sistemas Computacionais"
+      },
       "studyType": "Técnico",
+      "studyTypeTranslations": {
+        "es": "Técnico",
+        "en": "Technician",
+        "pt-BR": "Técnico"
+      },
       "startDate": "1993",
-      "endDate": "1996"
+      "endDate": "1996",
+      "description": "Formación técnica en programación y desarrollo de sistemas",
+      "descriptionTranslations": {
+        "es": "Formación técnica en programación y desarrollo de sistemas",
+        "en": "Technical training in programming and systems development",
+        "pt-BR": "Formação técnica em programação e desenvolvimento de sistemas"
+      }
     }
-  ],
-  "skills": [
+  ],  "skills": [
     {
       "name": "Desarrollo Backend .NET",
+      "nameTranslations": {
+        "es": "Desarrollo Backend .NET",
+        "en": ".NET Backend Development",
+        "pt-BR": "Desenvolvimento Backend .NET"
+      },
       "level": "Expert",
       "keywords": [
         ".NET 8",
@@ -123,10 +285,52 @@
         "Entity Framework Core",
         "Dapper",
         "SignalR"
-      ]
-    },
-    {
+      ],
+      "keywordsTranslations": {
+        "es": [
+          ".NET 8",
+          ".NET Core",
+          ".NET Framework",
+          "C#",
+          "MVC",
+          "Web API",
+          "Microservicios",
+          "Entity Framework Core",
+          "Dapper",
+          "SignalR"
+        ],
+        "en": [
+          ".NET 8",
+          ".NET Core",
+          ".NET Framework",
+          "C#",
+          "MVC",
+          "Web API",
+          "Microservices",
+          "Entity Framework Core",
+          "Dapper",
+          "SignalR"
+        ],
+        "pt-BR": [
+          ".NET 8",
+          ".NET Core",
+          ".NET Framework",
+          "C#",
+          "MVC",
+          "Web API",
+          "Microsserviços",
+          "Entity Framework Core",
+          "Dapper",
+          "SignalR"
+        ]
+      }
+    },    {
       "name": "Arquitectura y Mejores Prácticas",
+      "nameTranslations": {
+        "es": "Arquitectura y Mejores Prácticas",
+        "en": "Architecture and Best Practices",
+        "pt-BR": "Arquitetura e Melhores Práticas"
+      },
       "level": "Expert",
       "keywords": [
         "Clean Architecture",
@@ -135,7 +339,33 @@
         "APIs REST",
         "Microservicios",
         "Design Patterns"
-      ]
+      ],
+      "keywordsTranslations": {
+        "es": [
+          "Clean Architecture",
+          "SOLID",
+          "Clean Code",
+          "APIs REST",
+          "Microservicios",
+          "Patrones de Diseño"
+        ],
+        "en": [
+          "Clean Architecture",
+          "SOLID",
+          "Clean Code",
+          "REST APIs",
+          "Microservices",
+          "Design Patterns"
+        ],
+        "pt-BR": [
+          "Clean Architecture",
+          "SOLID",
+          "Clean Code",
+          "APIs REST",
+          "Microsserviços",
+          "Padrões de Design"
+        ]
+      }
     },
     {
       "name": "Desarrollo Frontend",
@@ -209,20 +439,48 @@
         "Gestión de equipos"
       ]
     }
-  ],
-  "languages": [
+  ],  "languages": [
     {
       "language": "Español",
-      "fluency": "Nativo"
+      "languageTranslations": {
+        "es": "Español",
+        "en": "Spanish",
+        "pt-BR": "Espanhol"
+      },
+      "fluency": "Nativo",
+      "fluencyTranslations": {
+        "es": "Nativo",
+        "en": "Native",
+        "pt-BR": "Nativo"
+      }
     },
     {
       "language": "Inglés",
-      "fluency": "Técnico (lectura y escritura)"
+      "languageTranslations": {
+        "es": "Inglés",
+        "en": "English",
+        "pt-BR": "Inglês"
+      },
+      "fluency": "Técnico (lectura y escritura)",
+      "fluencyTranslations": {
+        "es": "Técnico (lectura y escritura)",
+        "en": "Technical (reading and writing)",
+        "pt-BR": "Técnico (leitura e escrita)"
+      }
     }
-  ],
-  "projects": [    {
+  ],  "projects": [    {
       "name": "App Regional - Banco Central",
+      "nameTranslations": {
+        "es": "App Regional - Banco Central",
+        "en": "Regional App - Central Bank",
+        "pt-BR": "App Regional - Banco Central"
+      },
       "description": "Aplicación web desarrollada en .NET y Blazor WebAssembly para visualización de estadísticas en tiempo real",
+      "descriptionTranslations": {
+        "es": "Aplicación web desarrollada en .NET y Blazor WebAssembly para visualización de estadísticas en tiempo real",
+        "en": "Web application developed in .NET and Blazor WebAssembly for real-time statistics visualization",
+        "pt-BR": "Aplicação web desenvolvida em .NET e Blazor WebAssembly para visualização de estatísticas em tempo real"
+      },
       "url": "https://si3.bcentral.cl/estadisticas/Principal1/enlaces/aplicaciones/app_regional.html",
       "image": "/App-regional.jpeg",
       "highlights": [
@@ -230,23 +488,89 @@
         "Visualización de estadísticas en tiempo real",
         "Prototipo en .NET MAUI"
       ],
+      "highlightsTranslations": {
+        "es": [
+          "Desarrollo con .NET y Blazor WebAssembly",
+          "Visualización de estadísticas en tiempo real",
+          "Prototipo en .NET MAUI"
+        ],
+        "en": [
+          "Development with .NET and Blazor WebAssembly",
+          "Real-time statistics visualization",
+          "Prototype in .NET MAUI"
+        ],
+        "pt-BR": [
+          "Desenvolvimento com .NET e Blazor WebAssembly",
+          "Visualização de estatísticas em tempo real",
+          "Protótipo em .NET MAUI"
+        ]
+      },
       "keywords": [
         ".NET",
         "Blazor WebAssembly",
         ".NET MAUI",
         "Tiempo real"
       ],
+      "keywordsTranslations": {
+        "es": [
+          ".NET",
+          "Blazor WebAssembly",
+          ".NET MAUI",
+          "Tiempo real"
+        ],
+        "en": [
+          ".NET",
+          "Blazor WebAssembly",
+          ".NET MAUI",
+          "Real-time"
+        ],
+        "pt-BR": [
+          ".NET",
+          "Blazor WebAssembly",
+          ".NET MAUI",
+          "Tempo real"
+        ]
+      },
       "startDate": "2010",
       "endDate": "2024",
       "roles": [
         "Líder técnico",
         "Desarrollador principal"
       ],
+      "rolesTranslations": {
+        "es": [
+          "Líder técnico",
+          "Desarrollador principal"
+        ],
+        "en": [
+          "Technical Leader",
+          "Lead Developer"
+        ],
+        "pt-BR": [
+          "Líder técnico",
+          "Desenvolvedor principal"
+        ]
+      },
       "entity": "Banco Central de Chile",
+      "entityTranslations": {
+        "es": "Banco Central de Chile",
+        "en": "Central Bank of Chile",
+        "pt-BR": "Banco Central do Chile"
+      },
       "type": "application"
     },    {
       "name": "Sistemas Bancarios Itaú",
+      "nameTranslations": {
+        "es": "Sistemas Bancarios Itaú",
+        "en": "Itaú Banking Systems",
+        "pt-BR": "Sistemas Bancários Itaú"
+      },
       "description": "Soluciones internas en .NET / .NET Core para automatización de procesos bancarios",
+      "descriptionTranslations": {
+        "es": "Soluciones internas en .NET / .NET Core para automatización de procesos bancarios",
+        "en": "Internal solutions in .NET / .NET Core for banking process automation",
+        "pt-BR": "Soluções internas em .NET / .NET Core para automação de processos bancários"
+      },
       "url": "https://www.itau.cl/",
       "image": "https://images.contentstack.io/v3/assets/blt5ad73eb84118beed/blt57d15edbce1391b5/67e6e6f38af2cc6f75ffe699/header_logo.svg",
       "highlights": [
@@ -254,23 +578,89 @@
         "APIs REST para automatización",
         "Integración con sistemas legacy"
       ],
+      "highlightsTranslations": {
+        "es": [
+          "Flujos para plataforma MUREX",
+          "APIs REST para automatización",
+          "Integración con sistemas legacy"
+        ],
+        "en": [
+          "Workflows for MUREX platform",
+          "REST APIs for automation",
+          "Integration with legacy systems"
+        ],
+        "pt-BR": [
+          "Fluxos para plataforma MUREX",
+          "APIs REST para automação",
+          "Integração com sistemas legados"
+        ]
+      },
       "keywords": [
         ".NET Core",
         "MUREX",
         "APIs REST",
         "Automatización"
       ],
+      "keywordsTranslations": {
+        "es": [
+          ".NET Core",
+          "MUREX",
+          "APIs REST",
+          "Automatización"
+        ],
+        "en": [
+          ".NET Core",
+          "MUREX",
+          "REST APIs",
+          "Automation"
+        ],
+        "pt-BR": [
+          ".NET Core",
+          "MUREX",
+          "APIs REST",
+          "Automação"
+        ]
+      },
       "startDate": "2010",
       "endDate": "2024",
       "roles": [
         "Arquitecto de software",
         "Desarrollador senior"
       ],
+      "rolesTranslations": {
+        "es": [
+          "Arquitecto de software",
+          "Desarrollador senior"
+        ],
+        "en": [
+          "Software Architect",
+          "Senior Developer"
+        ],
+        "pt-BR": [
+          "Arquiteto de software",
+          "Desenvolvedor senior"
+        ]
+      },
       "entity": "Banco Itaú",
+      "entityTranslations": {
+        "es": "Banco Itaú",
+        "en": "Itaú Bank",
+        "pt-BR": "Banco Itaú"
+      },
       "type": "application"
     },    {
       "name": "Agentes Autónomos de IA",
+      "nameTranslations": {
+        "es": "Agentes Autónomos de IA",
+        "en": "AI Autonomous Agents",
+        "pt-BR": "Agentes Autônomos de IA"
+      },
       "description": "Desarrollo de agentes autónomos especializados para diversas funciones empresariales",
+      "descriptionTranslations": {
+        "es": "Desarrollo de agentes autónomos especializados para diversas funciones empresariales",
+        "en": "Development of specialized autonomous agents for various business functions",
+        "pt-BR": "Desenvolvimento de agentes autônomos especializados para diversas funções empresariais"
+      },
       "url": "https://inteliai.cl/",
       "image": "https://inteliai.cl/logo.png",
       "highlights": [
@@ -279,6 +669,26 @@
         "Agentes inmobiliarios",
         "Integración con APIs de IA"
       ],
+      "highlightsTranslations": {
+        "es": [
+          "Recepcionistas virtuales",
+          "Asistentes de agenda",
+          "Agentes inmobiliarios",
+          "Integración con APIs de IA"
+        ],
+        "en": [
+          "Virtual receptionists",
+          "Calendar assistants",
+          "Real estate agents",
+          "Integration with AI APIs"
+        ],
+        "pt-BR": [
+          "Recepcionistas virtuais",
+          "Assistentes de agenda",
+          "Agentes imobiliários",
+          "Integração com APIs de IA"
+        ]
+      },
       "keywords": [
         "Inteligencia Artificial",
         "Agentes autónomos",
@@ -287,16 +697,71 @@
         "OpenAI",
         "Prompt Engineering"
       ],
+      "keywordsTranslations": {
+        "es": [
+          "Inteligencia Artificial",
+          "Agentes autónomos",
+          "Python",
+          ".NET",
+          "OpenAI",
+          "Prompt Engineering"
+        ],
+        "en": [
+          "Artificial Intelligence",
+          "Autonomous agents",
+          "Python",
+          ".NET",
+          "OpenAI",
+          "Prompt Engineering"
+        ],
+        "pt-BR": [
+          "Inteligência Artificial",
+          "Agentes autônomos",
+          "Python",
+          ".NET",
+          "OpenAI",
+          "Prompt Engineering"
+        ]
+      },
       "startDate": "2024-08",
       "roles": [
         "Ingeniero de IA",
         "Desarrollador principal"
-      ],      "entity": "M&L AI SpA",
+      ],
+      "rolesTranslations": {
+        "es": [
+          "Ingeniero de IA",
+          "Desarrollador principal"
+        ],
+        "en": [
+          "AI Engineer",
+          "Lead Developer"
+        ],
+        "pt-BR": [
+          "Engenheiro de IA",
+          "Desenvolvedor principal"
+        ]
+      },
+      "entity": "M&L AI SpA",
+      "entityTranslations": {
+        "es": "M&L AI SpA",
+        "en": "M&L AI SpA",
+        "pt-BR": "M&L AI SpA"
+      },
       "type": "application"
-    },
-    {
+    },    {
       "name": "Venta Crédito Hipotecario (VCH)",
+      "nameTranslations": {
+        "es": "Venta Crédito Hipotecario (VCH)",
+        "en": "Mortgage Credit Sales (VCH)",
+        "pt-BR": "Venda de Crédito Hipotecário (VCH)"
+      },
       "description": "Sistema de gestión y venta de créditos hipotecarios para Banco Estado",
+      "descriptionTranslations": {
+        "es": "Sistema de gestión y venta de créditos hipotecarios para Banco Estado",
+        "en": "Management and sales system for mortgage loans for Banco Estado",
+        "pt-BR": "Sistema de gestão e venda de créditos hipotecários para o Banco Estado"
+      },
       "url": "https://www.bancoestado.cl/",
       "image": "https://www.bancoestado.cl/content/experience-fragments/bancoestado-public/cl/es/site/header/master/_jcr_content/root/container/header/Logo.coreimg.svg/1744236803751/logo-170-bancoestado.svg",
       "highlights": [
@@ -304,101 +769,363 @@
         "Coordinación del proyecto",
         "Integración con sistemas bancarios"
       ],
+      "highlightsTranslations": {
+        "es": [
+          "Análisis, desarrollo y mejora del sistema",
+          "Coordinación del proyecto",
+          "Integración con sistemas bancarios"
+        ],
+        "en": [
+          "Analysis, development, and improvement of the system",
+          "Project coordination",
+          "Integration with banking systems"
+        ],
+        "pt-BR": [
+          "Análise, desenvolvimento e melhoria do sistema",
+          "Coordenação do projeto",
+          "Integração com sistemas bancários"
+        ]
+      },
       "keywords": [
         "Visual Basic",
         ".NET",
         "SQL Server",
         "Aplicaciones Bancarias"
       ],
+      "keywordsTranslations": {
+        "es": [
+          "Visual Basic",
+          ".NET",
+          "SQL Server",
+          "Aplicaciones Bancarias"
+        ],
+        "en": [
+          "Visual Basic",
+          ".NET",
+          "SQL Server",
+          "Banking Applications"
+        ],
+        "pt-BR": [
+          "Visual Basic",
+          ".NET",
+          "SQL Server",
+          "Aplicações Bancárias"
+        ]
+      },
       "startDate": "2007",
       "endDate": "2018",
       "roles": [
         "Coordinador",
         "Analista desarrollador"
       ],
+      "rolesTranslations": {
+        "es": [
+          "Coordinador",
+          "Analista desarrollador"
+        ],
+        "en": [
+          "Coordinator",
+          "Developer Analyst"
+        ],
+        "pt-BR": [
+          "Coordenador",
+          "Analista desenvolvedor"
+        ]
+      },
       "entity": "Banco Estado",
+      "entityTranslations": {
+        "es": "Banco Estado",
+        "en": "Banco Estado",
+        "pt-BR": "Banco Estado"
+      },
       "type": "application"
-    },
-    {
+    },    {
       "name": "Seguros FIDENS",
+      "nameTranslations": {
+        "es": "Seguros FIDENS",
+        "en": "FIDENS Insurance",
+        "pt-BR": "Seguros FIDENS"
+      },
       "description": "Implementación de WebServices externos para obtención y venta de seguros",
+      "descriptionTranslations": {
+        "es": "Implementación de WebServices externos para obtención y venta de seguros",
+        "en": "Implementation of external WebServices for insurance acquisition and sales",
+        "pt-BR": "Implementação de WebServices externos para obtenção e venda de seguros"
+      },
       "url": "https://www.bancoestado.cl/",
       "image": "https://www.bancoestado.cl/content/experience-fragments/bancoestado-public/cl/es/site/header/master/_jcr_content/root/container/header/Logo.coreimg.svg/1744236803751/logo-170-bancoestado.svg",
       "highlights": [
         "Integración con plataforma PU-VCH",
         "Desarrollo de WebServices"
       ],
+      "highlightsTranslations": {
+        "es": [
+          "Integración con plataforma PU-VCH",
+          "Desarrollo de WebServices"
+        ],
+        "en": [
+          "Integration with PU-VCH platform",
+          "WebServices development"
+        ],
+        "pt-BR": [
+          "Integração com plataforma PU-VCH",
+          "Desenvolvimento de WebServices"
+        ]
+      },
       "keywords": [
         ".NET",
         "WebServices",
         "Integración",
         "Seguros"
       ],
+      "keywordsTranslations": {
+        "es": [
+          ".NET",
+          "WebServices",
+          "Integración",
+          "Seguros"
+        ],
+        "en": [
+          ".NET",
+          "WebServices",
+          "Integration",
+          "Insurance"
+        ],
+        "pt-BR": [
+          ".NET",
+          "WebServices",
+          "Integração",
+          "Seguros"
+        ]
+      },
       "startDate": "2015",
       "endDate": "2016",
       "roles": [
         "Jefe de proyecto",
         "Desarrollador"
       ],
+      "rolesTranslations": {
+        "es": [
+          "Jefe de proyecto",
+          "Desarrollador"
+        ],
+        "en": [
+          "Project Manager",
+          "Developer"
+        ],
+        "pt-BR": [
+          "Gerente de projeto",
+          "Desenvolvedor"
+        ]
+      },
       "entity": "Banco Estado",
+      "entityTranslations": {
+        "es": "Banco Estado",
+        "en": "Banco Estado",
+        "pt-BR": "Banco Estado"
+      },
       "type": "application"
-    },
-    {
+    },    {
       "name": "Matriz Documental",
+      "nameTranslations": {
+        "es": "Matriz Documental",
+        "en": "Document Matrix",
+        "pt-BR": "Matriz Documental"
+      },
       "description": "Sistema para generar múltiples documentos PDF consumiendo WebServices",
+      "descriptionTranslations": {
+        "es": "Sistema para generar múltiples documentos PDF consumiendo WebServices",
+        "en": "System to generate multiple PDF documents by consuming WebServices",
+        "pt-BR": "Sistema para gerar múltiplos documentos PDF consumindo WebServices"
+      },
       "url": "https://www.bancoestado.cl/",
       "image": "https://www.bancoestado.cl/content/experience-fragments/bancoestado-public/cl/es/site/header/master/_jcr_content/root/container/header/Logo.coreimg.svg/1744236803751/logo-170-bancoestado.svg",
       "highlights": [
         "Integración con FileNet",
         "Generación dinámica de documentos"
       ],
+      "highlightsTranslations": {
+        "es": [
+          "Integración con FileNet",
+          "Generación dinámica de documentos"
+        ],
+        "en": [
+          "Integration with FileNet",
+          "Dynamic document generation"
+        ],
+        "pt-BR": [
+          "Integração com FileNet",
+          "Geração dinâmica de documentos"
+        ]
+      },
       "keywords": [
         ".NET",
         "WebServices",
         "FileNet",
         "PDF"
       ],
+      "keywordsTranslations": {
+        "es": [
+          ".NET",
+          "WebServices",
+          "FileNet",
+          "PDF"
+        ],
+        "en": [
+          ".NET",
+          "WebServices",
+          "FileNet",
+          "PDF"
+        ],
+        "pt-BR": [
+          ".NET",
+          "WebServices",
+          "FileNet",
+          "PDF"
+        ]
+      },
       "startDate": "2016",
       "endDate": "2018",
       "roles": [
         "Jefe de proyecto",
         "Desarrollador"
       ],
+      "rolesTranslations": {
+        "es": [
+          "Jefe de proyecto",
+          "Desarrollador"
+        ],
+        "en": [
+          "Project Manager",
+          "Developer"
+        ],
+        "pt-BR": [
+          "Gerente de projeto",
+          "Desenvolvedor"
+        ]
+      },
       "entity": "Banco Estado",
+      "entityTranslations": {
+        "es": "Banco Estado",
+        "en": "Banco Estado",
+        "pt-BR": "Banco Estado"
+      },
       "type": "application"
-    },
-    {
+    },    {
       "name": "Carpeta Electrónica Cliente",
+      "nameTranslations": {
+        "es": "Carpeta Electrónica Cliente",
+        "en": "Electronic Client Folder",
+        "pt-BR": "Pasta Eletrônica do Cliente"
+      },
       "description": "Sistema que permite visualizar documentos generados para productos contratados por clientes",
+      "descriptionTranslations": {
+        "es": "Sistema que permite visualizar documentos generados para productos contratados por clientes",
+        "en": "System that allows viewing documents generated for products contracted by customers",
+        "pt-BR": "Sistema que permite visualizar documentos gerados para produtos contratados por clientes"
+      },
       "url": "https://www.bancoestado.cl/",
       "image": "https://www.bancoestado.cl/content/experience-fragments/bancoestado-public/cl/es/site/header/master/_jcr_content/root/container/header/Logo.coreimg.svg/1744236803751/logo-170-bancoestado.svg",
       "highlights": [
         "Visualización de documentos",
         "Integración con sistemas bancarios"
       ],
+      "highlightsTranslations": {
+        "es": [
+          "Visualización de documentos",
+          "Integración con sistemas bancarios"
+        ],
+        "en": [
+          "Document visualization",
+          "Integration with banking systems"
+        ],
+        "pt-BR": [
+          "Visualização de documentos",
+          "Integração com sistemas bancários"
+        ]
+      },
       "keywords": [
         ".NET",
         "Gestión Documental",
         "Interfaz de Usuario"
       ],
+      "keywordsTranslations": {
+        "es": [
+          ".NET",
+          "Gestión Documental",
+          "Interfaz de Usuario"
+        ],
+        "en": [
+          ".NET",
+          "Document Management",
+          "User Interface"
+        ],
+        "pt-BR": [
+          ".NET",
+          "Gestão Documental",
+          "Interface do Usuário"
+        ]
+      },
       "startDate": "2016",
       "endDate": "2018",
       "roles": [
         "Jefe de proyecto",
         "Desarrollador"
       ],
+      "rolesTranslations": {
+        "es": [
+          "Jefe de proyecto",
+          "Desarrollador"
+        ],
+        "en": [
+          "Project Manager",
+          "Developer"
+        ],
+        "pt-BR": [
+          "Gerente de projeto",
+          "Desenvolvedor"
+        ]
+      },
       "entity": "Banco Estado",
+      "entityTranslations": {
+        "es": "Banco Estado",
+        "en": "Banco Estado",
+        "pt-BR": "Banco Estado"
+      },
       "type": "application"
-    },
-    {
+    },    {
       "name": "ActiveX Digitalización de Imágenes",
+      "nameTranslations": {
+        "es": "ActiveX Digitalización de Imágenes",
+        "en": "ActiveX Image Scanning",
+        "pt-BR": "ActiveX Digitalização de Imagens"
+      },
       "description": "Componente para el manejo de obtención de imágenes por escáner",
+      "descriptionTranslations": {
+        "es": "Componente para el manejo de obtención de imágenes por escáner",
+        "en": "Component for handling image acquisition through scanners",
+        "pt-BR": "Componente para o gerenciamento de obtenção de imagens por scanner"
+      },
       "url": "https://www.bancoestado.cl/",
       "image": "https://www.bancoestado.cl/content/experience-fragments/bancoestado-public/cl/es/site/header/master/_jcr_content/root/container/header/Logo.coreimg.svg/1744236803751/logo-170-bancoestado.svg",
       "highlights": [
         "Implementación con especificaciones WIA y TWAIN",
         "Desarrollo de componentes ActiveX"
       ],
+      "highlightsTranslations": {
+        "es": [
+          "Implementación con especificaciones WIA y TWAIN",
+          "Desarrollo de componentes ActiveX"
+        ],
+        "en": [
+          "Implementation with WIA and TWAIN specifications",
+          "Development of ActiveX components"
+        ],
+        "pt-BR": [
+          "Implementação com especificações WIA e TWAIN",
+          "Desenvolvimento de componentes ActiveX"
+        ]
+      },
       "keywords": [
         "ActiveX",
         "Visual Basic",
@@ -406,34 +1133,129 @@
         "TWAIN",
         "Digitalización"
       ],
+      "keywordsTranslations": {
+        "es": [
+          "ActiveX",
+          "Visual Basic",
+          "WIA",
+          "TWAIN",
+          "Digitalización"
+        ],
+        "en": [
+          "ActiveX",
+          "Visual Basic",
+          "WIA",
+          "TWAIN",
+          "Scanning"
+        ],
+        "pt-BR": [
+          "ActiveX",
+          "Visual Basic",
+          "WIA",
+          "TWAIN",
+          "Digitalização"
+        ]
+      },
       "startDate": "2016",
       "endDate": "2018",
       "roles": [
         "Desarrollador principal"
       ],
+      "rolesTranslations": {
+        "es": [
+          "Desarrollador principal"
+        ],
+        "en": [
+          "Lead Developer"
+        ],
+        "pt-BR": [
+          "Desenvolvedor principal"
+        ]
+      },
       "entity": "Banco Estado",
+      "entityTranslations": {
+        "es": "Banco Estado",
+        "en": "Banco Estado",
+        "pt-BR": "Banco Estado"
+      },
       "type": "component"
-    },
-    {
+    },    {
       "name": "Estructurante de Crédito",
+      "nameTranslations": {
+        "es": "Estructurante de Crédito",
+        "en": "Credit Structuring",
+        "pt-BR": "Estruturante de Crédito"
+      },
       "description": "Sistema para evaluación comercial de clientes pyme para otorgamiento de créditos",
+      "descriptionTranslations": {
+        "es": "Sistema para evaluación comercial de clientes pyme para otorgamiento de créditos",
+        "en": "System for commercial evaluation of small business clients for credit granting",
+        "pt-BR": "Sistema para avaliação comercial de clientes PME para concessão de créditos"
+      },
       "url": "https://www.bancoestado.cl/",
       "image": "https://www.bancoestado.cl/content/experience-fragments/bancoestado-public/cl/es/site/header/master/_jcr_content/root/container/header/Logo.coreimg.svg/1744236803751/logo-170-bancoestado.svg",
       "highlights": [
         "Evaluación de clientes",
         "Ampliación de cupos de crédito"
       ],
+      "highlightsTranslations": {
+        "es": [
+          "Evaluación de clientes",
+          "Ampliación de cupos de crédito"
+        ],
+        "en": [
+          "Client evaluation",
+          "Credit limit expansion"
+        ],
+        "pt-BR": [
+          "Avaliação de clientes",
+          "Ampliação de limites de crédito"
+        ]
+      },
       "keywords": [
         ".NET",
         "Análisis Crediticio",
         "PYME"
       ],
+      "keywordsTranslations": {
+        "es": [
+          ".NET",
+          "Análisis Crediticio",
+          "PYME"
+        ],
+        "en": [
+          ".NET",
+          "Credit Analysis",
+          "SME"
+        ],
+        "pt-BR": [
+          ".NET",
+          "Análise Creditícia",
+          "PME"
+        ]
+      },
       "startDate": "2015",
       "endDate": "2018",
       "roles": [
         "Jefe de proyecto"
       ],
+      "rolesTranslations": {
+        "es": [
+          "Jefe de proyecto"
+        ],
+        "en": [
+          "Project Manager"
+        ],
+        "pt-BR": [
+          "Gerente de projeto"
+        ]
+      },
       "entity": "Banco Estado",
+      "entityTranslations": {
+        "es": "Banco Estado",
+        "en": "Banco Estado",
+        "pt-BR": "Banco Estado"
+      },
       "type": "application"
     },
     {
@@ -544,27 +1366,76 @@
       "entity": "Clínica Santiago",
       "type": "application"
     }
-  ],
-  "interests": [
+  ],  "interests": [
     {
       "name": "Tecnologías Emergentes",
+      "nameTranslations": {
+        "es": "Tecnologías Emergentes",
+        "en": "Emerging Technologies",
+        "pt-BR": "Tecnologias Emergentes"
+      },
       "keywords": [
         "Inteligencia Artificial",
         "Machine Learning",
         "Automatización",
         "Cloud Computing"
-      ]
+      ],
+      "keywordsTranslations": {
+        "es": [
+          "Inteligencia Artificial",
+          "Machine Learning",
+          "Automatización",
+          "Cloud Computing"
+        ],
+        "en": [
+          "Artificial Intelligence",
+          "Machine Learning",
+          "Automation",
+          "Cloud Computing"
+        ],
+        "pt-BR": [
+          "Inteligência Artificial",
+          "Machine Learning",
+          "Automação",
+          "Computação em Nuvem"
+        ]
+      }
     },
     {
       "name": "Arquitectura de Software",
+      "nameTranslations": {
+        "es": "Arquitectura de Software",
+        "en": "Software Architecture",
+        "pt-BR": "Arquitetura de Software"
+      },
       "keywords": [
         "Microservicios",
         "Clean Architecture",
         "Design Patterns",
         "Escalabilidad"
-      ]
+      ],
+      "keywordsTranslations": {
+        "es": [
+          "Microservicios",
+          "Clean Architecture",
+          "Design Patterns",
+          "Escalabilidad"
+        ],
+        "en": [
+          "Microservices",
+          "Clean Architecture",
+          "Design Patterns",
+          "Scalability"
+        ],
+        "pt-BR": [
+          "Microsserviços",
+          "Clean Architecture",
+          "Padrões de Design",
+          "Escalabilidade"
+        ]
+      }
     }
-  ],  "meta": {
+  ],"meta": {
     "canonical": "https://andresmmartinez.com/resume.json",
     "version": "v1.0.0",
     "lastModified": "2025-06-17T00:00:00.000Z"
