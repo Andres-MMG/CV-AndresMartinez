@@ -1,14 +1,14 @@
 {
-  "name": "vite-react-typescript-starter",
+  "name": "cv-andres-martinez",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test-build": "vite build && vite preview"
+    "start": "vite preview --host"
   },
   "dependencies": {
     "@jsonresume/schema": "^1.2.1",
