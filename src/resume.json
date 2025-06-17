@@ -1,0 +1,568 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Andrés Martínez Gajardo",
+    "label": "Ingeniero de Software Senior",
+    "image": "/Andres.png",
+    "email": "andres.martinez.g@gmail.com",
+    "phone": "+56 9 55155418",
+    "url": "https://andresmmartinez.com",
+    "summary": "Ingeniero de Software Senior con más de 20 años de experiencia liderando el desarrollo y mantenimiento de soluciones robustas en el ecosistema .NET. Experto en la gestión de proyectos críticos bajo metodologías ágiles (Scrum) y en la aplicación de buenas prácticas como Clean Architecture y principios SOLID. Recientemente enfocado en la integración de IA y desarrollo de agentes autónomos.",
+    "location": {
+      "city": "Santiago",
+      "countryCode": "CL",
+      "region": "Región Metropolitana"
+    },
+    "birthDate": "1978-07-20",
+    "nationality": "Chilena",
+    "maritalStatus": "Casado",
+    "nationalId": "13.479.065-2",
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "Andres-MMG",
+        "url": "https://github.com/Andres-MMG"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "andres-martinez-gajardo",
+        "url": "https://www.linkedin.com/in/andres-m-martinez-g"
+      },
+      {
+        "network": "Portfolio",
+        "username": "andresmmartinez",
+        "url": "https://andresmmartinez.com"
+      }
+    ]
+  },  "work": [
+    {
+      "name": "M&L AI SpA",
+      "position": "Ingeniero de Software / Jefe de Proyectos AI",
+      "location": "Santiago, Chile",
+      "description": "Empresa especializada en soluciones de inteligencia artificial y agentes autónomos",
+      "startDate": "2024-08",
+      "summary": "Diseño e implementación de arquitecturas y flujos de trabajo para soluciones de IA, desarrollo de agentes autónomos especializados e integración de microservicios con tecnologías emergentes.",
+      "highlights": [
+        "Diseñé e implementé arquitecturas y flujos de trabajo para soluciones de IA, utilizando Docker, VPS, Coolify, Git y servicios de hosting",
+        "Desarrollé agentes autónomos para diversas funciones: recepcionistas virtuales, asistentes de agenda, lectura de correos, recordatorios, agentes inmobiliarios y recepcionistas médicos",
+        "Integré microservicios en .NET C# y Python con interfaces en React, optimizando la experiencia de usuario",
+        "Implementé soluciones utilizando tecnologías emergentes como Retell.ai, VAPI, Zadarma, PocketBase, PostgreSQL, Redis, Google Drive, Google Calendar, ElevenLabs y ChatGPT",
+        "Investigué y apliqué técnicas de prompt engineering y .NET Semantic Kernel para el procesamiento semántico y entendimiento del lenguaje natural"
+      ]
+    },
+    {
+      "name": "Sermaluc",
+      "position": "Ingeniero de Software / Jefe de Proyectos TI",
+      "location": "Santiago, Chile",
+      "description": "Empresa de consultoría tecnológica especializada en soluciones bancarias y financieras",
+      "startDate": "2010-11",
+      "endDate": "2024-07",
+      "summary": "Liderazgo en el desarrollo de soluciones críticas para instituciones bancarias, incluyendo aplicaciones web, APIs REST y sistemas de visualización en tiempo real.",
+      "highlights": [
+        "Banco Central: Lideré el desarrollo y mantenimiento de la 'App Regional' con .NET y Blazor WebAssembly, enfocada en la visualización de estadísticas en tiempo real",
+        "Banco Itaú: Diseñé e implementé soluciones internas en .NET / .NET Core. Elaboré flujos para la plataforma MUREX y desarrollé APIs REST para la automatización de procesos bancarios",
+        "Banco Estado: Participé en proyectos clave como Venta Crédito Hipotecario (VCH), Seguros FIDENS, Matriz Documental, Carpeta Electrónica Cliente",
+        "Lideré y coordiné equipos de desarrollo, promoviendo la adopción de prácticas DevOps y control de versiones con Git"
+      ]
+    },
+    {
+      "name": "Newsystems Ltda.",
+      "position": "Analista Desarrollador",
+      "location": "Santiago, Chile",
+      "startDate": "2001",
+      "endDate": "2007",
+      "summary": "Desarrollo y mantenimiento de plataformas web y sistemas especializados.",
+      "highlights": [
+        "Desarrollo y mantenimiento de plataformas como ColWeb© y módulos para Escuelas de Conductores"
+      ]
+    },
+    {
+      "name": "Salas Consultoría y Asociados",
+      "position": "Jefe de Proyecto y Analista",
+      "location": "Santiago, Chile",
+      "startDate": "2000",
+      "endDate": "2001",
+      "summary": "Implementación de soluciones de inteligencia de negocios para clientes corporativos.",
+      "highlights": [
+        "Implementación de pilotos de Digital Dashboard y Cubos OLAP para clientes como Microsoft Chile y Compaq"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad de Ciencias de la Informática (UCINF)",
+      "area": "Análisis de Sistemas",
+      "studyType": "Analista de Sistemas",
+      "startDate": "2009",
+      "endDate": "2010"
+    },
+    {
+      "institution": "Centro Politécnico Particular N° 2 de Ñuñoa",
+      "area": "Programación de Sistemas Computacionales",
+      "studyType": "Técnico",
+      "startDate": "1993",
+      "endDate": "1996"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Desarrollo Backend .NET",
+      "level": "Expert",
+      "keywords": [
+        ".NET 8",
+        ".NET Core",
+        ".NET Framework",
+        "C#",
+        "MVC",
+        "Web API",
+        "Microservicios",
+        "Entity Framework Core",
+        "Dapper",
+        "SignalR"
+      ]
+    },
+    {
+      "name": "Arquitectura y Mejores Prácticas",
+      "level": "Expert",
+      "keywords": [
+        "Clean Architecture",
+        "SOLID",
+        "Clean Code",
+        "APIs REST",
+        "Microservicios",
+        "Design Patterns"
+      ]
+    },
+    {
+      "name": "Desarrollo Frontend",
+      "level": "Advanced",
+      "keywords": [
+        "Blazor WebAssembly",
+        "React",
+        "HTML5",
+        "JavaScript",
+        "TypeScript",
+        "CSS3"
+      ]
+    },
+    {
+      "name": "Bases de Datos",
+      "level": "Advanced",
+      "keywords": [
+        "SQL Server",
+        "PostgreSQL",
+        "PocketBase",
+        "Redis",
+        "Entity Framework",
+        "Dapper"
+      ]
+    },
+    {
+      "name": "DevOps y Cloud",
+      "level": "Advanced",
+      "keywords": [
+        "Docker",
+        "docker-compose",
+        "GitLab CI/CD",
+        "Git",
+        "Coolify",
+        "AWS",
+        "Google Cloud",
+        "VPS"
+      ]
+    },
+    {
+      "name": "Inteligencia Artificial",
+      "level": "Intermediate",
+      "keywords": [
+        "Prompt Engineering",
+        ".NET Semantic Kernel",
+        "n8n",
+        "Flowise",
+        "OpenAI API",
+        "ChatGPT",
+        "ElevenLabs",
+        "Retell.ai",
+        "VAPI"
+      ]
+    },
+    {
+      "name": "Desarrollo Móvil",
+      "level": "Intermediate",
+      "keywords": [
+        ".NET MAUI",
+        "Cross-platform development"
+      ]
+    },
+    {
+      "name": "Metodologías",
+      "level": "Advanced",
+      "keywords": [
+        "Agile",
+        "Scrum",
+        "DevOps",
+        "Liderazgo técnico",
+        "Gestión de equipos"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Técnico (lectura y escritura)"
+    }
+  ],
+  "projects": [    {
+      "name": "App Regional - Banco Central",
+      "description": "Aplicación web desarrollada en .NET y Blazor WebAssembly para visualización de estadísticas en tiempo real",
+      "url": "https://si3.bcentral.cl/estadisticas/Principal1/enlaces/aplicaciones/app_regional.html",
+      "image": "/App-regional.jpeg",
+      "highlights": [
+        "Desarrollo con .NET y Blazor WebAssembly",
+        "Visualización de estadísticas en tiempo real",
+        "Prototipo en .NET MAUI"
+      ],
+      "keywords": [
+        ".NET",
+        "Blazor WebAssembly",
+        ".NET MAUI",
+        "Tiempo real"
+      ],
+      "startDate": "2010",
+      "endDate": "2024",
+      "roles": [
+        "Líder técnico",
+        "Desarrollador principal"
+      ],
+      "entity": "Banco Central de Chile",
+      "type": "application"
+    },    {
+      "name": "Sistemas Bancarios Itaú",
+      "description": "Soluciones internas en .NET / .NET Core para automatización de procesos bancarios",
+      "url": "https://www.itau.cl/",
+      "image": "https://images.contentstack.io/v3/assets/blt5ad73eb84118beed/blt57d15edbce1391b5/67e6e6f38af2cc6f75ffe699/header_logo.svg",
+      "highlights": [
+        "Flujos para plataforma MUREX",
+        "APIs REST para automatización",
+        "Integración con sistemas legacy"
+      ],
+      "keywords": [
+        ".NET Core",
+        "MUREX",
+        "APIs REST",
+        "Automatización"
+      ],
+      "startDate": "2010",
+      "endDate": "2024",
+      "roles": [
+        "Arquitecto de software",
+        "Desarrollador senior"
+      ],
+      "entity": "Banco Itaú",
+      "type": "application"
+    },    {
+      "name": "Agentes Autónomos de IA",
+      "description": "Desarrollo de agentes autónomos especializados para diversas funciones empresariales",
+      "url": "https://inteliai.cl/",
+      "image": "https://inteliai.cl/logo.png",
+      "highlights": [
+        "Recepcionistas virtuales",
+        "Asistentes de agenda",
+        "Agentes inmobiliarios",
+        "Integración con APIs de IA"
+      ],
+      "keywords": [
+        "Inteligencia Artificial",
+        "Agentes autónomos",
+        "Python",
+        ".NET",
+        "OpenAI",
+        "Prompt Engineering"
+      ],
+      "startDate": "2024-08",
+      "roles": [
+        "Ingeniero de IA",
+        "Desarrollador principal"
+      ],      "entity": "M&L AI SpA",
+      "type": "application"
+    },
+    {
+      "name": "Venta Crédito Hipotecario (VCH)",
+      "description": "Sistema de gestión y venta de créditos hipotecarios para Banco Estado",
+      "url": "https://www.bancoestado.cl/",
+      "image": "https://www.bancoestado.cl/content/experience-fragments/bancoestado-public/cl/es/site/header/master/_jcr_content/root/container/header/Logo.coreimg.svg/1744236803751/logo-170-bancoestado.svg",
+      "highlights": [
+        "Análisis, desarrollo y mejora del sistema",
+        "Coordinación del proyecto",
+        "Integración con sistemas bancarios"
+      ],
+      "keywords": [
+        "Visual Basic",
+        ".NET",
+        "SQL Server",
+        "Aplicaciones Bancarias"
+      ],
+      "startDate": "2007",
+      "endDate": "2018",
+      "roles": [
+        "Coordinador",
+        "Analista desarrollador"
+      ],
+      "entity": "Banco Estado",
+      "type": "application"
+    },
+    {
+      "name": "Seguros FIDENS",
+      "description": "Implementación de WebServices externos para obtención y venta de seguros",
+      "url": "https://www.bancoestado.cl/",
+      "image": "https://www.bancoestado.cl/content/experience-fragments/bancoestado-public/cl/es/site/header/master/_jcr_content/root/container/header/Logo.coreimg.svg/1744236803751/logo-170-bancoestado.svg",
+      "highlights": [
+        "Integración con plataforma PU-VCH",
+        "Desarrollo de WebServices"
+      ],
+      "keywords": [
+        ".NET",
+        "WebServices",
+        "Integración",
+        "Seguros"
+      ],
+      "startDate": "2015",
+      "endDate": "2016",
+      "roles": [
+        "Jefe de proyecto",
+        "Desarrollador"
+      ],
+      "entity": "Banco Estado",
+      "type": "application"
+    },
+    {
+      "name": "Matriz Documental",
+      "description": "Sistema para generar múltiples documentos PDF consumiendo WebServices",
+      "url": "https://www.bancoestado.cl/",
+      "image": "https://www.bancoestado.cl/content/experience-fragments/bancoestado-public/cl/es/site/header/master/_jcr_content/root/container/header/Logo.coreimg.svg/1744236803751/logo-170-bancoestado.svg",
+      "highlights": [
+        "Integración con FileNet",
+        "Generación dinámica de documentos"
+      ],
+      "keywords": [
+        ".NET",
+        "WebServices",
+        "FileNet",
+        "PDF"
+      ],
+      "startDate": "2016",
+      "endDate": "2018",
+      "roles": [
+        "Jefe de proyecto",
+        "Desarrollador"
+      ],
+      "entity": "Banco Estado",
+      "type": "application"
+    },
+    {
+      "name": "Carpeta Electrónica Cliente",
+      "description": "Sistema que permite visualizar documentos generados para productos contratados por clientes",
+      "url": "https://www.bancoestado.cl/",
+      "image": "https://www.bancoestado.cl/content/experience-fragments/bancoestado-public/cl/es/site/header/master/_jcr_content/root/container/header/Logo.coreimg.svg/1744236803751/logo-170-bancoestado.svg",
+      "highlights": [
+        "Visualización de documentos",
+        "Integración con sistemas bancarios"
+      ],
+      "keywords": [
+        ".NET",
+        "Gestión Documental",
+        "Interfaz de Usuario"
+      ],
+      "startDate": "2016",
+      "endDate": "2018",
+      "roles": [
+        "Jefe de proyecto",
+        "Desarrollador"
+      ],
+      "entity": "Banco Estado",
+      "type": "application"
+    },
+    {
+      "name": "ActiveX Digitalización de Imágenes",
+      "description": "Componente para el manejo de obtención de imágenes por escáner",
+      "url": "https://www.bancoestado.cl/",
+      "image": "https://www.bancoestado.cl/content/experience-fragments/bancoestado-public/cl/es/site/header/master/_jcr_content/root/container/header/Logo.coreimg.svg/1744236803751/logo-170-bancoestado.svg",
+      "highlights": [
+        "Implementación con especificaciones WIA y TWAIN",
+        "Desarrollo de componentes ActiveX"
+      ],
+      "keywords": [
+        "ActiveX",
+        "Visual Basic",
+        "WIA",
+        "TWAIN",
+        "Digitalización"
+      ],
+      "startDate": "2016",
+      "endDate": "2018",
+      "roles": [
+        "Desarrollador principal"
+      ],
+      "entity": "Banco Estado",
+      "type": "component"
+    },
+    {
+      "name": "Estructurante de Crédito",
+      "description": "Sistema para evaluación comercial de clientes pyme para otorgamiento de créditos",
+      "url": "https://www.bancoestado.cl/",
+      "image": "https://www.bancoestado.cl/content/experience-fragments/bancoestado-public/cl/es/site/header/master/_jcr_content/root/container/header/Logo.coreimg.svg/1744236803751/logo-170-bancoestado.svg",
+      "highlights": [
+        "Evaluación de clientes",
+        "Ampliación de cupos de crédito"
+      ],
+      "keywords": [
+        ".NET",
+        "Análisis Crediticio",
+        "PYME"
+      ],
+      "startDate": "2015",
+      "endDate": "2018",
+      "roles": [
+        "Jefe de proyecto"
+      ],
+      "entity": "Banco Estado",
+      "type": "application"
+    },
+    {
+      "name": "WORKFLOW Bitácora",
+      "description": "Sistema para control de etapas en sucursales Sin Centro de Curse de Banco Estado",
+      "url": "https://www.bancoestado.cl/",
+      "image": "https://www.bancoestado.cl/content/experience-fragments/bancoestado-public/cl/es/site/header/master/_jcr_content/root/container/header/Logo.coreimg.svg/1744236803751/logo-170-bancoestado.svg",
+      "highlights": [
+        "Desarrollo de workflow",
+        "Control de procesos"
+      ],
+      "keywords": [
+        "Visual Basic",
+        "Workflow",
+        "Procesos bancarios"
+      ],
+      "startDate": "2008",
+      "endDate": "2010",
+      "roles": [
+        "Analista desarrollador"
+      ],
+      "entity": "Banco Estado",
+      "type": "application"
+    },
+    {
+      "name": "SACU Bansander AFP",
+      "description": "Servicio de Autenticación de Clave Usuaria contra PreviRed",
+      "highlights": [
+        "Implementación de validación de claves",
+        "Desarrollo de WebServices"
+      ],
+      "keywords": [
+        ".NET",
+        "VB6",
+        "WebServices",
+        "Autenticación"
+      ],
+      "startDate": "2007",
+      "endDate": "2010",
+      "roles": [
+        "Analista",
+        "Desarrollador"
+      ],
+      "entity": "Bansander AFP",
+      "type": "service"
+    },
+    {
+      "name": "ColWeb®",
+      "description": "Sistema de administración de colegios (Colegio en la Web)",
+      "highlights": [
+        "Desarrollo de plataforma educativa",
+        "Explotado por ServiPyme (filial Banco del Desarrollo)"
+      ],
+      "keywords": [
+        "Web",
+        "Educación",
+        "Administración"
+      ],
+      "startDate": "2001",
+      "endDate": "2007",
+      "roles": [
+        "Analista",
+        "Desarrollador"
+      ],
+      "entity": "Newsystems Ltda.",
+      "type": "application"
+    },
+    {
+      "name": "OteWeb Escuelas de Conductores",
+      "description": "Sistema especializado para escuelas de conductores",
+      "highlights": [
+        "Desarrollo de sistema de gestión",
+        "Implementación para Elicar San Felipe"
+      ],
+      "keywords": [
+        "Web",
+        "Gestión",
+        "Educación vial"
+      ],
+      "startDate": "2001",
+      "endDate": "2007",
+      "roles": [
+        "Analista",
+        "Desarrollador"
+      ],
+      "entity": "Elicar San Felipe",
+      "type": "application"
+    },
+    {
+      "name": "Gestión Clínica",
+      "description": "Sistema integral para la administración de clínicas",
+      "highlights": [
+        "Modelado de base de datos SQL Server 7.0",
+        "Desarrollo de módulos de mantenimiento, facturación y bodega",
+        "Reportes con Crystal Reports"
+      ],
+      "keywords": [
+        "Visual Basic 6.0",
+        "SQL Server",
+        "Crystal Reports",
+        "Gestión hospitalaria"
+      ],
+      "startDate": "1999-12",
+      "endDate": "2000-03",
+      "roles": [
+        "Programador"
+      ],
+      "entity": "Clínica Santiago",
+      "type": "application"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Tecnologías Emergentes",
+      "keywords": [
+        "Inteligencia Artificial",
+        "Machine Learning",
+        "Automatización",
+        "Cloud Computing"
+      ]
+    },
+    {
+      "name": "Arquitectura de Software",
+      "keywords": [
+        "Microservicios",
+        "Clean Architecture",
+        "Design Patterns",
+        "Escalabilidad"
+      ]
+    }
+  ],  "meta": {
+    "canonical": "https://andresmmartinez.com/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2025-06-17T00:00:00.000Z"
+  }
+}

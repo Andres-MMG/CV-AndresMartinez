@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useContext } from 'react';
 import { LanguageContext } from '../context/LanguageContext';
+import { useResumeData } from '../hooks/useResumeData';
 
 export const Hero: React.FC = () => {
   const { t, locale } = useContext(LanguageContext);
+  const { resume, loading, getFullName, getCurrentJob } = useResumeData();
   const typewriterRef = useRef<HTMLSpanElement>(null);
   
   useEffect(() => {
@@ -36,37 +38,46 @@ export const Hero: React.FC = () => {
     timerId = window.setTimeout(type, 1000);
     return () => clearTimeout(timerId);
   }, [locale]);
+  const currentJob = getCurrentJob();
+
+  if (loading) {
+    return (
+      <section id="home" className="min-h-screen flex items-center justify-center pt-16 px-4">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-400 mx-auto mb-4"></div>
+          <p className="text-gray-400">Cargando información...</p>
+        </div>
+      </section>
+    );
+  }
   
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-16 px-4">
       <div className="container mx-auto max-w-5xl">
         <div className="text-center md:text-left">
           <h1 className="text-4xl md:text-6xl font-bold mb-2" data-aos="fade-down">
-            Andrés Martínez Gajardo
+            {getFullName()}
           </h1>
           <div className="h-12 mb-6" data-aos="fade-up" data-aos-delay="300">
             <h2 className="text-xl md:text-3xl text-gray-300">
               <span ref={typewriterRef} className="text-blue-400"></span>
               <span className="animate-pulse">|</span>
-            </h2>
-          </div>
-          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto md:mx-0 mb-8" data-aos="fade-up" data-aos-delay="500">
-            {t('hero.description')}
+            </h2>          </div>
+          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto md:mx-0 mb-4" data-aos="fade-up" data-aos-delay="500">
+            {resume.basics?.summary || t('hero.description')}
           </p>
-          <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start" data-aos="fade-up" data-aos-delay="700">
-            <a
-              href="#projects"
-              className="px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-700 rounded-md font-semibold text-white hover:from-blue-700 hover:to-indigo-800 transition-all shadow-lg hover:shadow-blue-500/25"
-            >
-              {t('hero.buttons.projects')}
-            </a>
-            <a
-              href="#contact"
-              className="px-6 py-3 bg-gray-800 rounded-md font-semibold text-white hover:bg-gray-700 transition-all border border-gray-700"
-            >
-              {t('hero.buttons.contact')}
-            </a>
-          </div>
+          
+          {/* Información del trabajo actual */}
+          {currentJob && (
+            <div className="mb-6" data-aos="fade-up" data-aos-delay="600">
+              <p className="text-blue-400 font-semibold">
+                {currentJob.position} @ {currentJob.name}
+              </p>
+              <p className="text-gray-400 text-sm">
+                {currentJob.location} • {currentJob.startDate ? new Date(currentJob.startDate).getFullYear() : ''} - Presente
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </section>

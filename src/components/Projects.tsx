@@ -1,59 +1,77 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { ExternalLink } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import { useResumeData } from '../hooks/useResumeData';
 
 interface Project {
   id: string;
-  image: string;
-  url: string;
+  name: string;
+  description: string;
+  image?: string;
+  url?: string;
   tags: string[];
   featured?: boolean;
 }
 
 export const Projects: React.FC = () => {
   const { t } = useLanguage();
+  const { resume, getFeaturedProjects } = useResumeData();
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
 
-  const projects: Project[] = [
-    {
-      id: 'inteliai',
-      image: '/logoInteliAi.png',
-      url: 'https://inteliai.cl',
-      tags: ['AI', 'React', 'TypeScript','Tailwind', 'MercadoPago', 'Landing Page'],
-      featured: true
-    },
-    {
-      id: 'dashboard',
-      image: '/DashBoardInteliAI.png',
-      url: 'https://dashboard.inteliai.cl',
-      tags: ['React', 'TypeScript', 'Tailwind', 'Supabase', 'PostgreSQL', 'Redis', 'Dashboard', 'Analytics'],
-      featured: true
-    },
-    {
-      id: 'arsperpetuum',
-      image: '/arsperpetuum.webp',
-      url: 'https://arsperpetuum.cl',
-      tags: ['WordPress', 'WooCommerce', 'E-commerce','MercadoPago'],
-    },
-    {
-      id: 'okfugas',
-      image: '/okfugas.png',
-      url: 'https://www.okfugas.cl',
-      tags: ['WordPress', 'PHP', 'Scheduling', 'AI'],
-    },
-    {
-      id: 'drhouse',
-      image: '/dr-house.png',
-      url: 'https://dr-house.cl',
-      tags: ['React', 'TypeScript', 'PHP', 'WordPress', 'AI', 'Chatbots'],
-    }
-  ];
+  // Project images mapping
+  const projectImages: Record<string, string> = {
+    'inteliai': '/logoInteliAi.png',
+    'dashboard': '/DashBoardInteliAI.png',
+    'arsperpetuum': '/arsperpetuum.webp',
+    'okfugas': '/okfugas.png',
+    'drhouse': '/dr-house.png',
+    'app-regional-banco-central': '/App-regional.jpeg',
+    'sistemas-bancarios-itaú': 'https://images.contentstack.io/v3/assets/blt5ad73eb84118beed/blt57d15edbce1391b5/67e6e6f38af2cc6f75ffe699/header_logo.svg',
+    'agentes-autónomos-de-ia': 'https://inteliai.cl/logo.png',
+    // Default image if none is specified
+    'default': '/torectangulo.png'
+  };
 
-  const allTags = Array.from(new Set(projects.flatMap(project => project.tags)));
+  // Get projects from resume and augment them with additional properties
+  const projects: Project[] = useMemo(() => {
+    return (resume.projects || []).map(project => {
+      // Generate an id from the project name
+      const id = project.name?.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '') || '';
+      
+      // Determine if a project is featured (first 2 projects)
+      const featured = project.highlights?.some(highlight => 
+        highlight.toLowerCase().includes('featured') || highlight.toLowerCase().includes('destacado')
+      );
 
-  const filteredProjects = selectedTag 
-    ? projects.filter(project => project.tags.includes(selectedTag))
-    : projects;
+      // Get tags from keywords or create a default set
+      const tags = project.keywords || [];
+
+      // Obtener la URL de la imagen, priorizando la del proyecto
+      const imageUrl = project.image || projectImages[id] || projectImages.default;
+      
+      return {
+        id,
+        name: project.name || 'Proyecto sin nombre',
+        description: project.description || '',
+        // Usar la imagen del JSON si está definida, sino buscar en el mapeo, y si no usar default
+        image: imageUrl,
+        // Usar la URL del JSON si está definida, sino usar #
+        url: project.url || '#',
+        tags,
+        featured
+      };
+    });
+  }, [resume.projects]);
+
+  const allTags = useMemo(() => {
+    return Array.from(new Set(projects.flatMap(project => project.tags)));
+  }, [projects]);
+
+  const filteredProjects = useMemo(() => {
+    return selectedTag 
+      ? projects.filter(project => project.tags.includes(selectedTag))
+      : projects;
+  }, [selectedTag, projects]);
 
   return (
     <section id="projects" className="py-20 px-4">
@@ -108,7 +126,7 @@ export const Projects: React.FC = () => {
                       {/* Title first for better mobile display */}
                       <div className="p-4 bg-gray-800 border-b border-gray-700">
                         <h4 className="text-lg md:text-xl font-bold text-white flex items-center">
-                          {t(`projects.items.${project.id}.title`)}
+                          {project.name}
                           <ExternalLink className="ml-2 w-3 h-3 md:w-4 md:h-4 opacity-70" />
                         </h4>
                       </div>
@@ -117,15 +135,17 @@ export const Projects: React.FC = () => {
                       <div className="h-40 overflow-hidden relative">
                         <img 
                           src={project.image} 
-                          alt={t(`projects.items.${project.id}.title`)} 
-                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                          alt={project.name} 
+                          className={`w-full h-full transition-transform duration-500 group-hover:scale-110 ${
+                            project.image?.startsWith('http') ? 'object-contain p-2' : 'object-cover'
+                          }`}
                         />
                       </div>
                       
                       {/* Description container */}
                       <div className="p-4 flex flex-col flex-grow bg-gradient-to-b from-gray-800 to-gray-850">
                         <p className="text-gray-300 font-medium mb-4 text-sm md:text-base flex-grow">
-                          {t(`projects.items.${project.id}.description`)}
+                          {project.description}
                         </p>
                         <div className="flex flex-wrap gap-2 mt-auto">
                           {project.tags.map((tag, i) => (
@@ -160,7 +180,7 @@ export const Projects: React.FC = () => {
                   {/* Title first for better mobile display */}
                   <div className="p-3 bg-gray-800 border-b border-gray-700">
                     <h4 className="text-base md:text-lg font-bold text-white flex items-center">
-                      {t(`projects.items.${project.id}.title`)}
+                      {project.name}
                       <ExternalLink className="ml-2 w-3 h-3 opacity-70" />
                     </h4>
                   </div>
@@ -169,8 +189,10 @@ export const Projects: React.FC = () => {
                   <div className="h-28 sm:h-32 overflow-hidden relative">
                     <img 
                       src={project.image} 
-                      alt={t(`projects.items.${project.id}.title`)} 
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      alt={project.name} 
+                      className={`w-full h-full transition-transform duration-500 group-hover:scale-110 ${
+                        project.image?.startsWith('http') ? 'object-contain p-2' : 'object-cover'
+                      }`}
                     />
                   </div>
                   
@@ -178,7 +200,7 @@ export const Projects: React.FC = () => {
                   <div className="p-3 flex flex-col flex-grow bg-gradient-to-b from-gray-800 to-gray-850">
                     <p className="text-gray-300 text-xs md:text-sm mb-4 line-clamp-2 md:line-clamp-3 flex-grow" 
                       dangerouslySetInnerHTML={{ 
-                        __html: t(`projects.items.${project.id}.description`).replace(
+                        __html: project.description.replace(
                           /(gestión|inventario|sistema|agenda|facturación|detección|IA|chatbot)/g, 
                           '<span class="font-semibold text-white">$1</span>'
                         ) 

@@ -1,21 +1,36 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useMemo } from 'react';
 import { LanguageContext } from '../context/LanguageContext';
+import { useResumeData } from '../hooks/useResumeData';
 import NoSkillsMessage from './NoSkillsMessage';
 
-type SkillCategory = 'languages' | 'frameworks' | 'tools' | 'devops' | 'database' | 'ai';
-
-interface Skill {
+interface SkillItem {
   name: string;
-  proficiency: number; // 1-5
-  category: SkillCategory;
+  proficiency: number;
+  category: string;
   isNew?: boolean;
+  keywords?: string[];
 }
 
 export const Skills: React.FC = () => {
   const { t } = useContext(LanguageContext);
-  const [activeCategory, setActiveCategory] = useState<SkillCategory | 'all'>('all');
+  const { resume } = useResumeData();
+  const [activeCategory, setActiveCategory] = useState<string>('all');
   const [showAll, setShowAll] = useState(false);
   const skillsLimit = 12; // Número de habilidades a mostrar inicialmente
+
+  const allSkills = resume.skills || [];
+
+  // Función para obtener la etiqueta de proficiencia
+  const getProficiencyLevel = (level?: string): number => {
+    switch (level?.toLowerCase()) {
+      case 'expert': return 5;
+      case 'advanced': return 4;
+      case 'intermediate': return 3;
+      case 'beginner': return 2;
+      case 'basic': return 1;
+      default: return 3; // Default intermediate
+    }
+  };
 
   // Función para obtener la etiqueta de proficiencia traducida
   const getProficiencyLabel = (level: number): string => {
@@ -28,87 +43,56 @@ export const Skills: React.FC = () => {
       default: return t('skills.levels.unknown');
     }
   };
+  // Obtener las categorías desde las habilidades del JSON
+  const categories = useMemo(() => {
+    // Extraer las categorías de las habilidades
+    const skillCategories = allSkills.map(skill => skill.name || '');
+    // Agregar la categoría "all" al principio
+    return [
+      { id: 'all', label: t('skills.categories.all') },
+      ...skillCategories.map(category => ({ 
+        id: category, 
+        label: category 
+      }))
+    ];
+  }, [allSkills, t]);
 
-  const skills: Skill[] = [
-    { name: 'C#', proficiency: 5, category: 'languages' },
-    { name: 'TypeScript', proficiency: 4, category: 'languages', isNew: true },
-    { name: 'JavaScript', proficiency: 4, category: 'languages' },
-    { name: 'PHP', proficiency: 3, category: 'languages', isNew: true },
-    { name: 'Python', proficiency: 3, category: 'languages', isNew: true },
-    { name: 'Visual Basic', proficiency: 5, category: 'languages' },
-    
-    { name: '.NET', proficiency: 5, category: 'frameworks' },
-    { name: 'ASP.NET', proficiency: 5, category: 'frameworks' },
-    { name: 'Blazor', proficiency: 4, category: 'frameworks' },
-    { name: 'React', proficiency: 4, category: 'frameworks', isNew: true },
-    { name: 'Tailwind CSS', proficiency: 4, category: 'frameworks', isNew: true },
-    { name: 'WordPress', proficiency: 3, category: 'frameworks', isNew: true },
-    { name: 'WooCommerce', proficiency: 3, category: 'frameworks', isNew: true },
-    
-    { name: 'SQL Server', proficiency: 5, category: 'database' },
-    { name: 'PostgreSQL', proficiency: 4, category: 'database', isNew: true },
-    { name: 'SQLite', proficiency: 3, category: 'database', isNew: true },
-    { name: 'Redis', proficiency: 3, category: 'database', isNew: true },
-    { name: 'Supabase', proficiency: 3, category: 'database', isNew: true },
-    
-    { name: 'Docker', proficiency: 4, category: 'devops', isNew: true },
-    { name: 'Git', proficiency: 4, category: 'devops' },
-    { name: 'CI/CD', proficiency: 3, category: 'devops' },
-    { name: 'Coolify', proficiency: 4, category: 'devops', isNew: true },
-    { name: 'Caprover', proficiency: 3, category: 'devops', isNew: true },
-    
-    { name: 'ChatGPT', proficiency: 5, category: 'ai', isNew: true },
-    { name: 'GitHub Copilot', proficiency: 5, category: 'ai', isNew: true },
-    { name: 'Prompt Engineering', proficiency: 4, category: 'ai', isNew: true },
-    { name: 'Agent Creation', proficiency: 4, category: 'ai', isNew: true },
-    { name: 'Chatbots con IA', proficiency: 5, category: 'ai', isNew: true },
-    { name: 'Formularios Inteligentes', proficiency: 4, category: 'ai', isNew: true },
-    { name: 'n8n', proficiency: 4, category: 'tools', isNew: true },
-    { name: 'Flowise', proficiency: 4, category: 'tools', isNew: true },
-    { name: 'Evolution-API', proficiency: 4, category: 'tools', isNew: true },
-    { name: 'Strapi', proficiency: 3, category: 'tools', isNew: true },
-    { name: 'Odoo', proficiency: 3, category: 'tools', isNew: true },
-  ];
+  // Convertir las habilidades del JSON al formato que espera el componente
+  const processedSkills: SkillItem[] = useMemo(() => {
+    return allSkills.flatMap(skill => {
+      const category = skill.name || '';
+      const proficiencyLevel = getProficiencyLevel(skill.level);
+      
+      // Si hay keywords, crear una habilidad para cada keyword
+      return (skill.keywords || []).map(keyword => ({
+        name: keyword,
+        proficiency: proficiencyLevel,
+        category: category,
+        keywords: skill.keywords
+      }));
+    });
+  }, [allSkills]);
 
-  const categories = [
-    { id: 'all', label: 'Todas' },
-    { id: 'languages', label: 'Lenguajes' },
-    { id: 'frameworks', label: 'Frameworks' },
-    { id: 'database', label: 'Bases de Datos' },
-    { id: 'devops', label: 'DevOps' },
-    { id: 'ai', label: 'IA' },
-    { id: 'tools', label: 'Herramientas' },
-  ];
-
-  // Ordenar las habilidades: primero lenguajes, luego expertos, después nuevos, finalmente por nivel
-  const sortedSkills = [...skills].sort((a, b) => {
-    // Primero, priorizar la categoría "languages"
-    if (a.category === 'languages' && b.category !== 'languages') return -1;
-    if (a.category !== 'languages' && b.category === 'languages') return 1;
-    
-    // Segundo, dentro de cada categoría, mostrar primero habilidades de nivel experto (5)
-    if (a.proficiency === 5 && b.proficiency !== 5) return -1;
-    if (a.proficiency !== 5 && b.proficiency === 5) return 1;
-    
-    // Tercero, ordenar por nuevos
-    if (a.isNew && !b.isNew) return -1;
-    if (!a.isNew && b.isNew) return 1;
-    
-    // Por último, ordenar por nivel de experiencia (de mayor a menor)
-    return b.proficiency - a.proficiency;
-  });
+  // Ordenar las habilidades: primero por nivel de proficiencia
+  const sortedSkills = useMemo(() => {
+    return [...processedSkills].sort((a, b) => {
+      // Ordenar por nivel de experiencia (de mayor a menor)
+      return b.proficiency - a.proficiency;
+    });
+  }, [processedSkills]);
 
   // Filtrar por categoría
-  const categoryFilteredSkills = activeCategory === 'all' 
-    ? sortedSkills
-    : sortedSkills.filter(skill => skill.category === activeCategory);
+  const categoryFilteredSkills = useMemo(() => {
+    return activeCategory === 'all' 
+      ? sortedSkills
+      : sortedSkills.filter(skill => skill.category === activeCategory);
+  }, [sortedSkills, activeCategory]);
   
   // Limitar la cantidad de habilidades mostradas si showAll es false
   const filteredSkills = showAll ? categoryFilteredSkills : categoryFilteredSkills.slice(0, skillsLimit);
   
   // Determinar si hay más habilidades para mostrar
   const hasMoreSkills = categoryFilteredSkills.length > skillsLimit;
-
   return (
     <section id="skills" className="py-20 px-4 bg-gray-800/50">
       <div className="container mx-auto max-w-5xl">
@@ -119,17 +103,17 @@ export const Skills: React.FC = () => {
         </h2>
 
         <div className="flex justify-center flex-wrap gap-2 mb-12" data-aos="fade-up" data-aos-delay="100">
-          {categories.map(cat => (
+          {categories.map((cat) => (
             <button
               key={cat.id}
-              onClick={() => { setActiveCategory(cat.id as SkillCategory | 'all'); setShowAll(false); }}
+              onClick={() => { setActiveCategory(cat.id); setShowAll(false); }}
               className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${
                 activeCategory === cat.id
                   ? 'bg-blue-600 text-white shadow-lg'
                   : 'bg-gray-800 text-gray-400 hover:text-white hover:bg-gray-700'
               }`}
             >
-              {t(`skills.categories.${cat.id}`)}
+              {cat.label}
             </button>
           ))}
         </div>
@@ -138,9 +122,10 @@ export const Skills: React.FC = () => {
          {filteredSkills.length > 0 ? (
            filteredSkills.map((skill, index) => (
              <div 
-                key={index}
+                key={`${skill.category}-${skill.name}-${index}`}
                 data-aos="fade-up" 
-                data-aos-delay={150 + (index % 9) * 50}                className="bg-gray-800 rounded-lg p-4 border border-gray-700 hover:border-blue-500/30 transition-all shadow-md hover:shadow-blue-500/10"
+                data-aos-delay={150 + (index % 9) * 50}
+                className="bg-gray-800 rounded-lg p-4 border border-gray-700 hover:border-blue-500/30 transition-all shadow-md hover:shadow-blue-500/10"
               >
                 <div className="flex justify-between items-center mb-2">
                   <h3 className="font-semibold text-white flex items-center">
@@ -150,7 +135,8 @@ export const Skills: React.FC = () => {
                         new
                       </span>
                     )}
-                  </h3>                  {skill.proficiency === 5 ? (
+                  </h3>
+                  {skill.proficiency === 5 ? (
                     <span className="text-xs text-blue-400 font-semibold">
                       {getProficiencyLabel(skill.proficiency)}
                     </span>
@@ -159,7 +145,9 @@ export const Skills: React.FC = () => {
                       {getProficiencyLabel(skill.proficiency)}
                     </span>
                   )}
-                </div>                <div className="w-full bg-gray-700 rounded-full h-2.5 mt-1.5">                  {skill.proficiency === 5 ? (
+                </div>
+                <div className="w-full bg-gray-700 rounded-full h-2.5 mt-1.5">
+                  {skill.proficiency === 5 ? (
                     <div className="relative">
                       {/* Capa de brillo base */}
                       <div 

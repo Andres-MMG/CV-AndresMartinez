@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, MapPin, Phone, AlertCircle, CheckCircle2, Loader2 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import { useResumeData } from '../hooks/useResumeData';
 
 interface FormData {
   name: string;
@@ -20,6 +21,8 @@ interface FormErrors {
 
 export const Contact: React.FC = () => {
   const { t } = useLanguage();
+  const { resume } = useResumeData();
+  
   const [formData, setFormData] = useState<FormData>({
     name: '',
     phone: '',
@@ -31,6 +34,15 @@ export const Contact: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
   const [showError, setShowError] = useState(false);
+  
+  // Obtenemos los datos de contacto del resume
+  const contactInfo = {
+    email: resume.basics?.email || 'andres@inteliai.cl',
+    phone: resume.basics?.phone || '+56 9 55155418',
+    location: resume.basics?.location?.city 
+      ? `${resume.basics?.location?.city}, ${resume.basics?.location?.countryCode}`
+      : 'Santiago, Chile'
+  };
 
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {};
@@ -157,7 +169,7 @@ export const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-sm text-gray-400 mb-1">{t('contact.phone')}</h4>
-                  <p className="text-gray-200">+56 9 55155418</p>
+                  <p className="text-gray-200">{contactInfo.phone}</p>
                 </div>
               </div>
 
@@ -167,7 +179,7 @@ export const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-sm text-gray-400 mb-1">{t('contact.email')}</h4>
-                  <p className="text-gray-200">andres@inteliai.cl</p>
+                  <p className="text-gray-200">{contactInfo.email}</p>
                 </div>
               </div>
 
@@ -177,7 +189,7 @@ export const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-sm text-gray-400 mb-1">{t('contact.location')}</h4>
-                  <p className="text-gray-200">Santiago, Chile</p>
+                  <p className="text-gray-200">{contactInfo.location}</p>
                 </div>
               </div>
             </div>

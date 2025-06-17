@@ -1,9 +1,14 @@
 import React from 'react';
 import { Github, Linkedin, Twitter } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import { useResumeData } from '../hooks/useResumeData';
 
 export const Footer: React.FC = () => {
   const { t } = useLanguage();
+  const { getSocialProfiles } = useResumeData();
+  
+  // Get profile information
+  const profiles = getSocialProfiles();
   
   return (
     <footer className="py-8 px-4 bg-gray-900 border-t border-gray-800">
@@ -25,33 +30,40 @@ export const Footer: React.FC = () => {
           </div>
           
           <div className="flex space-x-4">
-            <a 
-              href="https://github.com/Andres-MMG"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
-              aria-label="Github"
-            >
-              <Github className="w-5 h-5" />
-            </a>
-            <a 
-              href="https://www.linkedin.com/in/andres-m-martinez-g"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
-              aria-label="LinkedIn"
-            >
-              <Linkedin className="w-5 h-5" />
-            </a>
-            <a 
-              href="https://x.com/Andres_MMG"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
-              aria-label="Twitter"
-            >
-              <Twitter className="w-5 h-5" />
-            </a>
+            {profiles.map((profile, index) => {
+              let Icon;
+              let ariaLabel;
+              
+              switch(profile.network?.toLowerCase()) {
+                case 'github':
+                  Icon = Github;
+                  ariaLabel = 'Github';
+                  break;
+                case 'linkedin':
+                  Icon = Linkedin;
+                  ariaLabel = 'LinkedIn';
+                  break;
+                case 'twitter':
+                  Icon = Twitter;
+                  ariaLabel = 'Twitter';
+                  break;
+                default:
+                  return null; // Skip unsupported networks
+              }
+              
+              return (
+                <a 
+                  key={index}
+                  href={profile.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors"
+                  aria-label={ariaLabel}
+                >
+                  <Icon className="w-5 h-5" />
+                </a>
+              );
+            }).filter(Boolean)}
           </div>
         </div>
       </div>

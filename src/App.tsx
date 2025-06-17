@@ -19,11 +19,12 @@ function App() {
     }`}>
       <ParticleBackground />
       <div className="relative z-10">
-        <Header />
+        <Header />        
         <main>
-          <Hero />
-          <About />
-          <Experience />
+          <Hero />          
+          <div className="container mx-auto px-4 py-8">
+            <About />
+          </div>          <Experience />
           <Education />
           <Skills />
           <Projects />
