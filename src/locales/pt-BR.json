@@ -7,8 +7,7 @@
     "projects": "Projetos",
     "contact": "Contato",
     "cvPrint": "CV para Impressão"
-  },
-  "about": {
+  },  "about": {
     "title": "Sobre mim",
     "subtitle": "Engenheiro de Software & Empreendedor",
     "paragraph1": "Com mais de 20 anos de experiência em desenvolvimento de software, evoluí desde construir soluções bancárias até fundar minha própria empresa de tecnologia.",
@@ -17,8 +16,16 @@
     "email": "Email:",
     "phone": "Telefone:",
     "location": "Localização:",
-    "availability": "Disponibilidade:"
-  },  "skills": {
+    "website": "Site:",
+    "downloadJSON": "Baixar JSON Resume",
+    "birthDate": "Data de nascimento:",
+    "nationality": "Nacionalidade:",
+    "maritalStatus": "Estado civil:",
+    "nationalId": "RG/CPF:",
+    "present": "Presente",
+    "availability": "Disponibilidade:",
+    "profiles": "Redes e Perfis"
+  },"skills": {
     "noSkills": "Nenhuma habilidade nesta categoria",
     "selectCategory": "Selecione outra categoria para ver mais habilidades",
     "title": "Habilidades Técnicas",
@@ -64,8 +71,21 @@
       "tech": "Tecnologia"
     },
     "showMore": "Ver mais experiência",
-    "showLess": "Ver menos experiência"
-  },  "education": {
+    "showLess": "Ver menos experiência",
+    "viewAllExperiences": "Ver todas as experiências",
+    "viewLessExperiences": "Ver menos experiências",
+    "summary": "Resumo de Experiência",
+    "stats": {
+      "companies": "Empresas",
+      "years": "Anos exp.",
+      "current": "Atual",
+      "achievements": "Conquistas"
+    },
+    "mainAchievements": "Principais conquistas",
+    "viewAll": "Ver todos",
+    "viewLess": "Ver menos",
+    "visitWebsite": "Visitar site de"
+  },"education": {
     "title": "Educação",
     "systemsAnalyst": {
       "period": "2009 - 2010",
@@ -81,6 +101,8 @@
     "title": "Meus Projetos",
     "filterAll": "Todos",
     "featuredProjects": "Projetos Destacados",
+    "viewAll": "Ver todos",
+    "viewLess": "Ver menos",
     "items": {
       "inteliai": {
         "title": "InteliAI",

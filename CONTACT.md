@@ -36,7 +36,7 @@ Disponible para trabajo presencial, remoto o híbrido
 - Actividad de desarrollo reciente
 
 ### LinkedIn
-👔 **[linkedin.com/in/andres-martinez-gajardo](https://www.linkedin.com/in/andres-m-martinez-g)**
+👔 **[linkedin.com/in/andres-m-martinez-g](https://www.linkedin.com/in/andres-m-martinez-g)**
 - Historial profesional completo
 - Recomendaciones y endorsements
 - Actualizaciones de carrera

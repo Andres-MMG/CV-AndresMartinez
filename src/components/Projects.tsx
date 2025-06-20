@@ -17,6 +17,10 @@ export const Projects: React.FC = () => {
   const { t } = useLanguage();
   const { resume, getFeaturedProjects } = useResumeData();
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
+  const [showAll, setShowAll] = useState<boolean>(false); // Estado para controlar el mostrar todos los proyectos
+  
+  // Número de proyectos a mostrar inicialmente (sin contar destacados)
+  const initialProjectCount = 6;
 
   // Project images mapping
   const projectImages: Record<string, string> = {
@@ -169,6 +173,7 @@ export const Projects: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects
             .filter(project => !project.featured || selectedTag !== null)
+            .slice(0, showAll ? undefined : initialProjectCount) // Mostrar todos o solo los iniciales
             .map((project, index) => (
               <div 
                 key={index}
@@ -224,6 +229,18 @@ export const Projects: React.FC = () => {
               </div>
             ))}
         </div>
+        
+        {/* Botón para Ver todos/Ver menos */}
+        {filteredProjects.filter(project => !project.featured || selectedTag !== null).length > initialProjectCount && (
+          <div className="text-center mt-8" data-aos="fade-up" data-aos-delay="200">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-700 rounded-md font-semibold text-white hover:from-blue-700 hover:to-indigo-800 transition-all shadow-lg hover:shadow-blue-500/25"
+            >
+              {showAll ? t('projects.viewLess') : `${t('projects.viewAll')} (${filteredProjects.filter(project => !project.featured || selectedTag !== null).length})`}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

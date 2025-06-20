@@ -10,11 +10,10 @@
     "image": "/Andres.png","email": "andres.martinez.g@gmail.com",
     "phone": "+56 9 55155418",
     "url": "https://andresmmartinez.com",
-    "summary": "Ingeniero de Software Senior con más de 20 años de experiencia liderando el desarrollo y mantenimiento de soluciones robustas en el ecosistema .NET. Experto en la gestión de proyectos críticos bajo metodologías ágiles (Scrum) y en la aplicación de buenas prácticas como Clean Architecture y principios SOLID. Recientemente enfocado en la integración de IA y desarrollo de agentes autónomos.",
-    "summaryTranslations": {
-      "es": "Ingeniero de Software Senior con más de 20 años de experiencia liderando el desarrollo y mantenimiento de soluciones robustas en el ecosistema .NET. Experto en la gestión de proyectos críticos bajo metodologías ágiles (Scrum) y en la aplicación de buenas prácticas como Clean Architecture y principios SOLID. Recientemente enfocado en la integración de IA y desarrollo de agentes autónomos.",
-      "en": "Senior Software Engineer with over 20 years of experience leading the development and maintenance of robust solutions in the .NET ecosystem. Expert in managing critical projects under agile methodologies (Scrum) and applying best practices such as Clean Architecture and SOLID principles. Recently focused on AI integration and autonomous agent development.",
-      "pt-BR": "Engenheiro de Software Sênior com mais de 20 anos de experiência liderando o desenvolvimento e manutenção de soluções robustas no ecossistema .NET. Especialista na gestão de projetos críticos sob metodologias ágeis (Scrum) e na aplicação de boas práticas como Clean Architecture e princípios SOLID. Recentemente focado na integração de IA e desenvolvimento de agentes autônomos."
+    "summary": "Ingeniero de Software Senior con más de 20 años de experiencia liderando el desarrollo y mantenimiento de soluciones robustas en el ecosistema .NET. Experto en la gestión de proyectos críticos bajo metodologías ágiles (Scrum) y en la aplicación de buenas prácticas como Clean Architecture y principios SOLID. Recientemente enfocado en la integración de IA y desarrollo de agentes autónomos. Especialista en Vibe Coding, un enfoque innovador donde se expresa la intención en lenguaje natural y la IA genera el código correspondiente.",
+    "summaryTranslations": {      "es": "Ingeniero de Software Senior con más de 20 años de experiencia liderando el desarrollo y mantenimiento de soluciones robustas en el ecosistema .NET. Experto en la gestión de proyectos críticos bajo metodologías ágiles (Scrum) y en la aplicación de buenas prácticas como Clean Architecture y principios SOLID. Recientemente enfocado en la integración de IA y desarrollo de agentes autónomos. Especialista en Vibe Coding, un enfoque innovador donde se expresa la intención en lenguaje natural y la IA genera el código correspondiente.",
+      "en": "Senior Software Engineer with over 20 years of experience leading the development and maintenance of robust solutions in the .NET ecosystem. Expert in managing critical projects under agile methodologies (Scrum) and applying best practices such as Clean Architecture and SOLID principles. Recently focused on AI integration and autonomous agent development. Specialist in Vibe Coding, an innovative approach where intention is expressed in natural language and AI generates the corresponding code.",
+      "pt-BR": "Engenheiro de Software Sênior com mais de 20 anos de experiência liderando o desenvolvimento e manutenção de soluções robustas no ecossistema .NET. Especialista na gestão de projetos críticos sob metodologias ágeis (Scrum) e na aplicação de boas práticas como Clean Architecture e princípios SOLID. Recentemente focado na integração de IA e desenvolvimento de agentes autônomos. Especialista em Vibe Coding, uma abordagem inovadora onde a intenção é expressa em linguagem natural e a IA gera o código correspondente."
     },
     "location": {
       "city": "Santiago",
@@ -23,7 +22,6 @@
     },
     "birthDate": "1978-07-20",
     "nationality": "Chilena",
-    "maritalStatus": "Casado",
     "nationalId": "13.479.065-2",
     "profiles": [
       {
@@ -366,30 +364,118 @@
           "Padrões de Design"
         ]
       }
-    },
-    {
+    },    {
       "name": "Desarrollo Frontend",
+      "nameTranslations": {
+        "es": "Desarrollo Frontend",
+        "en": "Frontend Development", 
+        "pt-BR": "Desenvolvimento Frontend"
+      },
       "level": "Advanced",
       "keywords": [
-        "Blazor WebAssembly",
         "React",
-        "HTML5",
+        "React Native",
         "JavaScript",
         "TypeScript",
-        "CSS3"
-      ]
-    },
-    {
+        "Tailwind CSS",
+        "Blazor WebAssembly",
+        "HTML5",
+        "CSS3",
+        "Gatsby",
+        "Vibe Coding"
+      ],
+      "keywordsTranslations": {
+        "es": [
+          "React",
+          "React Native", 
+          "JavaScript",
+          "TypeScript",
+          "Tailwind CSS",
+          "Blazor WebAssembly",
+          "HTML5",
+          "CSS3",
+          "Gatsby",
+          "Vibe Coding"
+        ],
+        "en": [
+          "React",
+          "React Native",
+          "JavaScript", 
+          "TypeScript",
+          "Tailwind CSS",
+          "Blazor WebAssembly",
+          "HTML5",
+          "CSS3",
+          "Gatsby",
+          "Vibe Coding"
+        ],
+        "pt-BR": [
+          "React",
+          "React Native",
+          "JavaScript",
+          "TypeScript", 
+          "Tailwind CSS",
+          "Blazor WebAssembly",
+          "HTML5",
+          "CSS3",
+          "Gatsby",
+          "Vibe Coding"
+        ]
+      }
+    },    {
       "name": "Bases de Datos",
+      "nameTranslations": {
+        "es": "Bases de Datos",
+        "en": "Databases",
+        "pt-BR": "Bancos de Dados"
+      },
       "level": "Advanced",
       "keywords": [
         "SQL Server",
         "PostgreSQL",
-        "PocketBase",
+        "Supabase",
         "Redis",
         "Entity Framework",
-        "Dapper"
-      ]
+        "Dapper",
+        "PocketBase",
+        "n8n Database",
+        "SQL"
+      ],
+      "keywordsTranslations": {
+        "es": [
+          "SQL Server",
+          "PostgreSQL",
+          "Supabase",
+          "Redis",
+          "Entity Framework",
+          "Dapper",
+          "PocketBase",
+          "Base de datos n8n",
+          "SQL"
+        ],
+        "en": [
+          "SQL Server",
+          "PostgreSQL", 
+          "Supabase",
+          "Redis",
+          "Entity Framework",
+          "Dapper",
+          "PocketBase",
+          "n8n Database",
+          "SQL"
+        ],
+        "pt-BR": [
+          "SQL Server",
+          "PostgreSQL",
+          "Supabase",
+          "Redis",
+          "Entity Framework",
+          "Dapper",
+          "PocketBase",
+          "Banco de dados n8n",
+          "SQL"
+        ]
+      }
     },
     {
       "name": "DevOps y Cloud",
@@ -404,9 +490,80 @@
         "Google Cloud",
         "VPS"
       ]
+    },    {
+      "name": "Stack Tecnológico Común",
+      "nameTranslations": {
+        "es": "Stack Tecnológico Común",
+        "en": "Common Technology Stack",
+        "pt-BR": "Stack Tecnológico Comum"
+      },
+      "level": "Expert",
+      "keywords": [
+        "React (Web y Mobile)",
+        "Tailwind CSS",
+        "Supabase (PostgreSQL)",
+        "Redis",
+        "n8n",
+        "Docker",
+        "GitLab CI/CD",
+        "Coolify",
+        "Webhooks",
+        "Clean Architecture",
+        "SOLID",
+        "Vibe Coding"
+      ],
+      "keywordsTranslations": {
+        "es": [
+          "React (Web y Mobile)",
+          "Tailwind CSS",
+          "Supabase (PostgreSQL)",
+          "Redis",
+          "n8n",
+          "Docker",
+          "GitLab CI/CD",
+          "Coolify",
+          "Webhooks",
+          "Arquitectura Limpia",
+          "SOLID",
+          "Vibe Coding"
+        ],
+        "en": [
+          "React (Web and Mobile)",
+          "Tailwind CSS",
+          "Supabase (PostgreSQL)",
+          "Redis",
+          "n8n",
+          "Docker",
+          "GitLab CI/CD",
+          "Coolify",
+          "Webhooks",
+          "Clean Architecture",
+          "SOLID",
+          "Vibe Coding"
+        ],
+        "pt-BR": [
+          "React (Web e Mobile)",
+          "Tailwind CSS",
+          "Supabase (PostgreSQL)",
+          "Redis",
+          "n8n",
+          "Docker",
+          "GitLab CI/CD",
+          "Coolify",
+          "Webhooks",
+          "Arquitetura Limpa",
+          "SOLID",
+          "Vibe Coding"
+        ]
+      }
     },
     {
       "name": "Inteligencia Artificial",
+      "nameTranslations": {
+        "es": "Inteligencia Artificial",
+        "en": "Artificial Intelligence",
+        "pt-BR": "Inteligência Artificial"
+      },
       "level": "Intermediate",
       "keywords": [
         "Prompt Engineering",
@@ -415,10 +572,69 @@
         "Flowise",
         "OpenAI API",
         "ChatGPT",
+        "Claude",
+        "Gemini",
+        "GitHub Copilot",
         "ElevenLabs",
         "Retell.ai",
-        "VAPI"
-      ]
+        "VAPI",
+        "VSCode",
+        "Notebook LLM",
+        "Gemini Studio"
+      ],
+      "keywordsTranslations": {
+        "es": [
+          "Prompt Engineering",
+          ".NET Semantic Kernel",
+          "n8n",
+          "Flowise",
+          "OpenAI API",
+          "ChatGPT",
+          "Claude",
+          "Gemini",
+          "GitHub Copilot",
+          "ElevenLabs",
+          "Retell.ai",
+          "VAPI",
+          "VSCode",
+          "Notebook LLM",
+          "Gemini Studio"
+        ],
+        "en": [
+          "Prompt Engineering",
+          ".NET Semantic Kernel",
+          "n8n",
+          "Flowise",
+          "OpenAI API",
+          "ChatGPT",
+          "Claude",
+          "Gemini",
+          "GitHub Copilot",
+          "ElevenLabs",
+          "Retell.ai",
+          "VAPI",
+          "VSCode",
+          "Notebook LLM",
+          "Gemini Studio"
+        ],
+        "pt-BR": [
+          "Engenharia de Prompt",
+          ".NET Semantic Kernel",
+          "n8n",
+          "Flowise",
+          "OpenAI API",
+          "ChatGPT",
+          "Claude",
+          "Gemini",
+          "GitHub Copilot",
+          "ElevenLabs",
+          "Retell.ai",
+          "VAPI",
+          "VSCode",
+          "Notebook LLM",
+          "Gemini Studio"
+        ]
+      }
     },
     {
       "name": "Desarrollo Móvil",
@@ -558,187 +774,143 @@
         "pt-BR": "Banco Central do Chile"
       },
       "type": "application"
-    },    {
-      "name": "Sistemas Bancarios Itaú",
+    },
+    {
+      "name": "Inteliai.cl",
       "nameTranslations": {
-        "es": "Sistemas Bancarios Itaú",
-        "en": "Itaú Banking Systems",
-        "pt-BR": "Sistemas Bancários Itaú"
-      },
-      "description": "Soluciones internas en .NET / .NET Core para automatización de procesos bancarios",
+        "es": "Inteliai.cl",
+        "en": "Inteliai.cl",
+        "pt-BR": "Inteliai.cl"
+      },      "description": "Plataforma completa de asistentes virtuales IA que automatizan la atención al cliente. Dividida en landing page monetizada con Mercado Pago y dashboard de gestión donde los usuarios pueden crear agentes de IA personalizados con conocimiento específico mediante RAG (Retrieval Augmented Generation). Permite integración multi-canal con WhatsApp, Telegram y widgets web.",
       "descriptionTranslations": {
-        "es": "Soluciones internas en .NET / .NET Core para automatización de procesos bancarios",
-        "en": "Internal solutions in .NET / .NET Core for banking process automation",
-        "pt-BR": "Soluções internas em .NET / .NET Core para automação de processos bancários"
-      },
-      "url": "https://www.itau.cl/",
-      "image": "https://images.contentstack.io/v3/assets/blt5ad73eb84118beed/blt57d15edbce1391b5/67e6e6f38af2cc6f75ffe699/header_logo.svg",
-      "highlights": [
-        "Flujos para plataforma MUREX",
-        "APIs REST para automatización",
-        "Integración con sistemas legacy"
-      ],
-      "highlightsTranslations": {
-        "es": [
-          "Flujos para plataforma MUREX",
-          "APIs REST para automatización",
-          "Integración con sistemas legacy"
-        ],
-        "en": [
-          "Workflows for MUREX platform",
-          "REST APIs for automation",
-          "Integration with legacy systems"
-        ],
-        "pt-BR": [
-          "Fluxos para plataforma MUREX",
-          "APIs REST para automação",
-          "Integração com sistemas legados"
-        ]
-      },
-      "keywords": [
-        ".NET Core",
-        "MUREX",
-        "APIs REST",
-        "Automatización"
-      ],
-      "keywordsTranslations": {
-        "es": [
-          ".NET Core",
-          "MUREX",
-          "APIs REST",
-          "Automatización"
-        ],
-        "en": [
-          ".NET Core",
-          "MUREX",
-          "REST APIs",
-          "Automation"
-        ],
-        "pt-BR": [
-          ".NET Core",
-          "MUREX",
-          "APIs REST",
-          "Automação"
-        ]
-      },
-      "startDate": "2010",
-      "endDate": "2024",
-      "roles": [
-        "Arquitecto de software",
-        "Desarrollador senior"
-      ],
-      "rolesTranslations": {
-        "es": [
-          "Arquitecto de software",
-          "Desarrollador senior"
-        ],
-        "en": [
-          "Software Architect",
-          "Senior Developer"
-        ],
-        "pt-BR": [
-          "Arquiteto de software",
-          "Desenvolvedor senior"
-        ]
-      },
-      "entity": "Banco Itaú",
-      "entityTranslations": {
-        "es": "Banco Itaú",
-        "en": "Itaú Bank",
-        "pt-BR": "Banco Itaú"
-      },
-      "type": "application"
-    },    {
-      "name": "Agentes Autónomos de IA",
-      "nameTranslations": {
-        "es": "Agentes Autónomos de IA",
-        "en": "AI Autonomous Agents",
-        "pt-BR": "Agentes Autônomos de IA"
-      },
-      "description": "Desarrollo de agentes autónomos especializados para diversas funciones empresariales",
-      "descriptionTranslations": {
-        "es": "Desarrollo de agentes autónomos especializados para diversas funciones empresariales",
-        "en": "Development of specialized autonomous agents for various business functions",
-        "pt-BR": "Desenvolvimento de agentes autônomos especializados para diversas funções empresariais"
+        "es": "Plataforma completa de asistentes virtuales IA que automatizan la atención al cliente. Dividida en landing page monetizada con Mercado Pago y dashboard de gestión donde los usuarios pueden crear agentes de IA personalizados con conocimiento específico mediante RAG (Retrieval Augmented Generation). Permite integración multi-canal con WhatsApp, Telegram y widgets web.",
+        "en": "Complete AI virtual assistants platform that automates customer service. Divided into a monetized landing page with Mercado Pago and management dashboard where users can create personalized AI agents with specific knowledge through RAG (Retrieval Augmented Generation). Enables multi-channel integration with WhatsApp, Telegram and web widgets.",
+        "pt-BR": "Plataforma completa de assistentes virtuais IA que automatizam o atendimento ao cliente. Dividida em landing page monetizada com Mercado Pago e dashboard de gestão onde os usuários podem criar agentes de IA personalizados com conhecimento específico através de RAG (Retrieval Augmented Generation). Permite integração multi-canal com WhatsApp, Telegram e widgets web."
       },
       "url": "https://inteliai.cl/",
-      "image": "https://inteliai.cl/logo.png",
-      "highlights": [
-        "Recepcionistas virtuales",
-        "Asistentes de agenda",
-        "Agentes inmobiliarios",
-        "Integración con APIs de IA"
+      "image": "/logoInteliAi.png",      "highlights": [
+        "Landing page monetizada con integración a Mercado Pago",
+        "Dashboard de gestión construido sobre n8n y Supabase Composite", 
+        "Creación de agentes de IA con personalidades customizables",
+        "Sistema RAG para carga de documentos de conocimiento específico",
+        "Integración multi-canal: WhatsApp, Telegram vía Evolution API",
+        "Generación de widgets web instalables con API key",
+        "Módulo de e-commerce con publicación automática en redes sociales",
+        "Sistema de pagos por tokens con Mercado Pago",
+        "Gestión de perfiles de usuario y planes de suscripción"
       ],
       "highlightsTranslations": {
         "es": [
-          "Recepcionistas virtuales",
-          "Asistentes de agenda",
-          "Agentes inmobiliarios",
-          "Integración con APIs de IA"
+          "Landing page monetizada con integración a Mercado Pago",
+          "Dashboard de gestión construido sobre n8n y Supabase Composite",
+          "Creación de agentes de IA con personalidades customizables", 
+          "Sistema RAG para carga de documentos de conocimiento específico",
+          "Integración multi-canal: WhatsApp, Telegram vía Evolution API",
+          "Generación de widgets web instalables con API key",
+          "Módulo de e-commerce con publicación automática en redes sociales",
+          "Sistema de pagos por tokens con Mercado Pago",
+          "Gestión de perfiles de usuario y planes de suscripción"
         ],
         "en": [
-          "Virtual receptionists",
-          "Calendar assistants",
-          "Real estate agents",
-          "Integration with AI APIs"
+          "Monetized landing page with Mercado Pago integration",
+          "Management dashboard built on n8n and Supabase Composite",
+          "Creation of AI agents with customizable personalities",
+          "RAG system for loading specific knowledge documents", 
+          "Multi-channel integration: WhatsApp, Telegram via Evolution API",
+          "Generation of installable web widgets with API key",
+          "E-commerce module with automatic social media publishing",
+          "Token-based payment system with Mercado Pago",
+          "User profile management and subscription plans"
         ],
         "pt-BR": [
-          "Recepcionistas virtuais",
-          "Assistentes de agenda",
-          "Agentes imobiliários",
-          "Integração com APIs de IA"
+          "Landing page monetizada com integração ao Mercado Pago",
+          "Dashboard de gestão construído sobre n8n e Supabase Composite",
+          "Criação de agentes de IA com personalidades customizáveis",
+          "Sistema RAG para carregamento de documentos de conhecimento específico",
+          "Integração multi-canal: WhatsApp, Telegram via Evolution API", 
+          "Geração de widgets web instaláveis com API key",
+          "Módulo de e-commerce com publicação automática em redes sociais",
+          "Sistema de pagamentos por tokens com Mercado Pago",
+          "Gestão de perfis de usuário e planos de assinatura"
         ]
-      },
-      "keywords": [
-        "Inteligencia Artificial",
-        "Agentes autónomos",
-        "Python",
-        ".NET",
-        "OpenAI",
-        "Prompt Engineering"
+      },      "keywords": [
+        "IA",
+        "Asistentes Virtuales",
+        "n8n",
+        "Supabase",
+        "Evolution API",
+        "WhatsApp",
+        "Telegram",
+        "RAG",
+        "Mercado Pago",
+        "React",
+        "Vibe Coding",
+        "Widgets Web",
+        "Multi-canal"
       ],
       "keywordsTranslations": {
         "es": [
-          "Inteligencia Artificial",
-          "Agentes autónomos",
-          "Python",
-          ".NET",
-          "OpenAI",
-          "Prompt Engineering"
+          "IA",
+          "Asistentes Virtuales",
+          "n8n",
+          "Supabase",
+          "Evolution API",
+          "WhatsApp",
+          "Telegram",
+          "RAG",
+          "Mercado Pago",
+          "React",
+          "Vibe Coding",
+          "Widgets Web",
+          "Multi-canal"
         ],
         "en": [
-          "Artificial Intelligence",
-          "Autonomous agents",
-          "Python",
-          ".NET",
-          "OpenAI",
-          "Prompt Engineering"
+          "AI",
+          "Virtual Assistants",
+          "n8n",
+          "Supabase",
+          "Evolution API",
+          "WhatsApp",
+          "Telegram",
+          "RAG",
+          "Mercado Pago",
+          "React",
+          "Vibe Coding",
+          "Web Widgets",
+          "Multi-channel"
         ],
         "pt-BR": [
-          "Inteligência Artificial",
-          "Agentes autônomos",
-          "Python",
-          ".NET",
-          "OpenAI",
-          "Prompt Engineering"
+          "IA",
+          "Assistentes Virtuais",
+          "n8n",
+          "Supabase",
+          "Evolution API",
+          "WhatsApp",
+          "Telegram",
+          "RAG",
+          "Mercado Pago",
+          "React",
+          "Vibe Coding",
+          "Widgets Web",
+          "Multi-canal"
         ]
       },
       "startDate": "2024-08",
       "roles": [
-        "Ingeniero de IA",
+        "Arquitecto de soluciones",
         "Desarrollador principal"
       ],
       "rolesTranslations": {
         "es": [
-          "Ingeniero de IA",
+          "Arquitecto de soluciones",
           "Desarrollador principal"
         ],
         "en": [
-          "AI Engineer",
+          "Solutions Architect",
           "Lead Developer"
         ],
         "pt-BR": [
-          "Engenheiro de IA",
+          "Arquiteto de soluções",
           "Desenvolvedor principal"
         ]
       },
@@ -749,695 +921,837 @@
         "pt-BR": "M&L AI SpA"
       },
       "type": "application"
-    },    {
-      "name": "Venta Crédito Hipotecario (VCH)",
+    },
+    {
+      "name": "LectorAI.cl",
       "nameTranslations": {
-        "es": "Venta Crédito Hipotecario (VCH)",
-        "en": "Mortgage Credit Sales (VCH)",
-        "pt-BR": "Venda de Crédito Hipotecário (VCH)"
-      },
-      "description": "Sistema de gestión y venta de créditos hipotecarios para Banco Estado",
+        "es": "LectorAI.cl",
+        "en": "LectorAI.cl",
+        "pt-BR": "LectorAI.cl"
+      },      "description": "Plataforma de análisis financiero automatizado para PYME que transforma balances de 8 columnas en informes financieros completos mediante IA. Sistema inteligente que detecta y procesa documentos contables independientemente del formato, generando estados financieros profesionales y análisis detallados.",
       "descriptionTranslations": {
-        "es": "Sistema de gestión y venta de créditos hipotecarios para Banco Estado",
-        "en": "Management and sales system for mortgage loans for Banco Estado",
-        "pt-BR": "Sistema de gestão e venda de créditos hipotecários para o Banco Estado"
+        "es": "Plataforma de análisis financiero automatizado para PYME que transforma balances de 8 columnas en informes financieros completos mediante IA. Sistema inteligente que detecta y procesa documentos contables independientemente del formato, generando estados financieros profesionales y análisis detallados.",
+        "en": "Automated financial analysis platform for SMEs that transforms 8-column balance sheets into comprehensive financial reports using AI. Intelligent system that detects and processes accounting documents regardless of format, generating professional financial statements and detailed analysis.",
+        "pt-BR": "Plataforma de análise financeira automatizada para PME que transforma balanços de 8 colunas em relatórios financeiros abrangentes usando IA. Sistema inteligente que detecta e processa documentos contábeis independentemente do formato, gerando demonstrações financeiras profissionais e análises detalhadas."
       },
-      "url": "https://www.bancoestado.cl/",
-      "image": "https://www.bancoestado.cl/content/experience-fragments/bancoestado-public/cl/es/site/header/master/_jcr_content/root/container/header/Logo.coreimg.svg/1744236803751/logo-170-bancoestado.svg",
-      "highlights": [
-        "Análisis, desarrollo y mejora del sistema",
-        "Coordinación del proyecto",
-        "Integración con sistemas bancarios"
+      "url": "https://lectorai.cl/",      "highlights": [
+        "Generación automática de Estados de Situación Financiera",
+        "Creación de Estados de Resultados Integrales",
+        "Elaboración de Estados de Cambio en el Patrimonio separados por ejercicio",
+        "Generación de EFE (Estado de Flujo de Efectivo) indirecto",
+        "Producción de notas explicativas a los estados financieros",
+        "Balance de comprobación de base automático",
+        "Clasificación inteligente por tipos de cuentas y clasificadores IFRS",
+        "Importación inteligente que detecta balances de 8 columnas independientemente del formato",
+        "Registro de usuarios y sistema de autenticación completo",
+        "Landing page y aplicación web desarrolladas con React y Supabase"
       ],
       "highlightsTranslations": {
         "es": [
-          "Análisis, desarrollo y mejora del sistema",
-          "Coordinación del proyecto",
-          "Integración con sistemas bancarios"
+          "Generación automática de Estados de Situación Financiera",
+          "Creación de Estados de Resultados Integrales",
+          "Elaboración de Estados de Cambio en el Patrimonio separados por ejercicio",
+          "Generación de EFE (Estado de Flujo de Efectivo) indirecto",
+          "Producción de notas explicativas a los estados financieros",
+          "Balance de comprobación de base automático",
+          "Clasificación inteligente por tipos de cuentas y clasificadores IFRS",
+          "Importación inteligente que detecta balances de 8 columnas independientemente del formato",
+          "Registro de usuarios y sistema de autenticación completo",
+          "Landing page y aplicación web desarrolladas con React y Supabase"
         ],
         "en": [
-          "Analysis, development, and improvement of the system",
-          "Project coordination",
-          "Integration with banking systems"
+          "Automatic generation of Statement of Financial Position",
+          "Creation of Comprehensive Income Statements",
+          "Development of Statement of Changes in Equity separated by period",
+          "Generation of indirect Cash Flow Statement (CFS)",
+          "Production of explanatory notes to financial statements",
+          "Automatic trial balance generation",
+          "Intelligent classification by account types and IFRS classifiers",
+          "Smart import that detects 8-column balances regardless of format",
+          "User registration and complete authentication system",
+          "Landing page and web application developed with React and Supabase"
         ],
         "pt-BR": [
-          "Análise, desenvolvimento e melhoria do sistema",
-          "Coordenação do projeto",
-          "Integração com sistemas bancários"
+          "Geração automática de Demonstração da Posição Financeira",
+          "Criação de Demonstrações de Resultado Abrangente",
+          "Elaboração de Demonstrações de Mudanças no Patrimônio separadas por exercício",
+          "Geração de DFC (Demonstração de Fluxo de Caixa) indireto",
+          "Produção de notas explicativas às demonstrações financeiras",
+          "Balancete de verificação automático",
+          "Classificação inteligente por tipos de contas e classificadores IFRS",
+          "Importação inteligente que detecta balanços de 8 colunas independentemente do formato",
+          "Registro de usuários e sistema de autenticação completo",
+          "Landing page e aplicação web desenvolvidas com React e Supabase"
         ]
-      },
-      "keywords": [
-        "Visual Basic",
-        ".NET",
-        "SQL Server",
-        "Aplicaciones Bancarias"
+      },      "keywords": [
+        "IA",
+        "Análisis Financiero",
+        "PYME",
+        "Estados Financieros",
+        "React",
+        "Supabase",
+        "IFRS",
+        "Contabilidad",
+        "Balances",
+        "EFE",
+        "Vibe Coding",
+        "Automatización"
       ],
       "keywordsTranslations": {
         "es": [
-          "Visual Basic",
-          ".NET",
-          "SQL Server",
-          "Aplicaciones Bancarias"
+          "IA",
+          "Análisis Financiero",
+          "PYME",
+          "Estados Financieros",
+          "React",
+          "Supabase",
+          "IFRS",
+          "Contabilidad",
+          "Balances",
+          "EFE",
+          "Vibe Coding",
+          "Automatización"
         ],
         "en": [
-          "Visual Basic",
-          ".NET",
-          "SQL Server",
-          "Banking Applications"
+          "AI",
+          "Financial Analysis",
+          "SME",
+          "Financial Statements",
+          "React",
+          "Supabase",
+          "IFRS",
+          "Accounting",
+          "Balance Sheets",
+          "Cash Flow",
+          "Vibe Coding",
+          "Automation"
         ],
         "pt-BR": [
-          "Visual Basic",
-          ".NET",
-          "SQL Server",
-          "Aplicações Bancárias"
+          "IA",
+          "Análise Financeira",
+          "PME",
+          "Demonstrações Financeiras",
+          "React",
+          "Supabase",
+          "IFRS",
+          "Contabilidade",
+          "Balanços",
+          "Fluxo de Caixa",
+          "Vibe Coding",
+          "Automação"
         ]
       },
-      "startDate": "2007",
-      "endDate": "2018",
+      "startDate": "2024-08",
       "roles": [
-        "Coordinador",
-        "Analista desarrollador"
+        "Desarrollador full-stack"
       ],
       "rolesTranslations": {
         "es": [
-          "Coordinador",
-          "Analista desarrollador"
+          "Desarrollador full-stack"
         ],
         "en": [
-          "Coordinator",
-          "Developer Analyst"
+          "Full-stack Developer"
         ],
         "pt-BR": [
-          "Coordenador",
-          "Analista desenvolvedor"
+          "Desenvolvedor full-stack"
         ]
       },
-      "entity": "Banco Estado",
+      "entity": "M&L AI SpA",
       "entityTranslations": {
-        "es": "Banco Estado",
-        "en": "Banco Estado",
-        "pt-BR": "Banco Estado"
-      },
-      "type": "application"
-    },    {
-      "name": "Seguros FIDENS",
-      "nameTranslations": {
-        "es": "Seguros FIDENS",
-        "en": "FIDENS Insurance",
-        "pt-BR": "Seguros FIDENS"
-      },
-      "description": "Implementación de WebServices externos para obtención y venta de seguros",
-      "descriptionTranslations": {
-        "es": "Implementación de WebServices externos para obtención y venta de seguros",
-        "en": "Implementation of external WebServices for insurance acquisition and sales",
-        "pt-BR": "Implementação de WebServices externos para obtenção e venda de seguros"
-      },
-      "url": "https://www.bancoestado.cl/",
-      "image": "https://www.bancoestado.cl/content/experience-fragments/bancoestado-public/cl/es/site/header/master/_jcr_content/root/container/header/Logo.coreimg.svg/1744236803751/logo-170-bancoestado.svg",
-      "highlights": [
-        "Integración con plataforma PU-VCH",
-        "Desarrollo de WebServices"
-      ],
-      "highlightsTranslations": {
-        "es": [
-          "Integración con plataforma PU-VCH",
-          "Desarrollo de WebServices"
-        ],
-        "en": [
-          "Integration with PU-VCH platform",
-          "WebServices development"
-        ],
-        "pt-BR": [
-          "Integração com plataforma PU-VCH",
-          "Desenvolvimento de WebServices"
-        ]
-      },
-      "keywords": [
-        ".NET",
-        "WebServices",
-        "Integración",
-        "Seguros"
-      ],
-      "keywordsTranslations": {
-        "es": [
-          ".NET",
-          "WebServices",
-          "Integración",
-          "Seguros"
-        ],
-        "en": [
-          ".NET",
-          "WebServices",
-          "Integration",
-          "Insurance"
-        ],
-        "pt-BR": [
-          ".NET",
-          "WebServices",
-          "Integração",
-          "Seguros"
-        ]
-      },
-      "startDate": "2015",
-      "endDate": "2016",
-      "roles": [
-        "Jefe de proyecto",
-        "Desarrollador"
-      ],
-      "rolesTranslations": {
-        "es": [
-          "Jefe de proyecto",
-          "Desarrollador"
-        ],
-        "en": [
-          "Project Manager",
-          "Developer"
-        ],
-        "pt-BR": [
-          "Gerente de projeto",
-          "Desenvolvedor"
-        ]
-      },
-      "entity": "Banco Estado",
-      "entityTranslations": {
-        "es": "Banco Estado",
-        "en": "Banco Estado",
-        "pt-BR": "Banco Estado"
-      },
-      "type": "application"
-    },    {
-      "name": "Matriz Documental",
-      "nameTranslations": {
-        "es": "Matriz Documental",
-        "en": "Document Matrix",
-        "pt-BR": "Matriz Documental"
-      },
-      "description": "Sistema para generar múltiples documentos PDF consumiendo WebServices",
-      "descriptionTranslations": {
-        "es": "Sistema para generar múltiples documentos PDF consumiendo WebServices",
-        "en": "System to generate multiple PDF documents by consuming WebServices",
-        "pt-BR": "Sistema para gerar múltiplos documentos PDF consumindo WebServices"
-      },
-      "url": "https://www.bancoestado.cl/",
-      "image": "https://www.bancoestado.cl/content/experience-fragments/bancoestado-public/cl/es/site/header/master/_jcr_content/root/container/header/Logo.coreimg.svg/1744236803751/logo-170-bancoestado.svg",
-      "highlights": [
-        "Integración con FileNet",
-        "Generación dinámica de documentos"
-      ],
-      "highlightsTranslations": {
-        "es": [
-          "Integración con FileNet",
-          "Generación dinámica de documentos"
-        ],
-        "en": [
-          "Integration with FileNet",
-          "Dynamic document generation"
-        ],
-        "pt-BR": [
-          "Integração com FileNet",
-          "Geração dinâmica de documentos"
-        ]
-      },
-      "keywords": [
-        ".NET",
-        "WebServices",
-        "FileNet",
-        "PDF"
-      ],
-      "keywordsTranslations": {
-        "es": [
-          ".NET",
-          "WebServices",
-          "FileNet",
-          "PDF"
-        ],
-        "en": [
-          ".NET",
-          "WebServices",
-          "FileNet",
-          "PDF"
-        ],
-        "pt-BR": [
-          ".NET",
-          "WebServices",
-          "FileNet",
-          "PDF"
-        ]
-      },
-      "startDate": "2016",
-      "endDate": "2018",
-      "roles": [
-        "Jefe de proyecto",
-        "Desarrollador"
-      ],
-      "rolesTranslations": {
-        "es": [
-          "Jefe de proyecto",
-          "Desarrollador"
-        ],
-        "en": [
-          "Project Manager",
-          "Developer"
-        ],
-        "pt-BR": [
-          "Gerente de projeto",
-          "Desenvolvedor"
-        ]
-      },
-      "entity": "Banco Estado",
-      "entityTranslations": {
-        "es": "Banco Estado",
-        "en": "Banco Estado",
-        "pt-BR": "Banco Estado"
-      },
-      "type": "application"
-    },    {
-      "name": "Carpeta Electrónica Cliente",
-      "nameTranslations": {
-        "es": "Carpeta Electrónica Cliente",
-        "en": "Electronic Client Folder",
-        "pt-BR": "Pasta Eletrônica do Cliente"
-      },
-      "description": "Sistema que permite visualizar documentos generados para productos contratados por clientes",
-      "descriptionTranslations": {
-        "es": "Sistema que permite visualizar documentos generados para productos contratados por clientes",
-        "en": "System that allows viewing documents generated for products contracted by customers",
-        "pt-BR": "Sistema que permite visualizar documentos gerados para produtos contratados por clientes"
-      },
-      "url": "https://www.bancoestado.cl/",
-      "image": "https://www.bancoestado.cl/content/experience-fragments/bancoestado-public/cl/es/site/header/master/_jcr_content/root/container/header/Logo.coreimg.svg/1744236803751/logo-170-bancoestado.svg",
-      "highlights": [
-        "Visualización de documentos",
-        "Integración con sistemas bancarios"
-      ],
-      "highlightsTranslations": {
-        "es": [
-          "Visualización de documentos",
-          "Integración con sistemas bancarios"
-        ],
-        "en": [
-          "Document visualization",
-          "Integration with banking systems"
-        ],
-        "pt-BR": [
-          "Visualização de documentos",
-          "Integração com sistemas bancários"
-        ]
-      },
-      "keywords": [
-        ".NET",
-        "Gestión Documental",
-        "Interfaz de Usuario"
-      ],
-      "keywordsTranslations": {
-        "es": [
-          ".NET",
-          "Gestión Documental",
-          "Interfaz de Usuario"
-        ],
-        "en": [
-          ".NET",
-          "Document Management",
-          "User Interface"
-        ],
-        "pt-BR": [
-          ".NET",
-          "Gestão Documental",
-          "Interface do Usuário"
-        ]
-      },
-      "startDate": "2016",
-      "endDate": "2018",
-      "roles": [
-        "Jefe de proyecto",
-        "Desarrollador"
-      ],
-      "rolesTranslations": {
-        "es": [
-          "Jefe de proyecto",
-          "Desarrollador"
-        ],
-        "en": [
-          "Project Manager",
-          "Developer"
-        ],
-        "pt-BR": [
-          "Gerente de projeto",
-          "Desenvolvedor"
-        ]
-      },
-      "entity": "Banco Estado",
-      "entityTranslations": {
-        "es": "Banco Estado",
-        "en": "Banco Estado",
-        "pt-BR": "Banco Estado"
-      },
-      "type": "application"
-    },    {
-      "name": "ActiveX Digitalización de Imágenes",
-      "nameTranslations": {
-        "es": "ActiveX Digitalización de Imágenes",
-        "en": "ActiveX Image Scanning",
-        "pt-BR": "ActiveX Digitalização de Imagens"
-      },
-      "description": "Componente para el manejo de obtención de imágenes por escáner",
-      "descriptionTranslations": {
-        "es": "Componente para el manejo de obtención de imágenes por escáner",
-        "en": "Component for handling image acquisition through scanners",
-        "pt-BR": "Componente para o gerenciamento de obtenção de imagens por scanner"
-      },
-      "url": "https://www.bancoestado.cl/",
-      "image": "https://www.bancoestado.cl/content/experience-fragments/bancoestado-public/cl/es/site/header/master/_jcr_content/root/container/header/Logo.coreimg.svg/1744236803751/logo-170-bancoestado.svg",
-      "highlights": [
-        "Implementación con especificaciones WIA y TWAIN",
-        "Desarrollo de componentes ActiveX"
-      ],
-      "highlightsTranslations": {
-        "es": [
-          "Implementación con especificaciones WIA y TWAIN",
-          "Desarrollo de componentes ActiveX"
-        ],
-        "en": [
-          "Implementation with WIA and TWAIN specifications",
-          "Development of ActiveX components"
-        ],
-        "pt-BR": [
-          "Implementação com especificações WIA e TWAIN",
-          "Desenvolvimento de componentes ActiveX"
-        ]
-      },
-      "keywords": [
-        "ActiveX",
-        "Visual Basic",
-        "WIA",
-        "TWAIN",
-        "Digitalización"
-      ],
-      "keywordsTranslations": {
-        "es": [
-          "ActiveX",
-          "Visual Basic",
-          "WIA",
-          "TWAIN",
-          "Digitalización"
-        ],
-        "en": [
-          "ActiveX",
-          "Visual Basic",
-          "WIA",
-          "TWAIN",
-          "Scanning"
-        ],
-        "pt-BR": [
-          "ActiveX",
-          "Visual Basic",
-          "WIA",
-          "TWAIN",
-          "Digitalização"
-        ]
-      },
-      "startDate": "2016",
-      "endDate": "2018",
-      "roles": [
-        "Desarrollador principal"
-      ],
-      "rolesTranslations": {
-        "es": [
-          "Desarrollador principal"
-        ],
-        "en": [
-          "Lead Developer"
-        ],
-        "pt-BR": [
-          "Desenvolvedor principal"
-        ]
-      },
-      "entity": "Banco Estado",
-      "entityTranslations": {
-        "es": "Banco Estado",
-        "en": "Banco Estado",
-        "pt-BR": "Banco Estado"
-      },
-      "type": "component"
-    },    {
-      "name": "Estructurante de Crédito",
-      "nameTranslations": {
-        "es": "Estructurante de Crédito",
-        "en": "Credit Structuring",
-        "pt-BR": "Estruturante de Crédito"
-      },
-      "description": "Sistema para evaluación comercial de clientes pyme para otorgamiento de créditos",
-      "descriptionTranslations": {
-        "es": "Sistema para evaluación comercial de clientes pyme para otorgamiento de créditos",
-        "en": "System for commercial evaluation of small business clients for credit granting",
-        "pt-BR": "Sistema para avaliação comercial de clientes PME para concessão de créditos"
-      },
-      "url": "https://www.bancoestado.cl/",
-      "image": "https://www.bancoestado.cl/content/experience-fragments/bancoestado-public/cl/es/site/header/master/_jcr_content/root/container/header/Logo.coreimg.svg/1744236803751/logo-170-bancoestado.svg",
-      "highlights": [
-        "Evaluación de clientes",
-        "Ampliación de cupos de crédito"
-      ],
-      "highlightsTranslations": {
-        "es": [
-          "Evaluación de clientes",
-          "Ampliación de cupos de crédito"
-        ],
-        "en": [
-          "Client evaluation",
-          "Credit limit expansion"
-        ],
-        "pt-BR": [
-          "Avaliação de clientes",
-          "Ampliação de limites de crédito"
-        ]
-      },
-      "keywords": [
-        ".NET",
-        "Análisis Crediticio",
-        "PYME"
-      ],
-      "keywordsTranslations": {
-        "es": [
-          ".NET",
-          "Análisis Crediticio",
-          "PYME"
-        ],
-        "en": [
-          ".NET",
-          "Credit Analysis",
-          "SME"
-        ],
-        "pt-BR": [
-          ".NET",
-          "Análise Creditícia",
-          "PME"
-        ]
-      },
-      "startDate": "2015",
-      "endDate": "2018",
-      "roles": [
-        "Jefe de proyecto"
-      ],
-      "rolesTranslations": {
-        "es": [
-          "Jefe de proyecto"
-        ],
-        "en": [
-          "Project Manager"
-        ],
-        "pt-BR": [
-          "Gerente de projeto"
-        ]
-      },
-      "entity": "Banco Estado",
-      "entityTranslations": {
-        "es": "Banco Estado",
-        "en": "Banco Estado",
-        "pt-BR": "Banco Estado"
+        "es": "M&L AI SpA",
+        "en": "M&L AI SpA",
+        "pt-BR": "M&L AI SpA"
       },
       "type": "application"
     },
     {
-      "name": "WORKFLOW Bitácora",
-      "description": "Sistema para control de etapas en sucursales Sin Centro de Curse de Banco Estado",
-      "url": "https://www.bancoestado.cl/",
-      "image": "https://www.bancoestado.cl/content/experience-fragments/bancoestado-public/cl/es/site/header/master/_jcr_content/root/container/header/Logo.coreimg.svg/1744236803751/logo-170-bancoestado.svg",
-      "highlights": [
-        "Desarrollo de workflow",
-        "Control de procesos"
-      ],
-      "keywords": [
-        "Visual Basic",
-        "Workflow",
-        "Procesos bancarios"
-      ],
-      "startDate": "2008",
-      "endDate": "2010",
-      "roles": [
-        "Analista desarrollador"
-      ],
-      "entity": "Banco Estado",
-      "type": "application"
-    },
-    {
-      "name": "SACU Bansander AFP",
-      "description": "Servicio de Autenticación de Clave Usuaria contra PreviRed",
-      "highlights": [
-        "Implementación de validación de claves",
-        "Desarrollo de WebServices"
-      ],
-      "keywords": [
-        ".NET",
-        "VB6",
-        "WebServices",
-        "Autenticación"
-      ],
-      "startDate": "2007",
-      "endDate": "2010",
-      "roles": [
-        "Analista",
-        "Desarrollador"
-      ],
-      "entity": "Bansander AFP",
-      "type": "service"
-    },
-    {
-      "name": "ColWeb®",
-      "description": "Sistema de administración de colegios (Colegio en la Web)",
-      "highlights": [
-        "Desarrollo de plataforma educativa",
-        "Explotado por ServiPyme (filial Banco del Desarrollo)"
-      ],
-      "keywords": [
-        "Web",
-        "Educación",
-        "Administración"
-      ],
-      "startDate": "2001",
-      "endDate": "2007",
-      "roles": [
-        "Analista",
-        "Desarrollador"
-      ],
-      "entity": "Newsystems Ltda.",
-      "type": "application"
-    },
-    {
-      "name": "OteWeb Escuelas de Conductores",
-      "description": "Sistema especializado para escuelas de conductores",
-      "highlights": [
-        "Desarrollo de sistema de gestión",
-        "Implementación para Elicar San Felipe"
-      ],
-      "keywords": [
-        "Web",
-        "Gestión",
-        "Educación vial"
-      ],
-      "startDate": "2001",
-      "endDate": "2007",
-      "roles": [
-        "Analista",
-        "Desarrollador"
-      ],
-      "entity": "Elicar San Felipe",
-      "type": "application"
-    },
-    {
-      "name": "Gestión Clínica",
-      "description": "Sistema integral para la administración de clínicas",
-      "highlights": [
-        "Modelado de base de datos SQL Server 7.0",
-        "Desarrollo de módulos de mantenimiento, facturación y bodega",
-        "Reportes con Crystal Reports"
-      ],
-      "keywords": [
-        "Visual Basic 6.0",
-        "SQL Server",
-        "Crystal Reports",
-        "Gestión hospitalaria"
-      ],
-      "startDate": "1999-12",
-      "endDate": "2000-03",
-      "roles": [
-        "Programador"
-      ],
-      "entity": "Clínica Santiago",
-      "type": "application"
-    }
-  ],  "interests": [
-    {
-      "name": "Tecnologías Emergentes",
+      "name": "OK Fugas",
       "nameTranslations": {
-        "es": "Tecnologías Emergentes",
-        "en": "Emerging Technologies",
-        "pt-BR": "Tecnologias Emergentes"
+        "es": "OK Fugas",
+        "en": "OK Fugas",
+        "pt-BR": "OK Fugas"
+      },      "description": "Empresa especializada en detección y reparación de fugas de agua con más de 15 años de experiencia. Utiliza tecnología de vanguardia como termografía, ultrasonido y gas trazador. Proyecto de transformación digital con estrategia de marketing automatizada.",
+      "descriptionTranslations": {
+        "es": "Empresa especializada en detección y reparación de fugas de agua con más de 15 años de experiencia. Utiliza tecnología de vanguardia como termografía, ultrasonido y gas trazador. Proyecto de transformación digital con estrategia de marketing automatizada.",
+        "en": "Company specialized in water leak detection and repair with over 15 years of experience. Uses cutting-edge technology such as thermography, ultrasound and tracer gas. Digital transformation project with automated marketing strategy.",
+        "pt-BR": "Empresa especializada em detecção e reparo de vazamentos de água com mais de 15 anos de experiência. Utiliza tecnologia de ponta como termografia, ultrassom e gás traçador. Projeto de transformação digital com estratégia de marketing automatizada."
       },
-      "keywords": [
-        "Inteligencia Artificial",
-        "Machine Learning",
+      "url": "https://www.okfugas.cl/",
+      "image": "/okfugas.png",      "highlights": [
+        "Más de 15 años de experiencia en detección de fugas",
+        "Tecnología avanzada: termografía, ultrasonido y gas trazador",
+        "Garantía única: 'Si no detectamos la fuga, no cobramos'",
+        "Métodos no invasivos que minimizan daños estructurales",
+        "Cobertura completa en Región Metropolitana",
+        "Precios fijos transparentes: $140.000 casas, $180.000 departamentos",
+        "6 meses de garantía en detecciones realizadas",
+        "Landing page desarrollada con React y Tailwind CSS",
+        "Estrategia de marketing digital con automatización en redes sociales"
+      ],
+      "highlightsTranslations": {
+        "es": [
+          "Más de 15 años de experiencia en detección de fugas",
+          "Tecnología avanzada: termografía, ultrasonido y gas trazador",
+          "Garantía única: 'Si no detectamos la fuga, no cobramos'",
+          "Métodos no invasivos que minimizan daños estructurales",
+          "Cobertura completa en Región Metropolitana",
+          "Precios fijos transparentes: $140.000 casas, $180.000 departamentos",
+          "6 meses de garantía en detecciones realizadas",
+          "Landing page desarrollada con React y Tailwind CSS",
+          "Estrategia de marketing digital con automatización en redes sociales"
+        ],
+        "en": [
+          "Over 15 years of experience in leak detection",
+          "Advanced technology: thermography, ultrasound and tracer gas",
+          "Unique guarantee: 'If we don't detect the leak, we don't charge'",
+          "Non-invasive methods that minimize structural damage",
+          "Complete coverage in Metropolitan Region",
+          "Transparent fixed prices: $140,000 houses, $180,000 apartments",
+          "6 months warranty on performed detections",
+          "Landing page developed with React and Tailwind CSS",
+          "Digital marketing strategy with social media automation"
+        ],
+        "pt-BR": [
+          "Mais de 15 anos de experiência em detecção de vazamentos",
+          "Tecnologia avançada: termografia, ultrassom e gás traçador",
+          "Garantia única: 'Se não detectarmos o vazamento, não cobramos'",
+          "Métodos não invasivos que minimizam danos estruturais",
+          "Cobertura completa na Região Metropolitana",
+          "Preços fixos transparentes: $140.000 casas, $180.000 apartamentos",
+          "6 meses de garantia em detecções realizadas",
+          "Landing page desenvolvida com React e Tailwind CSS",
+          "Estratégia de marketing digital com automação em redes sociais"
+        ]
+      },      "keywords": [
+        "React",
+        "Tailwind CSS",
+        "Marketing Digital",
+        "Landing Page",
+        "Detección de Fugas",
+        "Termografía",
+        "Ultrasonido",
+        "Gas Trazador",
         "Automatización",
-        "Cloud Computing"
+        "Redes Sociales",
+        "Vibe Coding"
       ],
       "keywordsTranslations": {
         "es": [
-          "Inteligencia Artificial",
-          "Machine Learning",
+          "React",
+          "Tailwind CSS",
+          "Marketing Digital",
+          "Landing Page",
+          "Detección de Fugas",
+          "Termografía",
+          "Ultrasonido",
+          "Gas Trazador",
           "Automatización",
-          "Cloud Computing"
+          "Redes Sociales",
+          "Vibe Coding"
         ],
         "en": [
-          "Artificial Intelligence",
-          "Machine Learning",
+          "React",
+          "Tailwind CSS",
+          "Digital Marketing",
+          "Landing Page",
+          "Leak Detection",
+          "Thermography",
+          "Ultrasound",
+          "Tracer Gas",
           "Automation",
-          "Cloud Computing"
+          "Social Media",
+          "Vibe Coding"
         ],
         "pt-BR": [
-          "Inteligência Artificial",
-          "Machine Learning",
+          "React",
+          "Tailwind CSS",
+          "Marketing Digital",
+          "Landing Page",
+          "Detecção de Vazamentos",
+          "Termografia",
+          "Ultrassom",
+          "Gás Traçador",
           "Automação",
-          "Computação em Nuvem"
+          "Redes Sociais",
+          "Vibe Coding"
+        ]
+      },
+      "startDate": "2024",
+      "roles": [
+        "Desarrollador frontend",
+        "Estratega digital"
+      ],
+      "rolesTranslations": {
+        "es": [
+          "Desarrollador frontend",
+          "Estratega digital"
+        ],
+        "en": [
+          "Frontend Developer",
+          "Digital Strategist"
+        ],
+        "pt-BR": [
+          "Desenvolvedor frontend",
+          "Estrategista digital"
+        ]
+      },
+      "entity": "M&L AI SpA",
+      "entityTranslations": {
+        "es": "M&L AI SpA",
+        "en": "M&L AI SpA",
+        "pt-BR": "M&L AI SpA"
+      },
+      "type": "website"
+    },
+    {
+      "name": "DoctorHouse",
+      "nameTranslations": {
+        "es": "DoctorHouse",
+        "en": "DoctorHouse",
+        "pt-BR": "DoctorHouse"
+      },      "description": "Empresa hermana de OK Fugas especializada en detección de fugas con 17 años de experiencia. Proyecto de competencia A/B testing entre estrategias tradicionales vs automatización con IA para optimizar marketing digital y captación de clientes.",
+      "descriptionTranslations": {
+        "es": "Empresa hermana de OK Fugas especializada en detección de fugas con 17 años de experiencia. Proyecto de competencia A/B testing entre estrategias tradicionales vs automatización con IA para optimizar marketing digital y captación de clientes.",
+        "en": "Sister company of OK Fugas specialized in leak detection with 17 years of experience. A/B testing competition project between traditional strategies vs AI automation to optimize digital marketing and customer acquisition.",
+        "pt-BR": "Empresa irmã da OK Fugas especializada em detecção de vazamentos com 17 anos de experiência. Projeto de competição A/B testing entre estratégias tradicionais vs automação com IA para otimizar marketing digital e captação de clientes."
+      },
+      "url": "https://dr-house.cl/",
+      "image": "/dr-house.png",      "highlights": [
+        "Proyecto de A/B testing: empresa tradicional vs empresa con IA",
+        "17 años de experiencia en detección y reparación de fugas",
+        "Tecnología avanzada: termografía, ultrasonido, gas trazador",
+        "Métodos no invasivos con garantía de no cobro si no se detecta",
+        "Publicaciones automáticas en Instagram y Facebook mediante IA",
+        "Estrategia de marketing digital totalmente automatizada",
+        "Landing page moderna desarrollada con React",
+        "Precios competitivos: $140.000 casas, $180.000 departamentos",
+        "Proyecto experimental iniciado en junio 2025"
+      ],
+      "highlightsTranslations": {
+        "es": [
+          "Proyecto de A/B testing: empresa tradicional vs empresa con IA",
+          "17 años de experiencia en detección y reparación de fugas",
+          "Tecnología avanzada: termografía, ultrasonido, gas trazador",
+          "Métodos no invasivos con garantía de no cobro si no se detecta",
+          "Publicaciones automáticas en Instagram y Facebook mediante IA",
+          "Estrategia de marketing digital totalmente automatizada",
+          "Landing page moderna desarrollada con React",
+          "Precios competitivos: $140.000 casas, $180.000 departamentos",
+          "Proyecto experimental iniciado en junio 2025"
+        ],
+        "en": [
+          "A/B testing project: traditional company vs AI-powered company",
+          "17 years of experience in leak detection and repair",
+          "Advanced technology: thermography, ultrasound, tracer gas",
+          "Non-invasive methods with no-charge guarantee if not detected",
+          "Automatic posts on Instagram and Facebook using AI",
+          "Fully automated digital marketing strategy",
+          "Modern landing page developed with React",
+          "Competitive prices: $140,000 houses, $180,000 apartments",
+          "Experimental project started in June 2025"
+        ],
+        "pt-BR": [
+          "Projeto de A/B testing: empresa tradicional vs empresa com IA",
+          "17 anos de experiência em detecção e reparo de vazamentos",
+          "Tecnologia avançada: termografia, ultrassom, gás traçador",
+          "Métodos não invasivos com garantia de não cobrança se não detectado",
+          "Postagens automáticas no Instagram e Facebook usando IA",
+          "Estratégia de marketing digital totalmente automatizada",
+          "Landing page moderna desenvolvida com React",
+          "Preços competitivos: $140.000 casas, $180.000 apartamentos",
+          "Projeto experimental iniciado em junho de 2025"
+        ]
+      },      "keywords": [
+        "React",
+        "Marketing Digital",
+        "Instagram",
+        "Facebook",
+        "Automatización",
+        "Landing Page",
+        "A/B Testing",
+        "IA",
+        "Detección de Fugas",
+        "Vibe Coding",
+        "Estrategia Digital"
+      ],
+      "keywordsTranslations": {
+        "es": [
+          "React",
+          "Marketing Digital",
+          "Instagram",
+          "Facebook",
+          "Automatización",
+          "Landing Page",
+          "A/B Testing",
+          "IA",
+          "Detección de Fugas",
+          "Vibe Coding",
+          "Estrategia Digital"
+        ],
+        "en": [
+          "React",
+          "Digital Marketing",
+          "Instagram",
+          "Facebook",
+          "Automation",
+          "Landing Page",
+          "A/B Testing",
+          "AI",
+          "Leak Detection",
+          "Vibe Coding",
+          "Digital Strategy"
+        ],
+        "pt-BR": [
+          "React",
+          "Marketing Digital",
+          "Instagram",
+          "Facebook",
+          "Automação",
+          "Landing Page",
+          "A/B Testing",
+          "IA",
+          "Detecção de Vazamentos",
+          "Vibe Coding",
+          "Estratégia Digital"
+        ]
+      },
+      "startDate": "2025-06",
+      "roles": [
+        "Desarrollador frontend",
+        "Especialista en automatización"
+      ],
+      "rolesTranslations": {
+        "es": [
+          "Desarrollador frontend",
+          "Especialista en automatización"
+        ],
+        "en": [
+          "Frontend Developer",
+          "Automation Specialist"
+        ],
+        "pt-BR": [
+          "Desenvolvedor frontend",
+          "Especialista em automação"
+        ]
+      },
+      "entity": "M&L AI SpA",
+      "entityTranslations": {
+        "es": "M&L AI SpA",
+        "en": "M&L AI SpA",
+        "pt-BR": "M&L AI SpA"
+      },
+      "type": "website"
+    },
+    {
+      "name": "RestauratuFoto.cl",
+      "nameTranslations": {
+        "es": "RestauratuFoto.cl",
+        "en": "RestauratuFoto.cl",
+        "pt-BR": "RestauratuFoto.cl"
+      },      "description": "Servicio de restauración automática de fotografías dañadas mediante IA. Plataforma que permite a los usuarios cargar fotos deterioradas y obtener versiones restauradas de alta calidad. Backend completamente desarrollado en n8n con procesamiento de imágenes avanzado e integración de pagos.",
+      "descriptionTranslations": {
+        "es": "Servicio de restauración automática de fotografías dañadas mediante IA. Plataforma que permite a los usuarios cargar fotos deterioradas y obtener versiones restauradas de alta calidad. Backend completamente desarrollado en n8n con procesamiento de imágenes avanzado e integración de pagos.",
+        "en": "Automatic restoration service for damaged photographs using AI. Platform that allows users to upload deteriorated photos and obtain high-quality restored versions. Backend fully developed in n8n with advanced image processing and payment integration.",
+        "pt-BR": "Serviço de restauração automática de fotografias danificadas usando IA. Plataforma que permite aos usuários carregar fotos deterioradas e obter versões restauradas de alta qualidade. Backend totalmente desenvolvido em n8n com processamento de imagens avançado e integração de pagamentos."
+      },
+      "url": "https://restauratufoto.cl/",      "highlights": [
+        "Backend completamente funcional desarrollado en n8n",
+        "Procesamiento de imágenes avanzado con algoritmos de IA",
+        "Integración de pagos segura con Mercado Pago",
+        "Restauración automática de fotos dañadas, rayadas o deterioradas",
+        "Sistema de carga y descarga de archivos optimizado",
+        "Interfaz de usuario en desarrollo con React",
+        "Arquitectura escalable para procesamiento masivo de imágenes",
+        "Proyecto con potencial de monetización y marketing en YouTube"
+      ],
+      "highlightsTranslations": {
+        "es": [
+          "Backend completamente funcional desarrollado en n8n",
+          "Procesamiento de imágenes avanzado con algoritmos de IA",
+          "Integración de pagos segura con Mercado Pago",
+          "Restauración automática de fotos dañadas, rayadas o deterioradas",
+          "Sistema de carga y descarga de archivos optimizado",
+          "Interfaz de usuario en desarrollo con React",
+          "Arquitectura escalable para procesamiento masivo de imágenes",
+          "Proyecto con potencial de monetización y marketing en YouTube"
+        ],
+        "en": [
+          "Fully functional backend developed in n8n",
+          "Advanced image processing with AI algorithms",
+          "Secure payment integration with Mercado Pago",
+          "Automatic restoration of damaged, scratched or deteriorated photos",
+          "Optimized file upload and download system",
+          "User interface in development with React",
+          "Scalable architecture for massive image processing",
+          "Project with monetization potential and YouTube marketing"
+        ],
+        "pt-BR": [
+          "Backend totalmente funcional desenvolvido em n8n",
+          "Processamento de imagens avançado com algoritmos de IA",
+          "Integração de pagamentos segura com Mercado Pago",
+          "Restauração automática de fotos danificadas, riscadas ou deterioradas",
+          "Sistema de upload e download de arquivos otimizado",
+          "Interface de usuário em desenvolvimento com React",
+          "Arquitetura escalável para processamento massivo de imagens",
+          "Projeto com potencial de monetização e marketing no YouTube"
+        ]
+      },      "keywords": [
+        "IA",
+        "Procesamiento de Imágenes",
+        "n8n",
+        "Mercado Pago",
+        "React",
+        "Restauración de Fotos",
+        "Automatización",
+        "Vibe Coding",
+        "Backend as a Service",
+        "Computer Vision"
+      ],
+      "keywordsTranslations": {
+        "es": [
+          "IA",
+          "Procesamiento de Imágenes",
+          "n8n",
+          "Mercado Pago",
+          "React",
+          "Restauración de Fotos",
+          "Automatización",
+          "Vibe Coding",
+          "Backend como Servicio",
+          "Visión por Computadora"
+        ],
+        "en": [
+          "AI",
+          "Image Processing",
+          "n8n",
+          "Mercado Pago",
+          "React",
+          "Photo Restoration",
+          "Automation",
+          "Vibe Coding",
+          "Backend as a Service",
+          "Computer Vision"
+        ],
+        "pt-BR": [
+          "IA",
+          "Processamento de Imagens",
+          "n8n",
+          "Mercado Pago",
+          "React",
+          "Restauração de Fotos",
+          "Automação",
+          "Vibe Coding",
+          "Backend como Serviço",
+          "Visão Computacional"
+        ]
+      },
+      "startDate": "2024",
+      "roles": [
+        "Desarrollador full-stack",
+        "Especialista en IA"
+      ],
+      "rolesTranslations": {
+        "es": [
+          "Desarrollador full-stack",
+          "Especialista en IA"
+        ],
+        "en": [
+          "Full-stack Developer",
+          "AI Specialist"
+        ],
+        "pt-BR": [
+          "Desenvolvedor full-stack",
+          "Especialista em IA"
+        ]
+      },
+      "entity": "M&L AI SpA",
+      "entityTranslations": {
+        "es": "M&L AI SpA",
+        "en": "M&L AI SpA",
+        "pt-BR": "M&L AI SpA"
+      },
+      "type": "application"
+    },
+    {
+      "name": "Tienda de Decoración Dark",
+      "nameTranslations": {
+        "es": "Tienda de Decoración Dark",
+        "en": "Dark Decoration Store",
+        "pt-BR": "Loja de Decoração Dark"
+      },      "description": "E-commerce especializado en decoración dark artesanal con arquitectura headless. Proyecto que migra de WordPress/WooCommerce tradicional a una solución moderna con frontend personalizado en React/Gatsby que consume APIs de WooCommerce como backend, optimizando la experiencia de usuario y funcionalidades personalizadas.",
+      "descriptionTranslations": {
+        "es": "E-commerce especializado en decoración dark artesanal con arquitectura headless. Proyecto que migra de WordPress/WooCommerce tradicional a una solución moderna con frontend personalizado en React/Gatsby que consume APIs de WooCommerce como backend, optimizando la experiencia de usuario y funcionalidades personalizadas.",
+        "en": "E-commerce specialized in handmade dark decoration with headless architecture. Project that migrates from traditional WordPress/WooCommerce to a modern solution with custom React/Gatsby frontend consuming WooCommerce APIs as backend, optimizing user experience and custom functionalities.",
+        "pt-BR": "E-commerce especializado em decoração dark artesanal com arquitetura headless. Projeto que migra do WordPress/WooCommerce tradicional para uma solução moderna com frontend personalizado em React/Gatsby que consome APIs do WooCommerce como backend, otimizando a experiência do usuário e funcionalidades personalizadas."
+      },
+      "image": "/torectangulo.png",      "highlights": [
+        "Migración de WordPress tradicional a arquitectura headless moderna",
+        "Frontend personalizado desarrollado con Gatsby/React",
+        "Consumo de APIs REST de WooCommerce como backend service",
+        "Integración avanzada con Mercado Pago para procesamiento de pagos",
+        "Funcionalidades completamente personalizadas vs limitaciones de WordPress",
+        "Optimización de performance y experiencia de usuario",
+        "Productos artesanales de decoración dark hechos a mano",
+        "Gestión completa de inventario y catálogo de productos",
+        "Sistema de pedidos y seguimiento personalizado"
+      ],
+      "highlightsTranslations": {
+        "es": [
+          "Migración de WordPress tradicional a arquitectura headless moderna",
+          "Frontend personalizado desarrollado con Gatsby/React",
+          "Consumo de APIs REST de WooCommerce como backend service",
+          "Integración avanzada con Mercado Pago para procesamiento de pagos",
+          "Funcionalidades completamente personalizadas vs limitaciones de WordPress",
+          "Optimización de performance y experiencia de usuario",
+          "Productos artesanales de decoración dark hechos a mano",
+          "Gestión completa de inventario y catálogo de productos",
+          "Sistema de pedidos y seguimiento personalizado"
+        ],
+        "en": [
+          "Migration from traditional WordPress to modern headless architecture",
+          "Custom frontend developed with Gatsby/React",
+          "Consumption of WooCommerce REST APIs as backend service",
+          "Advanced integration with Mercado Pago for payment processing",
+          "Fully customized functionalities vs WordPress limitations",
+          "Performance optimization and user experience",
+          "Handmade dark decoration artisanal products",
+          "Complete inventory management and product catalog",
+          "Custom order and tracking system"
+        ],
+        "pt-BR": [
+          "Migração do WordPress tradicional para arquitetura headless moderna",
+          "Frontend personalizado desenvolvido com Gatsby/React",
+          "Consumo de APIs REST do WooCommerce como serviço backend",
+          "Integração avançada com Mercado Pago para processamento de pagamentos",
+          "Funcionalidades totalmente personalizadas vs limitações do WordPress",
+          "Otimização de performance e experiência do usuário",
+          "Produtos artesanais de decoração dark feitos à mão",
+          "Gestão completa de inventário e catálogo de produtos",
+          "Sistema de pedidos e rastreamento personalizado"
+        ]
+      },      "keywords": [
+        "Gatsby",
+        "React",
+        "WooCommerce",
+        "PHP",
+        "Mercado Pago",
+        "E-commerce",
+        "Headless",
+        "APIs REST",
+        "WordPress",
+        "Hostinger",
+        "Vibe Coding",
+        "Migración"
+      ],
+      "keywordsTranslations": {
+        "es": [
+          "Gatsby",
+          "React",
+          "WooCommerce",
+          "PHP",
+          "Mercado Pago",
+          "E-commerce",
+          "Headless",
+          "APIs REST",
+          "WordPress",
+          "Hostinger",
+          "Vibe Coding",
+          "Migración"
+        ],
+        "en": [
+          "Gatsby",
+          "React",
+          "WooCommerce",
+          "PHP",
+          "Mercado Pago",
+          "E-commerce",
+          "Headless",
+          "REST APIs",
+          "WordPress",
+          "Hostinger",
+          "Vibe Coding",
+          "Migration"
+        ],
+        "pt-BR": [
+          "Gatsby",
+          "React",
+          "WooCommerce",
+          "PHP",
+          "Mercado Pago",
+          "E-commerce",
+          "Headless",
+          "APIs REST",
+          "WordPress",
+          "Hostinger",
+          "Vibe Coding",
+          "Migração"
+        ]
+      },
+      "startDate": "2023",
+      "roles": [
+        "Desarrollador frontend",
+        "Integrador de APIs"
+      ],
+      "rolesTranslations": {
+        "es": [
+          "Desarrollador frontend",
+          "Integrador de APIs"
+        ],
+        "en": [
+          "Frontend Developer",
+          "API Integrator"
+        ],
+        "pt-BR": [
+          "Desenvolvedor frontend",
+          "Integrador de APIs"
+        ]
+      },      "entity": "Proyecto Independiente",
+      "entityTranslations": {
+        "es": "Proyecto Independiente",
+        "en": "Independent Project",
+        "pt-BR": "Projeto Independente"
+      },
+      "type": "application"
+    }
+  ],
+  "interests": [    {
+      "name": "Vibe Coding",
+      "nameTranslations": {
+        "es": "Vibe Coding",
+        "en": "Vibe Coding", 
+        "pt-BR": "Vibe Coding"
+      },
+      "description": "Metodología de desarrollo donde el desarrollador expresa su intención en lenguaje natural y la IA transforma esa idea en código ejecutable. Concepto introducido por Andrej Karpathy en 2025, enfatizando el uso de herramientas de IA para mantener a los desarrolladores en la zona de creatividad y automatizar tareas de codificación.",
+      "descriptionTranslations": {
+        "es": "Metodología de desarrollo donde el desarrollador expresa su intención en lenguaje natural y la IA transforma esa idea en código ejecutable. Concepto introducido por Andrej Karpathy en 2025, enfatizando el uso de herramientas de IA para mantener a los desarrolladores en la zona de creatividad y automatizar tareas de codificación.",
+        "en": "Development methodology where the developer expresses their intention in natural language and AI transforms that idea into executable code. Concept introduced by Andrej Karpathy in 2025, emphasizing the use of AI tools to keep developers in the creativity zone and automate coding tasks.",
+        "pt-BR": "Metodologia de desenvolvimento onde o desenvolvedor expressa sua intenção em linguagem natural e a IA transforma essa ideia em código executável. Conceito introduzido por Andrej Karpathy em 2025, enfatizando o uso de ferramentas de IA para manter os desenvolvedores na zona de criatividade e automatizar tarefas de codificação."
+      },
+      "keywords": [
+        "IA",
+        "Prompt Engineering", 
+        "Desarrollo Asistido por IA",
+        "Creatividad",
+        "Democratización del Desarrollo",
+        "Code First, Refine Later",
+        "Prototipado Rápido",
+        "Desarrollo Iterativo",
+        "Human in the Loop"
+      ],
+      "keywordsTranslations": {
+        "es": [
+          "IA",
+          "Prompt Engineering",
+          "Desarrollo Asistido por IA", 
+          "Creatividad",
+          "Democratización del Desarrollo",
+          "Código Primero, Refinar Después",
+          "Prototipado Rápido",
+          "Desarrollo Iterativo",
+          "Humano en el Bucle"
+        ],
+        "en": [
+          "AI",
+          "Prompt Engineering",
+          "AI-Assisted Development",
+          "Creativity", 
+          "Development Democratization",
+          "Code First, Refine Later",
+          "Fast Prototyping",
+          "Iterative Development",
+          "Human in the Loop"
+        ],
+        "pt-BR": [
+          "IA",
+          "Engenharia de Prompt",
+          "Desenvolvimento Assistido por IA",
+          "Criatividade",
+          "Democratização do Desenvolvimento",
+          "Código Primeiro, Refinar Depois", 
+          "Prototipagem Rápida",
+          "Desenvolvimento Iterativo",
+          "Humano no Loop"
         ]
       }
     },
     {
-      "name": "Arquitectura de Software",
+      "name": "Investigación y Desarrollo",
       "nameTranslations": {
-        "es": "Arquitectura de Software",
-        "en": "Software Architecture",
-        "pt-BR": "Arquitetura de Software"
-      },
-      "keywords": [
-        "Microservicios",
-        "Clean Architecture",
-        "Design Patterns",
-        "Escalabilidad"
+        "es": "Investigación y Desarrollo",
+        "en": "Research and Development",
+        "pt-BR": "Pesquisa e Desenvolvimento"
+      },      "description": "Exploración continua de tecnologías emergentes de IA y herramientas de desarrollo asistido. Investigación activa en metodologías como Vibe Coding y experimentación con plataformas de última generación para optimizar el desarrollo de software.",
+      "descriptionTranslations": {
+        "es": "Exploración continua de tecnologías emergentes de IA y herramientas de desarrollo asistido. Investigación activa en metodologías como Vibe Coding y experimentación con plataformas de última generación para optimizar el desarrollo de software.",
+        "en": "Continuous exploration of emerging AI technologies and assisted development tools. Active research in methodologies like Vibe Coding and experimentation with cutting-edge platforms to optimize software development.",
+        "pt-BR": "Exploração contínua de tecnologias emergentes de IA e ferramentas de desenvolvimento assistido. Pesquisa ativa em metodologias como Vibe Coding e experimentação com plataformas de última geração para otimizar o desenvolvimento de software."
+      },      "keywords": [
+        "ChatGPT",
+        "Claude (Anthropic)",
+        "Gemini",
+        "GitHub Copilot",
+        "VSCode",
+        "Notebook LLM",
+        "Gemini Studio",
+        "Cursor",
+        "Trae",
+        "V0",
+        "BoldNew",
+        "Vibe Coding",
+        "Cloud Code"
       ],
       "keywordsTranslations": {
         "es": [
-          "Microservicios",
-          "Clean Architecture",
-          "Design Patterns",
-          "Escalabilidad"
+          "ChatGPT",
+          "Claude (Anthropic)",
+          "Gemini",
+          "GitHub Copilot",
+          "VSCode",
+          "Notebook LLM",
+          "Gemini Studio",
+          "Cursor",
+          "Trae",
+          "V0",
+          "BoldNew",
+          "Vibe Coding",
+          "Cloud Code"
         ],
         "en": [
-          "Microservices",
-          "Clean Architecture",
-          "Design Patterns",
-          "Scalability"
+          "ChatGPT",
+          "Claude (Anthropic)",
+          "Gemini",
+          "GitHub Copilot",
+          "VSCode",
+          "Notebook LLM",
+          "Gemini Studio",
+          "Cursor",
+          "Trae",
+          "V0",
+          "BoldNew",
+          "Vibe Coding",
+          "Cloud Code"
         ],
         "pt-BR": [
-          "Microsserviços",
-          "Clean Architecture",
-          "Padrões de Design",
-          "Escalabilidade"
+          "ChatGPT",
+          "Claude (Anthropic)",
+          "Gemini",
+          "GitHub Copilot",
+          "VSCode",
+          "Notebook LLM",
+          "Gemini Studio",
+          "Cursor",
+          "Trae",
+          "V0",
+          "BoldNew",
+          "Vibe Coding",
+          "Cloud Code"
         ]
       }
     }
-  ],"meta": {
+  ],
+  "meta": {
     "canonical": "https://andresmmartinez.com/resume.json",
     "version": "v1.0.0",
-    "lastModified": "2025-06-17T00:00:00.000Z"
+    "lastModified": "2025-06-20T00:00:00.000Z"
   }
 }

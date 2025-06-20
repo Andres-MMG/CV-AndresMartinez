@@ -49,7 +49,7 @@ export const Experience: React.FC = () => {
               const isExpanded = expandedItems.includes(index);
               const highlights = experience.highlights || [];
               const startDate = formatDate(experience.startDate);
-              const endDate = experience.endDate ? formatDate(experience.endDate) : 'Presente';
+              const endDate = experience.endDate ? formatDate(experience.endDate) : t('about.present');
 
               return (
                 <div 
@@ -91,7 +91,7 @@ export const Experience: React.FC = () => {
                     {/* Highlights */}
                     {highlights.length > 0 && (
                       <div className="space-y-2">
-                        <h4 className="text-gray-200 font-semibold mb-2">Logros principales:</h4>
+                        <h4 className="text-gray-200 font-semibold mb-2">{t('experience.mainAchievements')}:</h4>
                         <ul className="space-y-2">
                           {(isExpanded ? highlights : highlights.slice(0, 3)).map((highlight, hIndex) => (
                             <li key={hIndex} className="flex items-start">
@@ -109,7 +109,7 @@ export const Experience: React.FC = () => {
                             onClick={() => toggleExpand(index)}
                             className="mt-3 text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors"
                           >
-                            {isExpanded ? 'Ver menos ↑' : `Ver todos (${highlights.length}) ↓`}
+                            {isExpanded ? `${t('experience.viewLess')} ↑` : `${t('experience.viewAll')} (${highlights.length}) ↓`}
                           </button>
                         )}
                       </div>
@@ -124,7 +124,7 @@ export const Experience: React.FC = () => {
                           rel="noopener noreferrer"
                           className="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors"
                         >
-                          Visitar sitio web de {experience.name}
+                          {t('experience.visitWebsite')} {experience.name}
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                           </svg>
@@ -144,7 +144,7 @@ export const Experience: React.FC = () => {
                 onClick={() => setShowAll(!showAll)}
                 className="px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-700 rounded-md font-semibold text-white hover:from-blue-700 hover:to-indigo-800 transition-all shadow-lg hover:shadow-blue-500/25"
               >
-                {showAll ? 'Ver menos experiencias' : `Ver todas las experiencias (${experiences.length})`}
+                {showAll ? t('experience.viewLessExperiences') : `${t('experience.viewAllExperiences')} (${experiences.length})`}
               </button>
             </div>
           )}
@@ -152,32 +152,32 @@ export const Experience: React.FC = () => {
           {/* Estadísticas de experiencia */}
           <div className="mt-12 bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700" data-aos="fade-up" data-aos-delay="400">
             <h3 className="text-xl font-semibold mb-6 text-center text-white">
-              Resumen de Experiencia
+              {t('experience.summary')}
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div>
                 <div className="text-2xl font-bold text-blue-400">
                   {experiences.length}
                 </div>
-                <div className="text-sm text-gray-400">Empresas</div>
+                <div className="text-sm text-gray-400">{t('experience.stats.companies')}</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-green-400">
                   20+
                 </div>
-                <div className="text-sm text-gray-400">Años exp.</div>
+                <div className="text-sm text-gray-400">{t('experience.stats.years')}</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-purple-400">
                   {experiences.filter(exp => !exp.endDate).length}
                 </div>
-                <div className="text-sm text-gray-400">Actual</div>
+                <div className="text-sm text-gray-400">{t('experience.stats.current')}</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-orange-400">
                   {experiences.reduce((total, exp) => total + (exp.highlights?.length || 0), 0)}
                 </div>
-                <div className="text-sm text-gray-400">Logros</div>
+                <div className="text-sm text-gray-400">{t('experience.stats.achievements')}</div>
               </div>
             </div>
           </div>

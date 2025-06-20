@@ -61,26 +61,23 @@ export const About: React.FC = () => {
                 <p className="mb-2">
                   <span className="font-semibold text-gray-200">{t('about.phone')}</span>{" "}
                   <span className="text-gray-400">{contactInfo.phone || 'No disponible'}</span>
-                </p>
-                <p className="mb-2">
-                  <span className="font-semibold text-gray-200">Fecha de nacimiento:</span>{" "}
+                </p>                <p className="mb-2">
+                  <span className="font-semibold text-gray-200">{t('about.birthDate')}</span>{" "}
                   <span className="text-gray-400">
                     {resume.basics?.birthDate ? new Date(resume.basics.birthDate).toLocaleDateString('es-CL') : 'No disponible'}
                   </span>
                 </p>
                 <p className="mb-2">
-                  <span className="font-semibold text-gray-200">Nacionalidad:</span>{" "}
+                  <span className="font-semibold text-gray-200">{t('about.nationality')}</span>{" "}
                   <span className="text-gray-400">{resume.basics?.nationality || 'No disponible'}</span>
                 </p>
               </div>
-              <div>
-                <p className="mb-2">
+              <div>                <p className="mb-2">
                   <span className="font-semibold text-gray-200">{t('about.location')}</span>{" "}
                   <span className="text-gray-400">
-                    {contactInfo.location?.city || 'Santiago'}, {contactInfo.location?.countryCode || 'Chile'}
+                    {contactInfo.location || 'Santiago, Chile'}
                   </span>
-                </p>
-                <p className="mb-2">
+                </p><p className="mb-2">
                   <span className="font-semibold text-gray-200">{t('about.website')}</span>{" "}
                   <a 
                     href={contactInfo.website || '#'} 
@@ -90,13 +87,12 @@ export const About: React.FC = () => {
                   >
                     {contactInfo.website ? new URL(contactInfo.website).hostname : 'No disponible'}
                   </a>
-                </p>
-                <p className="mb-2">
-                  <span className="font-semibold text-gray-200">Estado civil:</span>{" "}
+                </p><p className="mb-2">
+                  <span className="font-semibold text-gray-200">{t('about.maritalStatus')}</span>{" "}
                   <span className="text-gray-400">{resume.basics?.maritalStatus || 'No disponible'}</span>
                 </p>
                 <p className="mb-2">
-                  <span className="font-semibold text-gray-200">RUN:</span>{" "}
+                  <span className="font-semibold text-gray-200">{t('about.nationalId')}</span>{" "}
                   <span className="text-gray-400">{resume.basics?.nationalId || 'No disponible'}</span>
                 </p>
                 <p className="mb-2">
@@ -105,11 +101,11 @@ export const About: React.FC = () => {
                 </p>
               </div>
             </div>            {/* Redes sociales desde JSON Resume */}
-            {contactInfo.profiles && contactInfo.profiles.length > 0 && (
+            {resume.basics?.profiles && resume.basics.profiles.length > 0 && (
               <div className="mt-6 pt-6 border-t border-gray-700">
-                <h4 className="text-lg font-semibold mb-3 text-gray-200">Redes y Perfiles</h4>
+                <h4 className="text-lg font-semibold mb-3 text-gray-200">{t('about.profiles')}</h4>
                 <div className="flex flex-wrap gap-3">
-                  {contactInfo.profiles.map((profile, index) => (
+                  {resume.basics?.profiles?.map((profile, index) => (
                     <a
                       key={index}
                       href={profile.url}
@@ -127,8 +123,7 @@ export const About: React.FC = () => {
               </div>
             )}
               {/* Botón para descargar resume JSON */}
-            <div className="mt-6 pt-6 border-t border-gray-700">
-              <button
+            <div className="mt-6 pt-6 border-t border-gray-700">              <button
                 onClick={() => {
                   const dataStr = JSON.stringify(resume, null, 2);
                   const blob = new Blob([dataStr], { type: "application/json" });
@@ -145,7 +140,7 @@ export const About: React.FC = () => {
                 data-aos="fade-up"
               >
                 <ExternalLink className="w-4 h-4 mr-2" />
-                Descargar JSON Resume
+                {t('about.downloadJSON')}
               </button>
             </div>
           </div>

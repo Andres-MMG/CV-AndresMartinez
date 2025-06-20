@@ -1,7 +1,7 @@
 # CV - Andrés Martínez Gajardo
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-andresmmartinez.com-blue?style=for-the-badge&logo=globe)](https://andresmmartinez.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/andres-martinez-gajardo)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/andres-m-martinez-g)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github)](https://github.com/Andres-MMG)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail)](mailto:andres.martinez.g@gmail.com)
 
@@ -102,7 +102,6 @@ He diseñado e implementado exitosamente aplicaciones web (MVC, APIs REST), móv
 
 ## 📑 Documentos Disponibles
 
-- 📝 **[CV Completo](./CV.txt)**: Versión detallada en formato texto
 - 🏆 **Certificaciones**: Documentación de cursos y certificaciones
 - 💼 **Portfolio de Proyectos**: Casos de estudio y proyectos destacados
 - 👥 **Referencias**: Disponibles bajo solicitud

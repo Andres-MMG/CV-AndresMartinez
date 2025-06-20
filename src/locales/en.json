@@ -7,8 +7,7 @@
     "projects": "Projects",
     "contact": "Contact",
     "cvPrint": "Printable CV"
-  },
-  "about": {
+  },  "about": {
     "title": "About Me",
     "subtitle": "Software Engineer & Entrepreneur",
     "paragraph1": "With over 20 years of software development experience, I have evolved from building banking solutions to founding my own tech company.",
@@ -17,8 +16,16 @@
     "email": "Email:",
     "phone": "Phone:",
     "location": "Location:",
-    "availability": "Availability:"
-  },  "skills": {
+    "website": "Website:",
+    "downloadJSON": "Download JSON Resume",
+    "birthDate": "Date of birth:",
+    "nationality": "Nationality:",
+    "maritalStatus": "Marital status:",
+    "nationalId": "ID Number:",
+    "present": "Present",
+    "availability": "Availability:",
+    "profiles": "Networks & Profiles"
+  },"skills": {
     "noSkills": "No skills in this category",
     "selectCategory": "Select another category to see more skills",
     "title": "Technical Skills",
@@ -64,8 +71,21 @@
       "tech": "Tech"
     },
     "showMore": "See more experience",
-    "showLess": "See less"
-  },  "education": {
+    "showLess": "See less",
+    "viewAllExperiences": "View all experiences",
+    "viewLessExperiences": "View less experiences",
+    "summary": "Experience Summary",
+    "stats": {
+      "companies": "Companies",
+      "years": "Yrs exp.",
+      "current": "Current",
+      "achievements": "Achievements"
+    },
+    "mainAchievements": "Main achievements",
+    "viewAll": "View all",
+    "viewLess": "View less",
+    "visitWebsite": "Visit website of"
+  },"education": {
     "title": "Education",
     "systemsAnalyst": {
       "period": "2009 - 2010",
@@ -81,6 +101,8 @@
     "title": "My Projects",
     "filterAll": "All",
     "featuredProjects": "Featured Projects",
+    "viewAll": "View all",
+    "viewLess": "View less",
     "items": {
       "inteliai": {
         "title": "InteliAI",
